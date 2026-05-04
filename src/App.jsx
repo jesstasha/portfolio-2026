@@ -158,6 +158,19 @@ function Hero({ label, title, description, focus }) {
         transition={{ duration: 0.8, delay: 0.15 }}
       >
         <img className="hero-profile-image" src="/jess_profile.png" alt="Taekyung Lim profile" />
+
+        <div className="id-card-footer">
+          <div>
+            <p className="id-school">University of Melbourne</p>
+            <p className="id-major">Computing Student</p>
+            <p className="id-name">Taekyung Lim</p>
+          </div>
+
+          <div className="id-code">
+            <div className="fake-barcode" />
+            <span>PORTFOLIO ID · 2026</span>
+          </div>
+        </div>
       </motion.div>
     </section>
   );
