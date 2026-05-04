@@ -674,3 +674,26 @@ h1 {
   margin-right: 8px;
   font-size: 0.65rem;
 }
+
+.site-shell {
+  overflow: visible;
+}
+
+.case-study-card {
+  overflow: visible;
+}
+
+.case-study-layout {
+  overflow: visible;
+}
+
+.case-study-remote {
+  position: sticky;
+  top: 104px;
+  align-self: start;
+  z-index: 4;
+}
+
+.case-study-long section {
+  scroll-margin-top: 130px;
+}

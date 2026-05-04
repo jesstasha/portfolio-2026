@@ -203,23 +203,33 @@ function SectionIntro({ label, title, description }) {
 }
 
 function ProjectCard({ project, index }) {
-  const isCanva = project.title === "Canva Projects Redesign";
-  const [activeSection, setActiveSection] = useState("problem");
+  const projectSlug = project.title
+    .toLowerCase()
+    .replaceAll(" ", "-")
+    .replaceAll("/", "")
+    .replaceAll("’", "")
+    .replaceAll("'", "");
+
+  const sectionIds = [
+    [`${projectSlug}-overview`, "Overview"],
+    [`${projectSlug}-problem`, "Problem"],
+    [`${projectSlug}-pain-points`, "Pain Points"],
+    [`${projectSlug}-solution`, "Solution"],
+    [`${projectSlug}-implementation`, "Implementation"],
+  ];
+
+  const [activeSection, setActiveSection] = useState(sectionIds[0][0]);
 
   useEffect(() => {
-    if (!isCanva) return;
-
-    const sectionIds = ["problem", "pain-points", "product-thinking", "solution", "implementation"];
-
     const handleScroll = () => {
-      let current = sectionIds[0];
+      let current = sectionIds[0][0];
 
-      sectionIds.forEach((id) => {
+      sectionIds.forEach(([id]) => {
         const section = document.getElementById(id);
         if (!section) return;
 
         const rect = section.getBoundingClientRect();
-        if (rect.top <= 180) {
+        if (rect.top <= 170) {
           current = id;
         }
       });
@@ -230,19 +240,11 @@ function ProjectCard({ project, index }) {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isCanva]);
-
-  const remoteItems = [
-    ["problem", "Problem"],
-    ["pain-points", "Pain Points"],
-    ["product-thinking", "Product Thinking"],
-    ["solution", "Solution"],
-    ["implementation", "Implementation"],
-  ];
+  }, [projectSlug]);
 
   return (
     <motion.article
-      className="project-card glass-card"
+      className="project-card glass-card case-study-card"
       initial={{ opacity: 0, y: 26 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.55, delay: index * 0.08 }}
@@ -260,83 +262,87 @@ function ProjectCard({ project, index }) {
         ))}
       </div>
 
-      {isCanva ? (
-        <div className="case-study-layout">
-          <div className="case-study-long">
-            <section id="problem">
-              <span>01 / Problem</span>
-              <h4>Older projects are hard to retrieve when users cannot remember the exact name.</h4>
-              <p>
-                Canva’s current project browsing experience supports recent access well, but becomes less effective
-                when users need to find work created months or years ago. If a user cannot remember the project name,
-                they are forced to rely on broad date sorting and visual scanning.
-              </p>
-            </section>
+      <div className="case-study-layout">
+        <div className="case-study-long">
+          <section id={`${projectSlug}-overview`}>
+            <span>01 / Overview</span>
+            <h4>{project.title}</h4>
+            <p>
+              This case study explains the project context, the design problem, the main user pain points,
+              the proposed solution, and how the idea was translated into an interactive prototype.
+            </p>
+          </section>
 
-            <section id="pain-points">
-              <span>02 / User Pain Points</span>
-              <ul>
-                <li>No alternative retrieval method when the project name is forgotten.</li>
-                <li>Broad time sorting such as “Most recent” does not help users narrow older work precisely.</li>
-                <li>Related assets can appear as separate vertical items, increasing visual clutter and cognitive load.</li>
-              </ul>
-            </section>
+          <section id={`${projectSlug}-problem`}>
+            <span>02 / Problem</span>
+            <h4>
+              {project.title === "Canva Projects Redesign"
+                ? "Older projects are hard to retrieve when users cannot remember the exact name."
+                : "Saved short-form videos quickly become difficult to organise, revisit, and use intentionally."}
+            </h4>
+            <p>
+              {project.title === "Canva Projects Redesign"
+                ? "Canva supports recent access well, but becomes less effective when users need to find work created months or years ago. If a user cannot remember the project name, they are forced to rely on broad date sorting and visual scanning."
+                : "Users often save useful videos across platforms, but the saved content becomes scattered and hard to retrieve later. The problem is not only saving content, but turning saved videos into an organised personal archive."}
+            </p>
+          </section>
 
-            <section id="product-thinking">
-              <span>03 / Product Thinking</span>
-              <p>
-                Canva is a creative archive, not just a content feed. A short-term filter such as “Last 30 days”
-                supports recent access, but does not match how creators return to accumulated work over time.
-              </p>
-            </section>
+          <section id={`${projectSlug}-pain-points`}>
+            <span>03 / User Pain Points</span>
+            <ul>
+              {project.title === "Canva Projects Redesign" ? (
+                <>
+                  <li>No alternative retrieval method when the project name is forgotten.</li>
+                  <li>Broad time sorting such as “Most recent” does not help users narrow older work precisely.</li>
+                  <li>Related assets can appear as separate vertical items, increasing visual clutter and cognitive load.</li>
+                </>
+              ) : (
+                <>
+                  <li>Saved videos are spread across different apps and platforms.</li>
+                  <li>Users may remember the vibe or purpose of a video, but not the exact title or source.</li>
+                  <li>Manual organisation takes effort, so saved content easily becomes an unused archive.</li>
+                </>
+              )}
+            </ul>
+          </section>
 
-            <section id="solution">
-              <span>04 / Solution</span>
-              <h4>Introduce year-based filtering and clearer project grouping.</h4>
-              <p>
-                Year-based navigation reduces the search space and helps long-term users browse their creative history
-                more intentionally. Grouping related project assets also makes the page easier to scan.
-              </p>
-            </section>
+          <section id={`${projectSlug}-solution`}>
+            <span>04 / Solution</span>
+            <h4>
+              {project.title === "Canva Projects Redesign"
+                ? "Introduce year-based filtering and clearer project grouping."
+                : "Create a mobile system for saving, arranging, searching, and revisiting short-form videos."}
+            </h4>
+            <p>
+              {project.title === "Canva Projects Redesign"
+                ? "Year-based navigation reduces the search space and helps long-term users browse their creative history more intentionally. Grouping related project assets also makes the page easier to scan."
+                : "SUNAPBOX organises videos through save flows, folders, swipe-based arranging, search, and AI-assisted tagging so users can retrieve saved videos based on meaning, context, and future use."}
+            </p>
+          </section>
 
-            <section id="implementation">
-              <span>05 / Design & Implementation</span>
-              <p>
-                The redesign was planned as a Figma case study and implemented as an interactive React prototype,
-                showing both the information architecture and working UI behaviour.
-              </p>
-            </section>
-          </div>
-
-          <aside className="case-study-remote">
-            <p>Case Study</p>
-            {remoteItems.map(([id, label]) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                className={activeSection === id ? "active" : ""}
-              >
-                {label}
-              </a>
-            ))}
-          </aside>
+          <section id={`${projectSlug}-implementation`}>
+            <span>05 / Design & Implementation</span>
+            <p>
+              {project.title === "Canva Projects Redesign"
+                ? "The redesign was planned as a UX case study and implemented as an interactive React prototype, showing both the information architecture and working UI behaviour."
+                : "The app was designed and developed in SwiftUI, with future AI parser integration planned through a lightweight backend that converts natural language prompts into structured actions."}
+            </p>
+          </section>
         </div>
-      ) : (
-        <div className="case-study-preview">
-          <div>
-            <strong>Problem</strong>
-            <p>What user need or design gap this project responds to.</p>
-          </div>
-          <div>
-            <strong>Process</strong>
-            <p>Research, design decisions, iterations, and implementation.</p>
-          </div>
-          <div>
-            <strong>Outcome</strong>
-            <p>What changed, what was learned, and what could come next.</p>
-          </div>
-        </div>
-      )}
+
+        <aside className="case-study-remote">
+          <p>Case Study</p>
+          {sectionIds.map(([id, label]) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              className={activeSection === id ? "active" : ""}
+            >
+              {label}
+            </a>
+          ))}
+        </aside>
+      </div>
     </motion.article>
   );
 }
