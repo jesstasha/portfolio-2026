@@ -162,7 +162,7 @@ function Hero({ label, title, description, focus }) {
         <div className="id-card-footer">
           <div>
             <p className="id-school">University of Melbourne</p>
-            <p className="id-major">Computing Student</p>
+            <p className="id-major">Computing Science Major</p>
             <p className="id-name">Taekyung Lim</p>
           </div>
 
