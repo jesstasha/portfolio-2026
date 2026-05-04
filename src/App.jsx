@@ -174,18 +174,73 @@ function Hero({ label, title, description, focus }) {
 }
 
 function ProjectPage({ number, title, description, projects }) {
+  const sectionItems = projects.flatMap((project) => {
+    const slug = project.title
+      .toLowerCase()
+      .replaceAll(" ", "-")
+      .replaceAll("/", "")
+      .replaceAll("’", "")
+      .replaceAll("'", "");
+
+    return [
+      [`${slug}-overview`, project.title],
+      [`${slug}-problem`, "Problem"],
+      [`${slug}-pain-points`, "Pain Points"],
+      [`${slug}-solution`, "Solution"],
+      [`${slug}-implementation`, "Implementation"],
+    ];
+  });
+
+  const [activeSection, setActiveSection] = useState(sectionItems[0][0]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let current = sectionItems[0][0];
+
+      sectionItems.forEach(([id]) => {
+        const section = document.getElementById(id);
+        if (!section) return;
+
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 170) current = id;
+      });
+
+      setActiveSection(current);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [title]);
+
   return (
     <section className="content-section">
       <SectionIntro label={number} title={title} description={description} />
 
-      <div className="project-stack">
-        {projects.map((project, index) => (
-          <ProjectCard key={project.title} project={project} index={index} />
-        ))}
+      <div className="project-page-layout">
+        <div className="project-stack">
+          {projects.map((project, index) => (
+            <ProjectCard key={project.title} project={project} index={index} />
+          ))}
+        </div>
+
+        <aside className="case-study-remote page-remote">
+          <p>Page Guide</p>
+          {sectionItems.map(([id, label]) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              className={activeSection === id ? "active" : ""}
+            >
+              {label}
+            </a>
+          ))}
+        </aside>
       </div>
     </section>
   );
 }
+
 
 function SectionIntro({ label, title, description }) {
   return (
@@ -210,38 +265,6 @@ function ProjectCard({ project, index }) {
     .replaceAll("’", "")
     .replaceAll("'", "");
 
-  const sectionIds = [
-    [`${projectSlug}-overview`, "Overview"],
-    [`${projectSlug}-problem`, "Problem"],
-    [`${projectSlug}-pain-points`, "Pain Points"],
-    [`${projectSlug}-solution`, "Solution"],
-    [`${projectSlug}-implementation`, "Implementation"],
-  ];
-
-  const [activeSection, setActiveSection] = useState(sectionIds[0][0]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      let current = sectionIds[0][0];
-
-      sectionIds.forEach(([id]) => {
-        const section = document.getElementById(id);
-        if (!section) return;
-
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 170) {
-          current = id;
-        }
-      });
-
-      setActiveSection(current);
-    };
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [projectSlug]);
-
   return (
     <motion.article
       className="project-card glass-card case-study-card"
@@ -262,8 +285,7 @@ function ProjectCard({ project, index }) {
         ))}
       </div>
 
-      <div className="case-study-layout">
-        <div className="case-study-long">
+      <div className="case-study-long">
           <section id={`${projectSlug}-overview`}>
             <span>01 / Overview</span>
             <h4>{project.title}</h4>
@@ -273,7 +295,7 @@ function ProjectCard({ project, index }) {
             </p>
           </section>
 
-          <section id={`${projectSlug}-problem`}>
+                              <section id={`${projectSlug}-problem`}>
             <span>02 / Problem</span>
             <h4>
               {project.title === "Canva Projects Redesign"
@@ -282,8 +304,13 @@ function ProjectCard({ project, index }) {
             </h4>
             <p>
               {project.title === "Canva Projects Redesign"
-                ? "Canva supports recent access well, but becomes less effective when users need to find work created months or years ago. If a user cannot remember the project name, they are forced to rely on broad date sorting and visual scanning."
+                ? "Users struggle to retrieve past projects when they cannot recall the project name, and the current “Recent” sorting forces inefficient visual scanning. This issue becomes more significant over time, as Canva is not a short-form content platform but a long-term creative archive. Users accumulate a large number of meaningful projects across months or years, making time-based access a critical part of the experience."
                 : "Users often save useful videos across platforms, but the saved content becomes scattered and hard to retrieve later. The problem is not only saving content, but turning saved videos into an organised personal archive."}
+            </p>
+            <p>
+              {project.title === "Canva Projects Redesign"
+                ? "However, the current filtering system follows a feed-based logic (e.g. “Last 30 days”), which prioritises recency over retrieval. While effective for accessing recent work, it does not support users who are trying to find older projects. As a result, users are forced to manually scan through large project lists, increasing cognitive load and making retrieval inefficient. This reveals a mismatch between feed-based interaction patterns and archive-based user behaviour."
+                : ""}
             </p>
           </section>
 
@@ -328,20 +355,6 @@ function ProjectCard({ project, index }) {
                 : "The app was designed and developed in SwiftUI, with future AI parser integration planned through a lightweight backend that converts natural language prompts into structured actions."}
             </p>
           </section>
-        </div>
-
-        <aside className="case-study-remote">
-          <p>Case Study</p>
-          {sectionIds.map(([id, label]) => (
-            <a
-              key={id}
-              href={`#${id}`}
-              className={activeSection === id ? "active" : ""}
-            >
-              {label}
-            </a>
-          ))}
-        </aside>
       </div>
     </motion.article>
   );

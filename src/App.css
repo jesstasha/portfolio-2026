@@ -697,3 +697,110 @@ h1 {
 .case-study-long section {
   scroll-margin-top: 130px;
 }
+
+.project-page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 24px;
+  align-items: start;
+}
+
+.page-remote {
+  position: sticky;
+  top: 104px;
+}
+
+.page-remote a:nth-child(2),
+.page-remote a:nth-child(7) {
+  margin-top: 8px;
+  font-weight: 850;
+  color: #27223a;
+}
+
+@media (max-width: 920px) {
+  .project-page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .page-remote {
+    order: -1;
+    position: relative;
+    top: 0;
+  }
+}
+
+/* Typography refinement */
+h1 {
+  font-size: clamp(2rem, 4.6vw, 4.4rem);
+  line-height: 1.04;
+}
+
+.section-intro h2 {
+  font-size: clamp(1.8rem, 3.8vw, 3.5rem);
+}
+
+.project-card h3 {
+  font-size: clamp(1.7rem, 3.1vw, 3rem);
+}
+
+.project-card > p {
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.case-study-long h4 {
+  font-size: clamp(1.15rem, 1.8vw, 1.55rem);
+  line-height: 1.25;
+}
+
+.case-study-long p,
+.case-study-long li {
+  font-size: 0.94rem;
+  line-height: 1.68;
+}
+
+.hero-copy,
+.section-intro span {
+  font-size: 0.98rem;
+}
+
+.tag-row span,
+.project-meta span,
+.case-study-remote a {
+  font-size: 0.82rem;
+}
+
+.case-study-long section {
+  padding: 20px;
+}
+
+.project-card {
+  padding: clamp(22px, 3vw, 36px);
+}
+
+/* Stronger editorial left alignment */
+.hero-card,
+.project-card,
+.case-study-long section,
+.about-card,
+.section-intro {
+  text-align: left;
+}
+
+.hero-card {
+  align-items: flex-start;
+}
+
+.project-card h3,
+.project-card > p,
+.case-study-long h4,
+.case-study-long p,
+.case-study-long ul {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.tag-row,
+.project-meta {
+  justify-content: flex-start;
+}
