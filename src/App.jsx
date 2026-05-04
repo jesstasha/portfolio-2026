@@ -152,22 +152,12 @@ function Hero({ label, title, description, focus }) {
       </motion.div>
 
       <motion.div
-        className="desktop-widget glass-card"
+        className="profile-card glass-card"
         initial={{ opacity: 0, y: 28, rotate: 2 }}
         animate={{ opacity: 1, y: 0, rotate: 0 }}
         transition={{ duration: 0.8, delay: 0.15 }}
       >
-        <div className="widget-header">
-          <span />
-          <span />
-          <span />
-        </div>
-        <p className="widget-title">Current Focus</p>
-        <ul>
-          {focus.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
+        <img className="hero-profile-image" src="/jess_profile.png" alt="Taekyung Lim profile" />
       </motion.div>
     </section>
   );
