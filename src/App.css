@@ -1485,3 +1485,21 @@ h1 {
   font-weight: 850 !important;
   letter-spacing: 0.14em !important;
 }
+
+/* Back card headings refinement */
+.back-title {
+  color: #ffffff !important;
+  font-size: 0.74rem !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.14em !important;
+}
+
+/* Force EXPERIENCE / SKILLS headings */
+.flip-back .back-inner .back-title {
+  color: #ffffff !important;
+  font-size: 0.86rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.16em !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+}
