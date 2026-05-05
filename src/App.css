@@ -1721,3 +1721,18 @@ h1 {
   line-height: 1.2 !important;
   border-radius: 16px !important;
 }
+
+/* Remote LCD vibe */
+.page-remote {
+  background: #a8cbb7 !important;
+}
+
+.page-remote,
+.page-remote * {
+  color: #1f2a25 !important;
+}
+
+/* 버튼 hover 살짝 어둡게 */
+.page-remote a:hover {
+  background: rgba(0, 0, 0, 0.08) !important;
+}
