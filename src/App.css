@@ -1077,3 +1077,195 @@ h1 {
 .profile-card {
   padding: 10px;
 }
+
+/* Back card clean layout */
+.flip-back {
+  background: #0a0a0a;
+  color: white;
+}
+
+.back-inner {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "SF Mono", "Fira Code", monospace;
+}
+
+/* 제목 */
+.back-title {
+  margin-top: 8px;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.6);
+}
+
+/* 경험 */
+.back-inner p {
+  margin: 2px 0;
+  font-size: 0.8rem;
+}
+
+/* 스킬 2열 */
+.skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+  margin-top: 6px;
+}
+
+.skill-grid div {
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+/* Back card clean layout */
+.flip-back {
+  background: #0a0a0a;
+  color: white;
+}
+
+.back-inner {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "SF Mono", "Fira Code", monospace;
+}
+
+/* 제목 */
+.back-title {
+  margin-top: 8px;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.6);
+}
+
+/* 경험 */
+.back-inner p {
+  margin: 2px 0;
+  font-size: 0.8rem;
+}
+
+/* 스킬 2열 */
+.skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+  margin-top: 6px;
+}
+
+.skill-grid div {
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+/* Back card clean layout */
+.flip-back {
+  background: #0a0a0a;
+  color: white;
+}
+
+.back-inner {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "SF Mono", "Fira Code", monospace;
+}
+
+/* 제목 */
+.back-title {
+  margin-top: 8px;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.6);
+}
+
+/* 경험 */
+.back-inner p {
+  margin: 2px 0;
+  font-size: 0.8rem;
+}
+
+/* 스킬 2열 */
+.skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+  margin-top: 6px;
+}
+
+.skill-grid div {
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+/* Click-to-flip profile card */
+.flip-card {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  display: grid;
+  transform-style: preserve-3d;
+  transition: transform 0.65s ease;
+}
+
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-face {
+  grid-area: 1 / 1;
+  backface-visibility: hidden;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.flip-front {
+  padding: 10px;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+  background: #0a0a0a;
+  color: white;
+  min-height: 360px;
+}
+
+.back-inner {
+  padding: 20px;
+  font-family: "SF Mono", "Fira Code", monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.back-title {
+  margin: 10px 0 2px;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.55);
+}
+
+.back-inner p {
+  margin: 0;
+  font-size: 0.78rem;
+}
+
+.flip-skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+  margin-top: 4px;
+}
+
+.flip-skill-grid div {
+  font-size: 0.72rem;
+  white-space: nowrap;
+}

@@ -151,27 +151,7 @@ function Hero({ label, title, description, focus }) {
         <p className="hero-copy">{description}</p>
       </motion.div>
 
-      <motion.div
-        className="profile-card glass-card"
-        initial={{ opacity: 0, y: 28, rotate: 2 }}
-        animate={{ opacity: 1, y: 0, rotate: 0 }}
-        transition={{ duration: 0.8, delay: 0.15 }}
-      >
-        <img className="hero-profile-image" src="/jess_profile.png" alt="Taekyung Lim profile" />
-
-        <div className="id-card-footer">
-          <div>
-            <p className="id-school">University of Melbourne</p>
-            <p className="id-major">Computing Science Major</p>
-            <p className="id-name">Taekyung Lim</p>
-          </div>
-
-          <div className="id-code">
-            <div className="fake-barcode" />
-            <span>PORTFOLIO ID · 2026</span>
-          </div>
-        </div>
-      </motion.div>
+      <FlipCard />
     </section>
   );
 }
@@ -360,6 +340,55 @@ function ProjectCard({ project, index }) {
           </section>
       </div>
     </motion.article>
+  );
+}
+
+
+
+function FlipCard() {
+  const [flipped, setFlipped] = useState(false);
+
+  return (
+    <div className="flip-card" onClick={() => setFlipped(!flipped)}>
+      <div className={`flip-card-inner ${flipped ? "flipped" : ""}`}>
+        <div className="flip-card-face flip-front glass-card">
+          <img className="hero-profile-image" src="/jess_profile.png" alt="Taekyung Lim profile" />
+
+          <div className="id-card-footer">
+            <div>
+              <p className="id-school">University of Melbourne</p>
+              <p className="id-major">Computing Science Major</p>
+              <p className="id-name">Taekyung Lim</p>
+            </div>
+
+            <div className="id-code">
+              <div className="fake-barcode" />
+              <span>PORTFOLIO ID · 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flip-card-face flip-back">
+          <div className="back-inner">
+            <p className="back-title">EXPERIENCE</p>
+            <p>2024 CISSA · Product Officer</p>
+            <p>2024 Tooldi · Marketing Ambassador</p>
+
+            <p className="back-title">SKILLS</p>
+            <div className="flip-skill-grid">
+              <div>Python ★★★★★</div>
+              <div>Figma ★★★★★</div>
+              <div>C ★★★★☆</div>
+              <div>Java ★★★★☆</div>
+              <div>JavaScript ★★★☆☆</div>
+              <div>React ★★★☆☆</div>
+              <div>Swift ★★☆☆☆</div>
+              <div>Godot ★★☆☆☆</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
