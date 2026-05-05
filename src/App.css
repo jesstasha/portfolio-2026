@@ -1629,3 +1629,9 @@ h1 {
     transform: translate(-50%, -50%) scale(0.75) rotate(18deg);
   }
 }
+
+/* Larger click sparkle */
+.click-sparkle {
+  width: 51px !important;
+  height: 51px !important;
+}
