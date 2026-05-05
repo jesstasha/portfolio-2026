@@ -2352,3 +2352,52 @@ h1 {
   border-radius: 999px !important;
 }
 
+
+/* Mint accent for hero eyebrow */
+.eyebrow {
+  color: #3fbf9b !important;
+}
+
+/* Mint active top navigation */
+.nav-links button.active {
+  background: rgba(210, 255, 236, 0.85) !important;
+  color: #26382f !important;
+  border: 1.5px solid rgba(63, 191, 155, 0.55) !important;
+}
+
+/* Mint text on flipped profile card */
+.flip-card-face:not(.flip-front) p:not(.back-card-title),
+.skill-stat p {
+  color: #9fd8bd !important;
+}
+
+
+/* Apply mint + Silkscreen font to key UI labels */
+.eyebrow,
+.nav-links button,
+.nav-links button.active {
+  font-family: "SilkPixel", monospace !important;
+  color: #3fbf9b !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+/* Keep active nav pill readable */
+.nav-links button.active {
+  background: rgba(210, 255, 236, 0.9) !important;
+  border: 1.5px solid rgba(63, 191, 155, 0.55) !important;
+  color: #26382f !important;
+}
+
+
+/* Keep header brand white but apply pixel font */
+.site-logo,
+.logo,
+.brand,
+header h1,
+.header-logo {
+  font-family: "SilkPixel", monospace !important;
+  color: #ffffff !important;
+  letter-spacing: 0.08em !important;
+}
+
