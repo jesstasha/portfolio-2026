@@ -407,7 +407,7 @@ function FlipCard() {
           <div className="id-card-footer">
             <div>
               <p className="id-school">University of Melbourne</p>
-              <p className="id-major">Computing Science Major</p>
+              <p className="id-major">Computer Science Major</p>
               <p className="id-name">Portfolio</p>
             </div>
 
