@@ -2163,3 +2163,63 @@ h1 {
   font-weight: 900 !important;
 }
 
+
+/* Retro arcade pixel font */
+@font-face {
+  font-family: "RetroPixel";
+  src: url("/fonts/press-start-2p.ttf") format("truetype");
+  font-display: swap;
+}
+
+.click-me-badge,
+.case-study-remote,
+.case-study-remote *,
+.page-remote,
+.page-remote * {
+  font-family: "RetroPixel", monospace !important;
+}
+
+
+/* Apply Silkscreen only to Click Me and LCD menu items, not Page Guide logo */
+@font-face {
+  font-family: "SilkPixel";
+  src: url("/fonts/silkscreen.ttf") format("truetype");
+  font-display: swap;
+}
+
+.click-me-badge,
+.page-remote a {
+  font-family: "SilkPixel", monospace !important;
+}
+
+.page-remote p {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif !important;
+}
+
+
+/* Make key LCD menu items visually bold with pixel font */
+.page-remote a {
+  font-weight: 400 !important;
+  text-shadow: none !important;
+}
+
+.page-remote a.important-guide-link {
+  font-weight: 900 !important;
+  color: #0d1712 !important;
+  text-shadow:
+    0.6px 0 #0d1712,
+    -0.6px 0 #0d1712,
+    0 0.6px #0d1712 !important;
+  letter-spacing: 0.12em !important;
+}
+
+
+/* Soften key LCD menu emphasis */
+.page-remote a.important-guide-link {
+  color: #26382f !important;
+  text-shadow:
+    0.5px 0 #26382f,
+    -0.5px 0 #26382f,
+    0 0.5px #26382f !important;
+}
+
