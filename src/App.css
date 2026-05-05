@@ -1277,3 +1277,24 @@ h1 {
   margin-top: -4px !important;
   margin-bottom: 4px !important;
 }
+
+/* Cyber mint back card text */
+.flip-back {
+  color: #b8ffd8;
+}
+
+.back-title {
+  color: rgba(124, 255, 178, 0.72) !important;
+}
+
+.back-inner p {
+  color: rgba(184, 255, 216, 0.88) !important;
+}
+
+.exp-note {
+  color: rgba(184, 255, 216, 0.52) !important;
+}
+
+.flip-skill-grid div {
+  color: rgba(184, 255, 216, 0.86);
+}
