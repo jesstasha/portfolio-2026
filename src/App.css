@@ -2238,3 +2238,80 @@ h1 {
   letter-spacing: 0.09em !important;
 }
 
+
+/* Slightly reduce case study body text for better scanability */
+.case-study-card p,
+.case-study-card li,
+.content-card p,
+.content-card li {
+  font-size: 0.94rem !important;
+  line-height: 1.68 !important;
+}
+
+.case-study-card h3,
+.content-card h3 {
+  font-size: 1.08rem !important;
+}
+
+
+/* Further refine case study typography */
+.case-study-card p,
+.case-study-card li,
+.content-card p,
+.content-card li {
+  font-size: 0.9rem !important;
+  line-height: 1.65 !important;
+}
+
+.case-study-card h3,
+.content-card h3 {
+  font-size: 1.04rem !important;
+}
+
+
+/* Apply pixel font to mint tag chips */
+.tag-row span {
+  font-family: "SilkPixel", monospace !important;
+  letter-spacing: 0.08em !important;
+}
+
+/* Keep skill stars + labels normal */
+.skill-stat p,
+.skill-stat span {
+  font-family: inherit !important;
+}
+
+
+/* FINAL: pixel font for mint project tag chips only */
+.project-card .tag-row span,
+.tag-row span {
+  font-family: "SilkPixel", monospace !important;
+  font-weight: 400 !important;
+  font-synthesis: none !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Make pixel font visible on tag chips */
+.tag-row span {
+  font-family: "SilkPixel", monospace !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Pixel font for mint text on flipped card, excluding headings and stars */
+.flip-card-face:not(.flip-front) p:not(.back-card-title),
+.skill-stat p {
+  font-family: "SilkPixel", monospace !important;
+  letter-spacing: 0.08em !important;
+  font-size: 0.72rem !important;
+}
+
+/* Keep stars normal */
+.skill-stat span {
+  font-family: inherit !important;
+}
+
