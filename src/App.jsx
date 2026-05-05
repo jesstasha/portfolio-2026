@@ -41,6 +41,7 @@ function App() {
 
   return (
     <main className="site-shell">
+      <ClickSparkle />
       <div className="background-orb orb-one" />
       <div className="background-orb orb-two" />
       <div className="background-orb orb-three" />
@@ -343,6 +344,51 @@ function ProjectCard({ project, index }) {
   );
 }
 
+
+
+
+function ClickSparkle() {
+  const [sparkles, setSparkles] = useState([]);
+
+  useEffect(() => {
+    const handleClick = (event) => {
+      const id = Date.now();
+
+      setSparkles((prev) => [
+        ...prev,
+        {
+          id,
+          x: event.clientX,
+          y: event.clientY,
+        },
+      ]);
+
+      setTimeout(() => {
+        setSparkles((prev) => prev.filter((sparkle) => sparkle.id !== id));
+      }, 650);
+    };
+
+    window.addEventListener("click", handleClick);
+    return () => window.removeEventListener("click", handleClick);
+  }, []);
+
+  return (
+    <div className="click-sparkle-layer">
+      {sparkles.map((sparkle) => (
+        <img
+          key={sparkle.id}
+          className="click-sparkle"
+          src="/cursor.gif"
+          alt=""
+          style={{
+            left: sparkle.x,
+            top: sparkle.y,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
 
 
 function FlipCard() {

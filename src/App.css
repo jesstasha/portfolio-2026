@@ -1572,3 +1572,60 @@ h1 {
     transform: rotate(360deg);
   }
 }
+
+/* Smaller page guide */
+.page-remote {
+  width: 190px !important;
+  padding: 14px !important;
+  border-radius: 24px !important;
+}
+
+.case-study-remote p,
+.page-remote p {
+  font-size: 0.66rem !important;
+  margin-bottom: 10px !important;
+}
+
+.case-study-remote a,
+.page-remote a {
+  font-size: 0.74rem !important;
+  padding: 7px 9px !important;
+  line-height: 1.25 !important;
+}
+
+.project-page-layout {
+  grid-template-columns: minmax(0, 1fr) 200px !important;
+  gap: 18px !important;
+}
+
+.click-sparkle-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.click-sparkle {
+  position: fixed;
+  width: 34px;
+  height: 34px;
+  transform: translate(-50%, -50%);
+  animation: sparklePop 0.65s ease-out forwards;
+}
+
+@keyframes sparklePop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.4) rotate(0deg);
+  }
+
+  18% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.15) rotate(8deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.75) rotate(18deg);
+  }
+}
