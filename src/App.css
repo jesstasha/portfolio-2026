@@ -1298,3 +1298,182 @@ h1 {
 .flip-skill-grid div {
   color: rgba(184, 255, 216, 0.86);
 }
+
+/* Back card title + skill alignment fix */
+.back-title {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  text-align: center;
+}
+
+.flip-skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 18px;
+}
+
+.flip-skill-grid div {
+  display: grid;
+  grid-template-columns: 76px 54px;
+  align-items: center;
+  column-gap: 6px;
+  font-size: 0.68rem;
+  color: rgba(184, 255, 216, 0.86);
+  white-space: nowrap;
+  text-align: left;
+}
+
+.flip-skill-grid div::first-letter {
+  color: inherit;
+}
+
+/* Skill grid: label over stars */
+.flip-skill-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 8px 14px !important;
+  justify-items: stretch !important;
+  text-align: left !important;
+}
+
+.skill-stat {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 2px !important;
+  min-height: 34px;
+  color: rgba(184, 255, 216, 0.86);
+}
+
+.skill-stat p {
+  margin: 0 !important;
+  font-size: 0.68rem !important;
+  line-height: 1 !important;
+  text-align: center !important;
+}
+
+.skill-stat span {
+  display: block !important;
+  font-size: 0.66rem !important;
+  letter-spacing: 1px !important;
+  line-height: 1 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+.back-title {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  text-align: center !important;
+}
+
+.flip-skill-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 8px 14px !important;
+}
+
+.skill-stat {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 2px !important;
+  min-height: 34px !important;
+  color: rgba(184, 255, 216, 0.86) !important;
+}
+
+.skill-stat p {
+  margin: 0 !important;
+  font-size: 0.68rem !important;
+  line-height: 1 !important;
+  text-align: center !important;
+}
+
+.skill-stat span {
+  display: block !important;
+  font-size: 0.66rem !important;
+  letter-spacing: 1px !important;
+  line-height: 1 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+/* Compact flip card back content */
+.flip-back {
+  min-height: 360px !important;
+}
+
+.back-inner {
+  padding: 16px !important;
+  gap: 5px !important;
+}
+
+.back-title {
+  margin: 6px 0 2px !important;
+  font-size: 0.58rem !important;
+  letter-spacing: 0.1em !important;
+}
+
+.back-inner p {
+  font-size: 0.66rem !important;
+  line-height: 1.18 !important;
+}
+
+.exp-note {
+  font-size: 0.52rem !important;
+  line-height: 1.1 !important;
+  margin-top: -2px !important;
+  margin-bottom: 2px !important;
+}
+
+.flip-skill-grid {
+  gap: 4px 8px !important;
+  margin-top: 2px !important;
+}
+
+.skill-stat {
+  min-height: 24px !important;
+  gap: 1px !important;
+}
+
+.skill-stat p {
+  font-size: 0.56rem !important;
+}
+
+.skill-stat span {
+  font-size: 0.54rem !important;
+  letter-spacing: 0.4px !important;
+}
+
+/* Rebalance flip card back into two clear blocks */
+.back-inner {
+  height: 100% !important;
+  min-height: 360px !important;
+  padding: 18px !important;
+  display: grid !important;
+  grid-template-rows: auto 1fr !important;
+  gap: 16px !important;
+}
+
+.back-title {
+  margin: 0 0 8px !important;
+}
+
+.flip-skill-grid {
+  align-content: start !important;
+  gap: 8px 12px !important;
+}
+
+.skill-stat {
+  min-height: 30px !important;
+}
+
+.skill-stat p {
+  font-size: 0.6rem !important;
+}
+
+.skill-stat span {
+  font-size: 0.58rem !important;
+}

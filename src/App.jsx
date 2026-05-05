@@ -378,16 +378,17 @@ function FlipCard() {
             <p className="exp-note">Korean digital design template platform</p>
 
             <p className="back-title">SKILLS</p>
+
             <div className="flip-skill-grid">
-              <div>Python ★★★★★</div>
-              <div>Figma ★★★★★</div>
-              <div>C ★★★★☆</div>
-              <div>Java ★★★★☆</div>
-              <div>JavaScript ★★★☆☆</div>
-              <div>React ★★★☆☆</div>
-              <div>Swift ★★☆☆☆</div>
-              <div>Git/GitHub ★★★☆☆</div>
-              <div>Godot ★★☆☆☆</div>
+              <div className="skill-stat"><p>Python</p><span>★★★★★</span></div>
+              <div className="skill-stat"><p>Figma</p><span>★★★★★</span></div>
+              <div className="skill-stat"><p>C</p><span>★★★★☆</span></div>
+              <div className="skill-stat"><p>Java</p><span>★★★★☆</span></div>
+              <div className="skill-stat"><p>JavaScript</p><span>★★★☆☆</span></div>
+              <div className="skill-stat"><p>React</p><span>★★★☆☆</span></div>
+              <div className="skill-stat"><p>Swift</p><span>★★☆☆☆</span></div>
+              <div className="skill-stat"><p>Git/GitHub</p><span>★★★☆☆</span></div>
+              <div className="skill-stat"><p>Godot</p><span>★★☆☆☆</span></div>
             </div>
           </div>
         </div>
