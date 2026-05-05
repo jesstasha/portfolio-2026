@@ -372,7 +372,10 @@ function FlipCard() {
           <div className="back-inner">
             <p className="back-title">EXPERIENCE</p>
             <p>2024 CISSA · Product Officer</p>
+            <p className="exp-note">Unimelb Computing & Information Systems Student Association</p>
+
             <p>2024 Tooldi · Marketing Ambassador</p>
+            <p className="exp-note">Korean digital design template platform</p>
 
             <p className="back-title">SKILLS</p>
             <div className="flip-skill-grid">
@@ -383,6 +386,7 @@ function FlipCard() {
               <div>JavaScript ★★★☆☆</div>
               <div>React ★★★☆☆</div>
               <div>Swift ★★☆☆☆</div>
+              <div>Git/GitHub ★★★☆☆</div>
               <div>Godot ★★☆☆☆</div>
             </div>
           </div>
