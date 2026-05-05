@@ -2223,3 +2223,18 @@ h1 {
     0 0.5px #26382f !important;
 }
 
+
+/* Slightly widen MP3 Page Guide so long labels fit better */
+.page-remote {
+  width: 195px !important;
+}
+
+.project-page-layout {
+  grid-template-columns: minmax(0, 1fr) 215px !important;
+}
+
+.page-remote a {
+  font-size: 0.62rem !important;
+  letter-spacing: 0.09em !important;
+}
+
