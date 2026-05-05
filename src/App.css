@@ -1635,3 +1635,30 @@ h1 {
   width: 51px !important;
   height: 51px !important;
 }
+
+@font-face {
+  font-family: "PokemonFont";
+  src: url("/fonts/pokemon.ttf") format("truetype");
+}
+
+.click-me-badge {
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  font-family: "PokemonFont", "SF Mono", monospace;
+  font-size: 1rem;
+  color: #b8ffd8;
+  text-shadow:
+    0 0 6px rgba(184, 255, 216, 0.9),
+    0 0 14px rgba(124, 255, 178, 0.65);
+  animation: floatClickMe 1.8s ease-in-out infinite;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+@keyframes floatClickMe {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-6px); }
+}
