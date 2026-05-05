@@ -2593,3 +2593,17 @@ header h1,
   line-height: 1.05 !important;
 }
 
+
+/* Test: apply ID-card mono font to main body/case study copy */
+body,
+.project-card p,
+.case-study-card p,
+.case-study-card li,
+.content-card p,
+.content-card li,
+.section-intro p,
+.hero-copy {
+  font-family: "SF Mono", "Fira Code", "JetBrains Mono", "IBM Plex Mono", monospace !important;
+  letter-spacing: -0.01em !important;
+}
+
