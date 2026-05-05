@@ -1867,3 +1867,109 @@ h1 {
   filter: drop-shadow(0 0 6px rgba(0, 255, 190, 0.9)) !important;
 }
 
+
+/* Move profile card group down so Click Me is not hidden by top header */
+.hero-profile-card,
+.profile-card,
+.hero-card-wrapper {
+  margin-top: 34px !important;
+}
+
+.click-me-badge {
+  top: -30px !important;
+}
+
+
+/* Move profile card group slightly further down */
+.hero-profile-card,
+.profile-card,
+.hero-card-wrapper {
+  margin-top: 52px !important;
+}
+
+.click-me-badge {
+  top: -28px !important;
+}
+
+
+/* FORCE move the visible profile image/card block down */
+.hero-visual,
+.hero-profile,
+.profile-stack,
+.profile-card-shell,
+.hero-profile-card,
+.profile-card {
+  transform: translateY(72px) !important;
+}
+
+.click-me-badge {
+  top: -24px !important;
+}
+
+
+/* Move FlipCard group down */
+.flip-card {
+  margin-top: 80px !important;
+}
+
+.flip-card-inner {
+  transform: translateY(20px) !important;
+}
+
+.click-me-badge {
+  top: -28px !important;
+}
+
+
+/* Align hero intro text with lowered FlipCard */
+.hero-copy {
+  margin-top: 80px !important;
+}
+
+
+/* Align left hero text block with lowered FlipCard */
+.hero-card > div:first-child {
+  transform: translateY(80px) !important;
+}
+
+
+/* Fix FlipCard rotation: only move outer card, never inner */
+.flip-card {
+  margin-top: 100px !important;
+  transform: none !important;
+}
+
+.flip-card-inner {
+  transform: none !important;
+}
+
+.flip-card-inner.flipped {
+  transform: rotateY(180deg) !important;
+}
+
+.click-me-badge {
+  top: -28px !important;
+}
+
+
+/* Align left hero intro block with lowered FlipCard */
+.hero-card {
+  align-items: center !important;
+}
+
+.hero-card > div:first-of-type:not(.flip-card) {
+  margin-top: 100px !important;
+}
+
+
+/* Lower the left hero text block to align with FlipCard */
+.hero-card > div:first-child {
+  padding-top: 95px !important;
+}
+
+
+/* Align left hero card with lowered FlipCard */
+.hero-section > .hero-card {
+  margin-top: 100px !important;
+}
+
