@@ -1477,3 +1477,11 @@ h1 {
 .skill-stat span {
   font-size: 0.58rem !important;
 }
+
+/* Back card headings refinement */
+.back-title {
+  color: #ffffff !important;
+  font-size: 0.74rem !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.14em !important;
+}
