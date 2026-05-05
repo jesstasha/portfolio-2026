@@ -1973,3 +1973,96 @@ h1 {
   margin-top: 100px !important;
 }
 
+
+/* MP3 player-style frame for Page Guide remote */
+.page-remote {
+  position: relative !important;
+  padding-top: 44px !important;
+  border: 2px solid rgba(57, 255, 191, 0.65) !important;
+  box-shadow:
+    0 0 0 3px rgba(255, 255, 255, 0.35),
+    0 0 18px rgba(57, 255, 191, 0.45),
+    inset 0 0 18px rgba(255, 255, 255, 0.28) !important;
+}
+
+/* top mini music-player control strip */
+.page-remote::before {
+  content: "◀  ▶  ▌▌";
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  right: 14px;
+  height: 24px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "PokemonPixelFinal", "PokemonFinal", monospace !important;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+
+  color: #39ffbf;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1.5px solid rgba(57, 255, 191, 0.8);
+  text-shadow:
+    0 0 4px #ffffff,
+    0 0 8px #39ffbf,
+    0 0 14px #00ffcc;
+  box-shadow:
+    inset 0 0 8px rgba(255, 255, 255, 0.5),
+    0 0 12px rgba(57, 255, 191, 0.55);
+}
+
+
+/* FINAL MP3 / iPod style Page Guide remote */
+.page-remote {
+  position: sticky !important;
+  top: 110px !important;
+  align-self: start !important;
+
+  padding-top: 54px !important;
+  border: 8px solid #d9ddd9 !important;
+  border-radius: 28px !important;
+  background: linear-gradient(145deg, #eef1eb, #cfd7d0) !important;
+
+  box-shadow:
+    inset 0 0 0 2px rgba(255,255,255,0.9),
+    inset 0 -10px 18px rgba(0,0,0,0.08),
+    0 12px 28px rgba(0,0,0,0.16) !important;
+}
+
+/* MP3 top control strip */
+.page-remote::before {
+  content: "◀    ▶    ▌▌";
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  right: 16px;
+  height: 30px;
+
+  border-radius: 999px;
+  background: linear-gradient(145deg, #ffffff, #d7ded8);
+  border: 2px solid rgba(120, 130, 120, 0.35);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "PokemonPixelFinal", "PokemonFinal", monospace !important;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  color: #6b756f !important;
+  text-shadow: 0 1px 0 #ffffff;
+
+  box-shadow:
+    inset 0 2px 4px rgba(255,255,255,0.9),
+    inset 0 -3px 5px rgba(0,0,0,0.12);
+}
+
+/* make guide buttons feel like small screen/menu items */
+.page-remote a {
+  background: rgba(255,255,255,0.45) !important;
+  border: 1px solid rgba(80, 90, 80, 0.18) !important;
+}
+
