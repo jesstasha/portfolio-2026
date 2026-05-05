@@ -2066,3 +2066,41 @@ h1 {
   border: 1px solid rgba(80, 90, 80, 0.18) !important;
 }
 
+
+/* MP3 LCD screen inside Page Guide */
+.page-remote {
+  padding: 64px 14px 16px !important;
+  background: linear-gradient(145deg, #e8ece6, #cfd7d0) !important;
+}
+
+/* LCD screen area: make all contents feel inside the screen */
+.page-remote p,
+.page-remote a {
+  background: #a8cbb7 !important;
+  color: #1f2a25 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.page-remote p {
+  margin: 0 !important;
+  padding: 12px 10px 8px !important;
+  border-radius: 16px 16px 0 0 !important;
+}
+
+.page-remote a {
+  margin: 0 !important;
+  padding: 7px 10px !important;
+  border-radius: 0 !important;
+}
+
+.page-remote a:last-child {
+  border-radius: 0 0 16px 16px !important;
+  padding-bottom: 12px !important;
+}
+
+.page-remote a:hover {
+  background: #8fb6a3 !important;
+  color: #111a16 !important;
+}
+
