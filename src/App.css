@@ -670,7 +670,7 @@ h1 {
 }
 
 .case-study-remote a.active::before {
-  content: "●";
+  content: ">";
   margin-right: 8px;
   font-size: 0.65rem;
 }
