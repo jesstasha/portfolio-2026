@@ -48,7 +48,7 @@ function App() {
 
       <header className="top-bar">
         <button className="logo" onClick={() => setPage("ux")}>
-          Taekyung Lim
+          Portfolio
         </button>
 
         <nav className="nav-links">
@@ -68,8 +68,8 @@ function App() {
         <>
           <Hero
             label="UX Portfolio 2026"
-            title="I design thoughtful product experiences through research, interaction, and front-end craft."
-            description="Computing student focused on UX / product design, interface systems, and human-centred digital experiences."
+            title="Hi, I'm Teekyung (Jessica) Lim"
+            description="I design thoughtful product experiences through research, interaction, and front-end craft. Computing student focused on UX / product design, interface systems, and human-centred digital experiences."
             focus={["Canva redesign case study", "SUNAPBOX mobile UX", "Product storytelling"]}
           />
           <ProjectPage
@@ -399,13 +399,13 @@ function FlipCard() {
       <div className={`flip-card-inner ${flipped ? "flipped" : ""}`}>
         <div className="click-me-badge">Click me!</div>
         <div className="flip-card-face flip-front glass-card">
-          <img className="hero-profile-image" src="/jess_profile.png" alt="Taekyung Lim profile" />
+          <img className="hero-profile-image" src="/jess_profile.png" alt="Portfolio profile" />
 
           <div className="id-card-footer">
             <div>
               <p className="id-school">University of Melbourne</p>
               <p className="id-major">Computing Science Major</p>
-              <p className="id-name">Taekyung Lim</p>
+              <p className="id-name">Portfolio</p>
             </div>
 
             <div className="id-code">
