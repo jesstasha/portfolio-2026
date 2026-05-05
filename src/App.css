@@ -2401,3 +2401,195 @@ header h1,
   letter-spacing: 0.08em !important;
 }
 
+
+/* Curly decorative font for main hero title only */
+@font-face {
+  font-family: "Mieszkanie";
+  src: url("/fonts/mieszkanie9.otf") format("opentype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "Mieszkanie", cursive !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1.05 !important;
+}
+
+
+/* Test Goodbye Cruel World for main hero title only */
+@font-face {
+  font-family: "GoodbyeCruel";
+  src: url("/fonts/goodbye.ttf") format("truetype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "GoodbyeCruel", cursive !important;
+  letter-spacing: 0.03em !important;
+  line-height: 1.05 !important;
+}
+
+
+/* Sabrina font for main hero title */
+@font-face {
+  font-family: "SabrinaTitle";
+  src: url("/fonts/sabrina.ttf") format("truetype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "SabrinaTitle", cursive !important;
+  letter-spacing: 0.01em !important;
+  line-height: 1.02 !important;
+}
+
+
+/* Sabrina font for main hero title */
+@font-face {
+  font-family: "SabrinaTitle";
+  src: url("/fonts/sabrina.ttf") format("truetype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "SabrinaTitle", cursive !important;
+  letter-spacing: 0.01em !important;
+  line-height: 1.02 !important;
+}
+
+
+/* Starry Type for main hero title */
+@font-face {
+  font-family: "StarryTitle";
+  src: url("/fonts/starry-type.ttf") format("truetype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "StarryTitle", cursive !important;
+  letter-spacing: 0.015em !important;
+  line-height: 1.02 !important;
+}
+
+
+/* KiwiSoda for main hero title */
+@font-face {
+  font-family: "KiwiTitle";
+  src: url("/fonts/kiwisoda.ttf") format("truetype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "KiwiTitle", cursive !important;
+  letter-spacing: 0.01em !important;
+  line-height: 1.02 !important;
+}
+
+
+/* Hero label back to dark, hero title to mint */
+.hero-card .eyebrow {
+  color: #1f2a25 !important;
+}
+
+.hero-card h1 {
+  color: #3fbf9b !important;
+}
+
+
+/* Crazy Curlz for main hero title */
+@font-face {
+  font-family: "CrazyTitle";
+  src: url("/fonts/crazycurlz.ttf") format("truetype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "CrazyTitle", cursive !important;
+  letter-spacing: 0.01em !important;
+  line-height: 1.02 !important;
+}
+
+
+/* Stars font for main hero title */
+@font-face {
+  font-family: "StarsTitle";
+  src: url("/fonts/stars.ttf") format("truetype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "StarsTitle", cursive !important;
+  letter-spacing: 0.015em !important;
+  line-height: 1.02 !important;
+}
+
+
+/* Mieszkanie for main hero title */
+@font-face {
+  font-family: "MieszkanieTitle";
+  src: url("/fonts/mieszkanie9.otf") format("opentype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "MieszkanieTitle", cursive !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1.05 !important;
+}
+
+
+/* Floozy for main hero title */
+@font-face {
+  font-family: "FloozyTitle";
+  src: url("/fonts/floozy.ttf") format("truetype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "FloozyTitle", cursive !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1.05 !important;
+}
+
+
+/* Kurly Kyoots for main hero title */
+@font-face {
+  font-family: "KurlyTitle";
+  src: url("/fonts/kurlykyoots.otf") format("opentype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "KurlyTitle", cursive !important;
+  letter-spacing: 0.015em !important;
+  line-height: 1.02 !important;
+}
+
+
+/* Angelica for main hero title */
+@font-face {
+  font-family: "AngelicaTitle";
+  src: url("/fonts/angelica.ttf") format("truetype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "AngelicaTitle", cursive !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1.05 !important;
+}
+
+
+/* FINAL hero title font: Mieszkanie */
+@font-face {
+  font-family: "FinalHeroTitle";
+  src: url("/fonts/mieszkanie9.otf") format("opentype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "FinalHeroTitle", cursive !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1.05 !important;
+}
+

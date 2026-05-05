@@ -85,8 +85,8 @@ function App() {
         <>
           <Hero
             label="Game Development"
-            title="I build playful systems that turn interaction into meaning."
-            description="A collection of game and interactive projects exploring player feedback, narrative design, and systems thinking."
+            title="Hi, I'm Teekyung (Jessica) Lim"
+            description="I build playful systems that turn interaction into meaning. A collection of game and interactive projects exploring player feedback, narrative design, and systems thinking."
             focus={["Earth Resonance", "Anymore Farm", "Interactive systems"]}
           />
           <ProjectPage
