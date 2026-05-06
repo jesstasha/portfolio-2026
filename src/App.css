@@ -3032,3 +3032,459 @@ body,
   border-radius: 0 0 16px 16px !important;
 }
 
+
+/* 2000s online media player cards */
+.retro-media-player {
+  min-height: 190px;
+  border-radius: 10px;
+  padding: 8px;
+  background: linear-gradient(180deg, #2b2b2b, #111);
+  border: 2px solid #6f6f6f;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.18),
+    0 12px 24px rgba(0,0,0,0.18);
+}
+
+.retro-player-screen {
+  height: 135px;
+  border-radius: 4px;
+  background:
+    radial-gradient(circle at center, rgba(120,120,120,0.22), transparent 32%),
+    #050505;
+  border: 1px solid #3d3d3d;
+  display: grid;
+  place-items: center;
+  color: rgba(255,255,255,0.32);
+  font-family: "SilkPixel", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+}
+
+.retro-player-controls {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 7px;
+}
+
+.retro-player-controls button {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 2px solid #cfcfcf;
+  background: linear-gradient(145deg, #ffffff, #b8b8b8);
+  color: #111;
+  font-size: 0.72rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,0.9),
+    0 2px 4px rgba(0,0,0,0.35);
+}
+
+.retro-player-controls button:hover {
+  filter: brightness(0.92);
+}
+
+
+/* Refine retro media player: thin frame + centered play only */
+.retro-media-player {
+  min-height: 170px !important;
+  padding: 5px !important;
+  border-radius: 8px !important;
+  background: linear-gradient(180deg, #d7d7d7, #8f8f8f) !important;
+  border: 1.5px solid #6f6f6f !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.55),
+    0 8px 18px rgba(0,0,0,0.12) !important;
+}
+
+.retro-player-screen {
+  height: 155px !important;
+  border-radius: 4px !important;
+  background: #050505 !important;
+  border: 1px solid #2b2b2b !important;
+  position: relative !important;
+  display: grid !important;
+  place-items: center !important;
+}
+
+.retro-player-screen span {
+  display: none !important;
+}
+
+.retro-player-controls {
+  position: absolute !important;
+  inset: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  display: grid !important;
+  place-items: center !important;
+  pointer-events: none !important;
+}
+
+.retro-player-controls button {
+  display: none !important;
+}
+
+.retro-player-controls button:first-child {
+  display: grid !important;
+  pointer-events: auto !important;
+
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 999px !important;
+
+  border: 2px solid #d8d8d8 !important;
+  background: linear-gradient(145deg, #ffffff, #b9b9b9) !important;
+  color: #111 !important;
+
+  font-size: 0.9rem !important;
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,0.95),
+    0 2px 6px rgba(0,0,0,0.45) !important;
+}
+
+
+/* Refine retro media player: thin frame + centered play only */
+.retro-media-player {
+  min-height: 170px !important;
+  padding: 5px !important;
+  border-radius: 8px !important;
+  background: linear-gradient(180deg, #d7d7d7, #8f8f8f) !important;
+  border: 1.5px solid #6f6f6f !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.55),
+    0 8px 18px rgba(0,0,0,0.12) !important;
+}
+
+.retro-player-screen {
+  height: 155px !important;
+  border-radius: 4px !important;
+  background: #050505 !important;
+  border: 1px solid #2b2b2b !important;
+  position: relative !important;
+  display: grid !important;
+  place-items: center !important;
+}
+
+.retro-player-screen span {
+  display: none !important;
+}
+
+.retro-player-controls {
+  position: absolute !important;
+  inset: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  display: grid !important;
+  place-items: center !important;
+  pointer-events: none !important;
+}
+
+.retro-player-controls button {
+  display: none !important;
+}
+
+.retro-player-controls button:first-child {
+  display: grid !important;
+  pointer-events: auto !important;
+
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 999px !important;
+
+  border: 2px solid #d8d8d8 !important;
+  background: linear-gradient(145deg, #ffffff, #b9b9b9) !important;
+  color: #111 !important;
+
+  font-size: 0.9rem !important;
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,0.95),
+    0 2px 6px rgba(0,0,0,0.45) !important;
+}
+
+
+/* 2000s web player: thin frame + bottom centered play */
+.retro-media-player {
+  min-height: 165px !important;
+  padding: 4px !important;
+  border-radius: 5px !important;
+
+  background: linear-gradient(180deg, #eeeeee, #c8c8c8 55%, #9f9f9f) !important;
+  border: 1px solid rgba(80, 80, 80, 0.45) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.9),
+    inset 0 -1px 0 rgba(0,0,0,0.18),
+    0 8px 16px rgba(0,0,0,0.10) !important;
+}
+
+.retro-player-screen {
+  height: 128px !important;
+  border-radius: 3px !important;
+  background: #050505 !important;
+  border: 1px solid #202020 !important;
+}
+
+.retro-player-controls {
+  position: static !important;
+  height: 28px !important;
+  padding: 3px 0 0 !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  pointer-events: auto !important;
+  background: linear-gradient(180deg, #dcdcdc, #a9a9a9) !important;
+  border-top: 1px solid rgba(255,255,255,0.7) !important;
+}
+
+.retro-player-controls button {
+  display: none !important;
+}
+
+.retro-player-controls button:first-child {
+  display: grid !important;
+  place-items: center !important;
+
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 999px !important;
+
+  border: 1px solid #bfc0c0 !important;
+  background: linear-gradient(145deg, #ffffff, #d2d2d2) !important;
+  color: #5f6663 !important;
+
+  font-size: 0.62rem !important;
+  line-height: 1 !important;
+
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.95),
+    0 1px 3px rgba(0,0,0,0.28) !important;
+}
+
+
+/* More About Me activity case-study cards */
+.activity-stack {
+  display: grid;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.activity-card {
+  padding: 26px !important;
+}
+
+.activity-card h4 {
+  margin: 14px 0 10px;
+  font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+  line-height: 1.15;
+  color: #27223a;
+}
+
+.activity-sections {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.activity-sections section {
+  padding: 20px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.36);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+}
+
+.activity-sections section > span {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+
+  padding: 9px 13px;
+  border-radius: 999px;
+
+  font-family: "SilkPixel", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #3fbf9b;
+  border: 1.5px solid rgba(63, 191, 155, 0.55);
+  background: rgba(210, 255, 236, 0.45);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.55),
+    0 0 10px rgba(63,191,155,0.18);
+
+  margin-bottom: 14px;
+}
+
+.activity-sections p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.activity-sections .retro-media-player {
+  margin-top: 4px;
+}
+
+
+/* Match More About Me layout to case study structure */
+.activity-card {
+  text-align: left !important;
+  padding: 34px !important;
+}
+
+.activity-card h4 {
+  text-align: left !important;
+  margin-top: 18px !important;
+  margin-bottom: 18px !important;
+
+  font-size: clamp(1.8rem, 3vw, 2.7rem) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.05em !important;
+}
+
+.activity-card .project-meta {
+  justify-content: flex-start !important;
+}
+
+.activity-card .tag-row {
+  justify-content: flex-start !important;
+  margin-top: 18px !important;
+  margin-bottom: 26px !important;
+}
+
+.activity-sections {
+  gap: 22px !important;
+}
+
+.activity-sections section {
+  text-align: left !important;
+  padding: 26px !important;
+}
+
+.activity-sections section > span {
+  margin-bottom: 18px !important;
+}
+
+.activity-sections p {
+  text-align: left !important;
+  max-width: 90% !important;
+}
+
+/* remove centered layout feeling */
+.more-about-panel {
+  text-align: left !important;
+}
+
+.more-about-panel h3,
+.more-about-panel > p {
+  text-align: left !important;
+}
+
+
+/* FORCE More About Me to match case study layout */
+.more-about-panel,
+.more-about-panel * {
+  text-align: left !important;
+}
+
+.activity-card {
+  padding: clamp(22px, 3vw, 36px) !important;
+}
+
+.activity-card h4 {
+  margin: 18px 0 14px !important;
+  text-align: left !important;
+  font-size: clamp(1.15rem, 1.8vw, 1.55rem) !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.activity-card .tag-row {
+  margin-left: 0 !important;
+  justify-content: flex-start !important;
+}
+
+.activity-sections section {
+  text-align: left !important;
+  padding: 20px !important;
+}
+
+.activity-sections section > span {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+.activity-sections p {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  max-width: none !important;
+}
+
+.activity-sections .retro-media-player {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+
+/* More About Me should read like the UX/Product section intro */
+.more-about-panel {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.more-about-panel h3 {
+  font-size: clamp(1.8rem, 3.8vw, 3.5rem) !important;
+  line-height: 0.95 !important;
+  letter-spacing: -0.07em !important;
+  color: rgba(39, 34, 58, 0.78) !important;
+  text-shadow: none !important;
+  margin: 0 0 18px !important;
+}
+
+.more-about-panel > p {
+  font-size: 0.98rem !important;
+  color: rgba(39, 34, 58, 0.68) !important;
+  margin-bottom: 28px !important;
+}
+
+/* Activity cards should match case study cards, not white blocks */
+.activity-card {
+  background: rgba(255, 255, 255, 0.34) !important;
+  border: 1px solid rgba(255, 255, 255, 0.56) !important;
+  box-shadow: 0 18px 50px rgba(96, 83, 132, 0.12) !important;
+}
+
+.activity-card h4 {
+  margin-bottom: 12px !important;
+}
+
+.activity-summary {
+  margin: 0 0 18px !important;
+  font-size: 0.9rem !important;
+  line-height: 1.65 !important;
+  color: rgba(39, 34, 58, 0.78) !important;
+}
+
+/* Keep hashtags below summary, aligned like case study */
+.activity-card .tag-row {
+  margin-top: 0 !important;
+  margin-bottom: 24px !important;
+}
+
+/* Inner sections same soft card feeling */
+.activity-sections section {
+  background: rgba(255, 255, 255, 0.30) !important;
+  border: 1px solid rgba(255, 255, 255, 0.46) !important;
+}
+

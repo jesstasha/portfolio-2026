@@ -141,13 +141,109 @@ function App() {
               <section id="more-about-me" className="more-about-panel glass-card">
                 <h3>More About Me</h3>
                 <p>
-                  A small archive of the communities, workshops, product roles, and creative activities I have been part of.
+                  A small archive of the communities, product roles, and creative activities I have been part of.
                 </p>
 
-                <div className="more-about-grid">
-                  <div className="more-about-photo">TOOLDI</div>
-                  <div className="more-about-photo">PRODUCT OFFICER</div>
-                  <div className="more-about-photo">WORKSHOP</div>
+                <div className="activity-stack">
+                  <article className="activity-card glass-card">
+                    <div className="project-meta">
+                      <span>Student Society · Product Role</span>
+                    </div>
+
+                    <h4>CISSA Product Officer</h4>
+                    <p className="activity-summary">
+                      Supporting student-facing product experiences through community, events, and digital interaction.
+                    </p>
+
+                    <div className="tag-row">
+                      <span>#Product Thinking</span>
+                      <span>#Student Community</span>
+                      <span>#Event UX</span>
+                    </div>
+
+                    <div className="activity-sections">
+                      <section>
+                        <span>01 / Overview</span>
+                        <p>
+                          A student society product role focused on supporting digital experiences, events, and community-facing initiatives.
+                        </p>
+                      </section>
+
+                      <section>
+                        <span>02 / Photo / Video</span>
+                        <div className="retro-media-player">
+                          <div className="retro-player-screen"></div>
+                          <div className="retro-player-controls">
+                            <button type="button">▶</button>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section>
+                        <span>03 / What I Do</span>
+                        <p>
+                          I contribute to product-oriented planning, user-facing communication, and experience design for student initiatives.
+                        </p>
+                      </section>
+
+                      <section>
+                        <span>04 / What I Learn</span>
+                        <p>
+                          This experience helps me understand how product thinking works in a real community context, where clarity, usability, and collaboration matter.
+                        </p>
+                      </section>
+                    </div>
+                  </article>
+
+                  <article className="activity-card glass-card">
+                    <div className="project-meta">
+                      <span>Marketing Supporters · Design Tool</span>
+                    </div>
+
+                    <h4>Tooldi Marketing Supporters</h4>
+                    <p className="activity-summary">
+                      Creating marketing and design-tool content through visual storytelling and practical creative workflows.
+                    </p>
+
+                    <div className="tag-row">
+                      <span>#Content Design</span>
+                      <span>#Marketing</span>
+                      <span>#Design Tools</span>
+                    </div>
+
+                    <div className="activity-sections">
+                      <section>
+                        <span>01 / Overview</span>
+                        <p>
+                          A marketing supporters activity where I explored design-tool content, visual communication, and creative promotion.
+                        </p>
+                      </section>
+
+                      <section>
+                        <span>02 / Photo / Video</span>
+                        <div className="retro-media-player">
+                          <div className="retro-player-screen"></div>
+                          <div className="retro-player-controls">
+                            <button type="button">▶</button>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section>
+                        <span>03 / What I Do</span>
+                        <p>
+                          I created and supported marketing content while experimenting with tool-based design workflows and visual storytelling.
+                        </p>
+                      </section>
+
+                      <section>
+                        <span>04 / What I Learn</span>
+                        <p>
+                          This helped me connect design execution with audience communication, brand tone, and practical content-making.
+                        </p>
+                      </section>
+                    </div>
+                  </article>
                 </div>
               </section>
 
