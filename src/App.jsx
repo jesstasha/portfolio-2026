@@ -155,7 +155,7 @@ function Hero({ label, title, description, focus }) {
           <a href="https://github.com/jesstasha" target="_blank" rel="noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/jessica-lim-7139432b6/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
         </div>
