@@ -2898,3 +2898,118 @@ body,
   margin-bottom: -38px !important;
 }
 
+
+/* About contact form */
+.contact-panel {
+  margin-top: 28px;
+  padding: 32px;
+}
+
+.contact-panel h3 {
+  margin-bottom: 24px;
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #3fbf9b;
+  text-shadow: 0 0 14px rgba(63, 191, 155, 0.35);
+}
+
+.contact-panel form {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-panel input,
+.contact-panel textarea {
+  width: 100%;
+  border: 1.5px solid rgba(63, 191, 155, 0.45);
+  border-radius: 18px;
+  padding: 16px 18px;
+  background: rgba(255, 255, 255, 0.42);
+  color: #27223a;
+  font: inherit;
+  outline: none;
+}
+
+.contact-panel textarea {
+  resize: vertical;
+}
+
+.contact-panel input::placeholder,
+.contact-panel textarea::placeholder {
+  color: rgba(39, 34, 58, 0.55);
+}
+
+.contact-panel button {
+  width: fit-content;
+  margin-top: 10px;
+  padding: 14px 34px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(63, 191, 155, 0.55);
+  background: rgba(210, 255, 236, 0.65);
+  color: #26382f;
+  font-family: "SilkPixel", monospace;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  box-shadow: 0 0 14px rgba(63,191,155,0.22);
+}
+
+
+/* More About Me photo archive */
+.more-about-panel {
+  margin-top: 28px;
+  padding: 32px;
+}
+
+.more-about-panel h3 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #3fbf9b;
+  text-shadow: 0 0 14px rgba(63, 191, 155, 0.35);
+}
+
+.more-about-panel p {
+  margin: 0 0 24px;
+  max-width: 720px;
+}
+
+.more-about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.more-about-photo {
+  min-height: 180px;
+  border-radius: 24px;
+  border: 1.5px solid rgba(63, 191, 155, 0.45);
+  background: rgba(210, 255, 236, 0.32);
+  color: #3fbf9b;
+  display: grid;
+  place-items: center;
+  font-family: "SilkPixel", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  box-shadow: 0 0 14px rgba(63, 191, 155, 0.18);
+}
+
+@media (max-width: 760px) {
+  .more-about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Smaller headings for More About Me and Contact */
+.more-about-panel h3,
+.contact-panel h3 {
+  font-size: clamp(1.35rem, 3vw, 2.2rem) !important;
+  line-height: 1 !important;
+}
+
+.more-about-panel p,
+.contact-panel input,
+.contact-panel textarea,
+.contact-panel button {
+  font-size: 0.82rem !important;
+}
+

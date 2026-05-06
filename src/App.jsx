@@ -101,13 +101,16 @@ function App() {
 
       {page === "about" && (
         <section className="content-section about-section single-page">
-          <SectionIntro
-            label="03"
-            title="About"
-            description="I enjoy building experiences that sit between design, code, storytelling, and interaction."
-          />
+          <div className="project-page-layout">
 
-          <div className="about-grid">
+            <div>
+              <SectionIntro
+                label="03"
+                title="About"
+                description="I enjoy building experiences that sit between design, code, storytelling, and interaction."
+              />
+
+              <div className="about-grid">
             <div className="glass-card about-card">
               <h3>What I care about</h3>
               <p>
@@ -132,6 +135,44 @@ function App() {
                 GitHub: <a href="https://github.com/jesstasha">jesstasha</a>
               </p>
             </div>
+              </div>
+
+
+              <section id="more-about-me" className="more-about-panel glass-card">
+                <h3>More About Me</h3>
+                <p>
+                  A small archive of the communities, workshops, product roles, and creative activities I have been part of.
+                </p>
+
+                <div className="more-about-grid">
+                  <div className="more-about-photo">TOOLDI</div>
+                  <div className="more-about-photo">PRODUCT OFFICER</div>
+                  <div className="more-about-photo">WORKSHOP</div>
+                </div>
+              </section>
+
+              <div className="contact-panel glass-card">
+            <h3>Contact</h3>
+            <form action="mailto:your@email.com" method="post" encType="text/plain">
+              <input type="text" name="name" placeholder="Name" />
+              <input type="email" name="email" placeholder="Email *" required />
+              <input type="text" name="phone" placeholder="Phone number" />
+              <textarea name="message" placeholder="Comment" rows="5"></textarea>
+              <button type="submit">Send</button>
+            </form>
+              </div>
+            </div>
+
+            <aside className="case-study-remote page-remote">
+              <p>Page Guide</p>
+
+              <nav>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#more-about-me">More About Me</a>
+              </nav>
+            </aside>
+
           </div>
         </section>
       )}
