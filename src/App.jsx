@@ -172,14 +172,13 @@ function App() {
                       <section>
                         <span>02 / Photo / Video</span>
 
-                        <details className="photo-accordion">
-                          <summary>View photos ↓</summary>
-
-                          <div className="photo-archive-grid">
-                            <img src="/images/about/cissa-01.png" alt="CISSA event group photo" />
-                            <img src="/images/about/cissa-02.png" alt="CISSA Design-A-Palooza group photo" />
-                          </div>
-                        </details>
+                        <PhotoFold
+                          images={[
+                            "/images/about/cissa-01.png",
+                            "/images/about/cissa-02.png",
+                          ]}
+                          alt="CISSA activity photo"
+                        />
                       </section>
 
                       <section>
@@ -307,6 +306,34 @@ function Hero({ label, title, description, focus }) {
     </section>
   );
 }
+
+
+function PhotoFold({ images, alt }) {
+  const [active, setActive] = useState(0);
+
+  const nextPhoto = () => {
+    setActive((current) => (current + 1) % images.length);
+  };
+
+  const previous = images[(active - 1 + images.length) % images.length];
+
+  return (
+    <div className="photo-fold-stage">
+      <div className="photo-fold-card photo-fold-back">
+        <img src={previous} alt={alt} />
+      </div>
+
+      <div className="photo-fold-card photo-fold-front" key={active}>
+        <img src={images[active]} alt={alt} />
+      </div>
+
+      <button type="button" className="photo-fold-next" onClick={nextPhoto} aria-label="Next photo">
+        &gt;
+      </button>
+    </div>
+  );
+}
+
 
 function ProjectPage({ number, title, description, projects }) {
   const sectionItems = projects.flatMap((project) => {
