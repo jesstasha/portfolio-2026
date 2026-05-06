@@ -367,7 +367,7 @@ function Hero({ label, title, description, focus }) {
         transition={{ duration: 0.7 }}
       >
         <p className="eyebrow">{label}</p>
-        <h1>{title}</h1>
+        <h1 className="hero-title">{title}</h1>
 
         <div className="hero-socials">
           <a href="https://github.com/jesstasha" target="_blank" rel="noreferrer" aria-label="GitHub">
