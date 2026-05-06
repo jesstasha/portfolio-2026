@@ -216,13 +216,18 @@ function App() {
                       <section>
                         <span>02 / Photo / Video</span>
 
-                        <PhotoFold
-                          images={[
-                            "/images/about/cissa-01.png",
-                            "/images/about/cissa-02.png",
-                          ]}
-                          alt="CISSA activity photo"
-                        />
+                        <div className="media-window">
+                          <div className="media-window-bar">
+                            <span></span><span></span><span></span>
+                          </div>
+                          <PhotoFold
+                            images={[
+                              "/images/about/cissa-01.png",
+                              "/images/about/cissa-02.png",
+                            ]}
+                            alt="CISSA activity photo"
+                          />
+                        </div>
                       </section>
 
                       <section>
@@ -267,12 +272,17 @@ function App() {
 
                       <section>
                         <span>02 / Photo / Video</span>
-                        <video
-                          className="tooldi-video"
-                          src="/videos/about/tooldi.mp4"
-                          controls
-                          playsInline
-                        />
+                        <div className="media-window">
+                          <div className="media-window-bar">
+                            <span></span><span></span><span></span>
+                          </div>
+                          <video
+                            className="tooldi-video"
+                            src="/videos/about/tooldi.mp4"
+                            controls
+                            playsInline
+                          />
+                        </div>
                       </section>
 
                       <section>
