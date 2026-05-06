@@ -267,12 +267,12 @@ function App() {
 
                       <section>
                         <span>02 / Photo / Video</span>
-                        <div className="retro-media-player">
-                          <div className="retro-player-screen"></div>
-                          <div className="retro-player-controls">
-                            <button type="button">▶</button>
-                          </div>
-                        </div>
+                        <video
+                          className="tooldi-video"
+                          src="/videos/about/tooldi.mp4"
+                          controls
+                          playsInline
+                        />
                       </section>
 
                       <section>
