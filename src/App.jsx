@@ -268,7 +268,7 @@ function ProjectCard({ project, index }) {
 
       <div className="tag-row">
         {project.tags.map((tag) => (
-          <span key={tag}>{tag}</span>
+          <span key={tag}>#{tag}</span>
         ))}
       </div>
 

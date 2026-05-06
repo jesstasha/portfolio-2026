@@ -2703,3 +2703,90 @@ body,
   margin-bottom: 18px !important;
 }
 
+
+/* Keyword tags → lightweight hashtag style */
+.tag-row span {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: 0 0 10px rgba(63, 191, 155, 0.28) !important;
+
+  color: #3fbf9b !important;
+
+  padding: 0 !important;
+  border-radius: 0 !important;
+
+  font-family: "SilkPixel", monospace !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: none !important;
+}
+
+
+/* REAL hashtag style tags */
+.tag-row span {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  padding: 0 !important;
+  margin-right: 18px !important;
+
+  color: #46d7b0 !important;
+  text-shadow: 0 0 10px rgba(70, 215, 176, 0.55) !important;
+
+  font-family: "SilkPixel", monospace !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: none !important;
+}
+
+
+/* Final hashtag tag style */
+.tag-row span {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  padding: 0 !important;
+  border-radius: 0 !important;
+
+  color: #46d7b0 !important;
+  text-shadow: 0 0 10px rgba(70, 215, 176, 0.6) !important;
+
+  font-family: "SilkPixel", monospace !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: none !important;
+}
+
+
+/* Position hashtag tags with case study card */
+.tag-row {
+  margin-left: 22px !important;
+  margin-top: 32px !important;
+  margin-bottom: 8px !important;
+  gap: 24px !important;
+}
+
+.tag-row span {
+  font-size: 0.9rem !important;
+  text-shadow: 0 0 12px rgba(70, 215, 176, 0.68) !important;
+}
+
+
+/* Keep hashtag tags in one line */
+.tag-row {
+  flex-wrap: nowrap !important;
+  gap: 18px !important;
+  margin-left: 22px !important;
+  margin-top: 30px !important;
+  margin-bottom: 10px !important;
+  overflow: visible !important;
+}
+
+.tag-row span {
+  white-space: nowrap !important;
+  font-size: 0.84rem !important;
+  letter-spacing: 0.06em !important;
+}
+
