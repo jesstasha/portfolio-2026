@@ -3765,3 +3765,28 @@ body,
   padding: 34px 26px 26px !important;
 }
 
+
+/* Gold glowing name signature on ID card */
+.id-card-footer {
+  position: relative !important;
+  padding-bottom: 42px !important;
+}
+
+.id-signature {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+
+  font-family: "SilkPixel", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  white-space: nowrap;
+
+  color: #d8b45a;
+  text-shadow:
+    0 0 4px rgba(255, 238, 168, 0.95),
+    0 0 10px rgba(216, 180, 90, 0.75),
+    0 0 18px rgba(255, 214, 112, 0.45);
+}
+

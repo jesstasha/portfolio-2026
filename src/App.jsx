@@ -597,6 +597,7 @@ function FlipCard() {
               <p className="id-school">University of Melbourne</p>
               <p className="id-major">Computer Science Major</p>
               <p className="id-name">Portfolio</p>
+              <strong className="id-signature">TAEKYUNG LIM</strong>
             </div>
 
             <div className="id-code">
