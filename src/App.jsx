@@ -683,7 +683,6 @@ function FlipCard() {
               <span>PORTFOLIO ID · 2026</span>
             </div>
           </div>
-          <strong className="id-signature">TAEKYUNG LIM</strong>
         </div>
 
         <div className="flip-card-face flip-back">
