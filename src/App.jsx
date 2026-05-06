@@ -104,7 +104,7 @@ function App() {
             Game Development
           </button>
           <button className={page === "about" ? "active" : ""} onClick={() => setPage("about")}>
-            About
+            About Me
           </button>
         </nav>
       </header>
