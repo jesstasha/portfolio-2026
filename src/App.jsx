@@ -171,12 +171,15 @@ function App() {
 
                       <section>
                         <span>02 / Photo / Video</span>
-                        <div className="retro-media-player">
-                          <div className="retro-player-screen"></div>
-                          <div className="retro-player-controls">
-                            <button type="button">▶</button>
+
+                        <details className="photo-accordion">
+                          <summary>View photos ↓</summary>
+
+                          <div className="photo-archive-grid">
+                            <img src="/images/about/cissa-01.png" alt="CISSA event group photo" />
+                            <img src="/images/about/cissa-02.png" alt="CISSA Design-A-Palooza group photo" />
                           </div>
-                        </div>
+                        </details>
                       </section>
 
                       <section>
