@@ -4408,3 +4408,12 @@ body,
     -0.7px 0 #7ff5e8,
     0 0 5px rgba(127,245,232,0.45) !important;
 }
+
+/* Hide only the decorative star behind EXPERIENCE */
+.flip-back::before,
+.flip-back::after,
+.back-inner::before,
+.back-inner::after {
+  content: none !important;
+  display: none !important;
+}
