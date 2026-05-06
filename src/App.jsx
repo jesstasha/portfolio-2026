@@ -120,7 +120,7 @@ function App() {
           <ProjectPage
             number="01"
             title="UX / Product"
-            description="Case studies focused on product thinking, discoverability, interaction flow, and user-centred design decisions."
+            description=""
             projects={uxProjects}
           />
         </>
@@ -131,7 +131,7 @@ function App() {
 <ProjectPage
             number="02"
             title="Game Development"
-            description="Projects exploring systems, player feedback, narrative meaning, and playful experience design."
+            description=""
             projects={gameProjects}
           />
         </>
@@ -145,7 +145,7 @@ function App() {
               <SectionIntro
                 label="03"
                 title="About"
-                description="I enjoy building experiences that sit between design, code, storytelling, and interaction."
+                description=""
               />
 
               <div className="about-grid">
