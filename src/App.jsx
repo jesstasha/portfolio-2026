@@ -167,7 +167,7 @@ function App() {
               <p>Page Guide</p>
 
               <nav>
-                <a href="#about">About</a>
+                <a href="#about" className="active">About</a>
                 <a href="#contact">Contact</a>
                 <a href="#more-about-me">More About Me</a>
               </nav>

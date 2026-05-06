@@ -3013,3 +3013,22 @@ body,
   font-size: 0.82rem !important;
 }
 
+
+/* Fix Page Guide hover overflow */
+.page-remote a:hover,
+.case-study-remote a:hover {
+  transform: none !important;
+  background: #8fb6a3 !important;
+  color: #111a16 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.page-remote a:first-of-type:hover {
+  border-radius: 16px 16px 0 0 !important;
+}
+
+.page-remote a:last-of-type:hover {
+  border-radius: 0 0 16px 16px !important;
+}
+
