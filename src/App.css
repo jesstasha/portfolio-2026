@@ -4181,3 +4181,14 @@ body,
 .id-signature {
   margin-top: 10px !important;
 }
+
+/* Move the two top hero cards upward */
+.hero-card,
+.flip-card {
+  transform: translateY(-42px) !important;
+}
+
+.hero-card,
+.flip-card {
+  transform: translateY(-72px) !important;
+}
