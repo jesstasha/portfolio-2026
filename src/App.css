@@ -4171,3 +4171,13 @@ body,
   text-align: center !important;
   z-index: 40 !important;
 }
+
+.id-card-footer {
+  padding-bottom: 12px !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.id-signature {
+  margin-top: 10px !important;
+}
