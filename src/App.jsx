@@ -113,7 +113,7 @@ function App() {
         <>
           <Hero
             label="UX Portfolio 2026"
-            title="Hi, I'm Teekyung (Jessica) Lim"
+            title="Hi, I'm Taekyung, Jessica Lim"
             description="I design thoughtful product experiences through research, interaction, and front-end craft. Computing student focused on UX / product design, interface systems, and human-centred digital experiences."
             focus={["<strong>Canva redesign case study</strong>", "<strong>SUNAPBOX mobile UX</strong>", "Product storytelling"]}
           />
@@ -130,7 +130,7 @@ function App() {
         <>
           <Hero
             label="Game Development"
-            title="Hi, I'm Teekyung (Jessica) Lim"
+            title="Hi, I'm Taekyung, Jessica Lim"
             description="I build playful systems that turn interaction into meaning. A collection of game and interactive projects exploring player feedback, narrative design, and systems thinking."
             focus={["Earth Resonance", "Anymore Farm", "Interactive systems"]}
           />

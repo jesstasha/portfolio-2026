@@ -4005,3 +4005,26 @@ body,
   padding: 10px 28px !important;
 }
 
+
+/* Hero title font */
+@font-face {
+  font-family: "AdvinePixel";
+  src: url("/fonts/AdvinePixel-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+.hero-card h1 {
+  font-family: "AdvinePixel", "SilkPixel", monospace !important;
+  letter-spacing: 0.02em !important;
+}
+
+
+/* Big section headings font */
+.section-intro h2,
+.more-about-panel h3,
+.funfact-panel h3,
+.contact-panel h3 {
+  font-family: "AdvinePixel", "SilkPixel", monospace !important;
+  letter-spacing: 0.02em !important;
+}
+
