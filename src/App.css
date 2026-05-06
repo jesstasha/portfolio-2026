@@ -4348,3 +4348,12 @@ body,
     0 0 6px rgba(127, 245, 232, 0.75),
     0 0 12px rgba(127, 245, 232, 0.45) !important;
 }
+
+.click-me-badge {
+  color: #7ff5e8 !important;
+  -webkit-text-fill-color: #7ff5e8 !important;
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.55),
+    0 0 4px rgba(127, 245, 232, 0.9),
+    0 0 12px rgba(127, 245, 232, 0.55) !important;
+}
