@@ -673,14 +673,12 @@ function FlipCard() {
 
           <div className="id-card-footer">
             <div>
-              <p className="id-school">University of Melbourne</p>
+              <p className="id-school">University of<br />Melbourne</p>
               <p className="id-major">Computer Science Major</p>
-              <p className="id-name">Portfolio</p>
             </div>
 
             <div className="id-code">
               <div className="fake-barcode" />
-              <span>PORTFOLIO ID · 2026</span>
             </div>
           </div>
         </div>

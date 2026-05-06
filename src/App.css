@@ -4461,3 +4461,50 @@ body,
   display: none !important;
   border: none !important;
 }
+
+/* Align barcode block with University of Melbourne text */
+.id-card-footer {
+  align-items: flex-start !important;
+}
+
+.id-code {
+  align-self: flex-start !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.id-card-footer {
+  display: grid !important;
+  grid-template-columns: 1fr auto !important;
+  align-items: flex-start !important;
+  column-gap: 18px !important;
+}
+
+.id-card-footer > div:first-child {
+  min-width: 0 !important;
+  white-space: nowrap !important;
+}
+
+.id-major {
+  white-space: nowrap !important;
+}
+
+/* Keep only Computer Science Major on one line */
+.id-major {
+  white-space: nowrap !important;
+  display: block !important;
+  max-width: 210px !important;
+}
+
+.id-school {
+  max-width: 150px !important;
+  line-height: 1.15 !important;
+}
+
+.id-school {
+  line-height: 1.15 !important;
+}
+
+.id-major {
+  white-space: nowrap !important;
+}
