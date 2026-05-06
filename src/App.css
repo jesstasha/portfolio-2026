@@ -3724,3 +3724,44 @@ body,
   transform: translateY(-50%) scale(1.06);
 }
 
+
+/* Gothic mint glowing frame inside flipped profile card */
+.flip-back {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.flip-back::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: 22px;
+  border: 1.5px solid rgba(70, 215, 176, 0.75);
+  box-shadow:
+    inset 0 0 18px rgba(70, 215, 176, 0.22),
+    0 0 18px rgba(70, 215, 176, 0.45);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.flip-back::after {
+  content: "✦";
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #46d7b0;
+  font-size: 1.2rem;
+  text-shadow:
+    0 0 8px rgba(70, 215, 176, 0.9),
+    0 0 18px rgba(70, 215, 176, 0.6);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.flip-back .back-inner {
+  position: relative !important;
+  z-index: 3 !important;
+  padding: 34px 26px 26px !important;
+}
+
