@@ -40,6 +40,49 @@ const gameProjects = [
 function App() {
   const [page, setPage] = useState("ux");
   const [showFunFact, setShowFunFact] = useState(false);
+  const [activeAboutSection, setActiveAboutSection] = useState("about");
+
+  useEffect(() => {
+    if (page !== "about") return;
+
+    const aboutSections = ["about", "more-about-me", "contact"];
+
+    const handleAboutScroll = () => {
+      let current = "about";
+      let bestDistance = Infinity;
+      const targetY = window.innerHeight * 0.42;
+
+      aboutSections.forEach((id) => {
+        const section = document.getElementById(id);
+        if (!section) return;
+
+        const rect = section.getBoundingClientRect();
+        const distance = Math.abs(rect.top - targetY);
+
+        if (rect.top < window.innerHeight && rect.bottom > 0 && distance < bestDistance) {
+          bestDistance = distance;
+          current = id;
+        }
+      });
+
+      const scrollBottom = window.scrollY + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+
+      if (pageHeight - scrollBottom < 80) {
+        current = "contact";
+      }
+
+      setActiveAboutSection(current);
+    };
+
+    handleAboutScroll();
+    window.addEventListener("scroll", handleAboutScroll);
+    window.addEventListener("resize", handleAboutScroll);
+    return () => {
+      window.removeEventListener("scroll", handleAboutScroll);
+      window.removeEventListener("resize", handleAboutScroll);
+    };
+  }, [page]);
 
   return (
     <main className="site-shell">
@@ -101,7 +144,7 @@ function App() {
       )}
 
       {page === "about" && (
-        <section className="content-section about-section single-page">
+        <section id="about" className="content-section about-section single-page">
           <div className="project-page-layout">
 
             <div>
@@ -291,9 +334,9 @@ function App() {
               <p>Page Guide</p>
 
               <nav>
-                <a href="#about" className="active">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#more-about-me">More About Me</a>
+                <a href="#about" className={activeAboutSection === "about" ? "active" : ""}>About</a>
+                <a href="#more-about-me" className={activeAboutSection === "more-about-me" ? "active" : ""}>More About Me</a>
+                <a href="#contact" className={activeAboutSection === "contact" ? "active" : ""}>Fun Fact & Contact</a>
               </nav>
             </aside>
 
