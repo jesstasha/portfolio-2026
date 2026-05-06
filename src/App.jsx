@@ -128,13 +128,7 @@ function App() {
 
       {page === "games" && (
         <>
-          <Hero
-            label="Game Development"
-            title="Hi, I'm Taekyung, Jessica Lim"
-            description="I build playful systems that turn interaction into meaning. A collection of game and interactive projects exploring player feedback, narrative design, and systems thinking."
-            focus={["Earth Resonance", "Anymore Farm", "Interactive systems"]}
-          />
-          <ProjectPage
+<ProjectPage
             number="02"
             title="Game Development"
             description="Projects exploring systems, player feedback, narrative meaning, and playful experience design."
