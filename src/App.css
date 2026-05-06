@@ -4683,3 +4683,78 @@ header,
     0 0 8px rgba(127, 245, 232, 0.35),
     0 0 18px rgba(127, 245, 232, 0.18) !important;
 }
+
+/* Active top nav = same style as 01 / Overview chip */
+.nav-links button.active {
+  background: rgba(255, 255, 255, 0.72) !important;
+  color: #45d6bf !important;
+  -webkit-text-fill-color: #45d6bf !important;
+  border: 1px solid rgba(69, 214, 191, 0.8) !important;
+  box-shadow:
+    0 0 8px rgba(69, 214, 191, 0.28),
+    inset 0 0 12px rgba(255, 255, 255, 0.45) !important;
+}
+
+/* FINAL: make active top nav match 01 / Overview chip */
+.nav-links button.active {
+  background: rgba(255, 255, 255, 0.42) !important;
+  background-color: rgba(255, 255, 255, 0.42) !important;
+  color: #38d6bd !important;
+  -webkit-text-fill-color: #38d6bd !important;
+
+  border: 1px solid rgba(56, 214, 189, 0.75) !important;
+  box-shadow:
+    0 0 0 1px rgba(56, 214, 189, 0.08),
+    0 0 10px rgba(56, 214, 189, 0.22),
+    inset 0 0 14px rgba(255, 255, 255, 0.5) !important;
+
+  font-family: "SilkPixel", monospace !important;
+  font-weight: 400 !important;
+  text-shadow: none !important;
+}
+
+/* FINAL: active top nav exactly matches 01 / Overview chip */
+.nav-links button.active {
+  font-family: "SilkPixel", monospace !important;
+  font-weight: 400 !important;
+  font-synthesis: none !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+
+  color: #3fbf9b !important;
+  -webkit-text-fill-color: #3fbf9b !important;
+  border: 1.5px solid rgba(63, 191, 155, 0.55) !important;
+  background: rgba(210, 255, 236, 0.45) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.55),
+    0 0 10px rgba(63,191,155,0.18) !important;
+}
+
+/* TRUE final reset: exact Overview chip style */
+.nav-links button.active {
+  all: unset !important;
+
+  font-family: "SilkPixel", monospace !important;
+  font-weight: 400 !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 9px 13px !important;
+  border-radius: 999px !important;
+
+  color: #3fbf9b !important;
+  border: 1.5px solid rgba(63, 191, 155, 0.55) !important;
+  background: rgba(210, 255, 236, 0.45) !important;
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.55),
+    0 0 10px rgba(63,191,155,0.18) !important;
+
+  cursor: pointer !important;
+}
