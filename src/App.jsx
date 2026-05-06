@@ -168,7 +168,7 @@ function App() {
             <div className="glass-card about-card">
               <h3>Contact</h3>
               <p>
-                Email: <a href="mailto:your@email.com">your@email.com</a>
+                Email: <a href="mailto:gueong26396@email.com">gueong26396@email.com</a>
                 <br />
                 GitHub: <a href="https://github.com/jesstasha">jesstasha</a>
               </p>
@@ -323,7 +323,7 @@ function App() {
 
                 <div className="contact-panel glass-card">
                   <h3>Contact</h3>
-                  <form action="mailto:your@email.com" method="post" encType="text/plain">
+                  <form action="mailto:gueong26396@email.com" method="post" encType="text/plain">
                     <input type="text" name="name" placeholder="Name" />
                     <input type="email" name="email" placeholder="Email *" required />
                     <input type="text" name="phone" placeholder="Phone number" />
