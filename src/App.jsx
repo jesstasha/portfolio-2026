@@ -319,7 +319,8 @@ function ProjectPage({ number, title, description, projects }) {
       [`${slug}-problem`, "Problem"],
       [`${slug}-pain-points`, "Pain Points"],
       [`${slug}-solution`, "Solution"],
-      [`${slug}-implementation`, "Implementation"],
+      [`${slug}-process`, "Process"],
+      [`${slug}-learning`, "Learning"],
     ];
   });
 
@@ -426,7 +427,7 @@ function ProjectCard({ project, index }) {
             <h4>{project.title}</h4>
             <p>
               This case study explains the project context, the design problem, the main user pain points,
-              the proposed solution, and how the idea was translated into an interactive prototype.
+              the proposed solution, and how the idea was translated into an interactive prototype. The app was designed and developed in SwiftUI, with future AI parser integration planned through a lightweight backend that converts natural language prompts into structured actions. The redesign was planned as a UX case study and implemented as an interactive React prototype, showing both the information architecture and working UI behaviour.
             </p>
           </section>
 
@@ -482,12 +483,21 @@ function ProjectCard({ project, index }) {
             </p>
           </section>
 
-          <section id={`${projectSlug}-implementation`}>
-            <span>05 / Design & Implementation</span>
+          <section id={`${projectSlug}-process`}>
+            <span>05 / Process & Challenges</span>
             <p>
               {project.title === "Canva Projects Redesign"
-                ? "The redesign was planned as a UX case study and implemented as an interactive React prototype, showing both the information architecture and working UI behaviour."
-                : "The app was designed and developed in SwiftUI, with future AI parser integration planned through a lightweight backend that converts natural language prompts into structured actions."}
+                ? "I focused on turning a familiar interface problem into a clear product-design case study. The main challenge was not simply making the page look different, but identifying why older projects become difficult to retrieve and translating that problem into a practical navigation idea."
+                : "I focused on shaping SUNAPBOX as a product concept that connects saving, organising, searching, and revisiting short-form videos. The main challenge was keeping the flow simple while still showing how AI-assisted tagging and folder-based organisation could support real user behaviour."}
+            </p>
+          </section>
+
+          <section id={`${projectSlug}-learning`}>
+            <span>06 / What I Learned</span>
+            <p>
+              {project.title === "Canva Projects Redesign"
+                ? "I learned how important information hierarchy is when designing for long-term use. A product can feel easy for recent actions but still become difficult when users return months or years later, so retrieval and memory support need to be considered as part of the experience."
+                : "I learned how product thinking can turn a personal pain point into a structured mobile experience. Designing SUNAPBOX helped me think more deeply about how users save content emotionally, forget details over time, and need flexible ways to recover meaning later."}
             </p>
           </section>
       </div>
