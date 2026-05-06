@@ -179,7 +179,7 @@ function App() {
               <section id="more-about-me" className="more-about-panel glass-card">
                 <h3>More About Me</h3>
                 <p>
-                  A small archive of the communities, product roles, and creative activities I have been part of.
+                  
                 </p>
 
                 <div className="activity-stack">
