@@ -4143,3 +4143,31 @@ body,
   box-shadow: none !important;
 }
 
+
+.flip-front {
+  overflow: visible !important;
+}
+
+.id-signature {
+  position: absolute !important;
+  left: 50% !important;
+  bottom: -28px !important;
+  transform: translateX(-50%) !important;
+  display: block !important;
+  width: max-content !important;
+  margin: 0 !important;
+  text-align: center !important;
+  z-index: 30 !important;
+}
+
+.id-signature {
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 26px !important;
+  transform: translateX(-50%) !important;
+  display: block !important;
+  width: max-content !important;
+  margin: 0 !important;
+  text-align: center !important;
+  z-index: 40 !important;
+}
