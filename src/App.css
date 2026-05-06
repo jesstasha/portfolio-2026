@@ -4223,3 +4223,128 @@ body,
 .flip-back {
   padding-bottom: 10px !important;
 }
+
+/* Move Click me into a cleaner button at the bottom */
+.click-me-badge {
+  position: absolute !important;
+  top: auto !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: 18px !important;
+  transform: translateX(-50%) !important;
+
+  padding: 8px 18px !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #4f3b2b !important;
+  border: 1px solid rgba(79, 59, 43, 0.18) !important;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12) !important;
+
+  text-shadow: none !important;
+  filter: none !important;
+  animation: none !important;
+}
+
+.click-me-badge {
+  bottom: 4px !important;
+}
+
+.click-me-badge {
+  bottom: -18px !important;
+}
+
+/* Put Click me below the card without overlapping it */
+.flip-card {
+  margin-bottom: 52px !important;
+}
+
+.click-me-badge {
+  top: calc(100% + 14px) !important;
+  bottom: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 20 !important;
+}
+
+/* Restore mint glowing Click me text */
+.click-me-badge {
+  position: absolute !important;
+  top: calc(100% + 10px) !important;
+  bottom: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+
+  color: #98fff1 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+
+  text-shadow:
+    0 0 6px rgba(152,255,241,0.95),
+    0 0 14px rgba(152,255,241,0.8),
+    0 0 26px rgba(152,255,241,0.55) !important;
+
+  animation: pulseGlow 2s ease-in-out infinite !important;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+
+  50% {
+    opacity: 0.85;
+    transform: translateX(-50%) scale(1.04);
+  }
+}
+
+.click-me-badge {
+  font-size: 1.25rem !important;
+}
+
+.click-me-badge {
+  font-size: 1.7rem !important;
+  letter-spacing: 0.12em !important;
+}
+
+.click-me-badge {
+  color: #c8b6ff !important;
+  text-shadow:
+    0 0 6px rgba(200, 182, 255, 0.75),
+    0 0 14px rgba(200, 182, 255, 0.45) !important;
+}
+
+.click-me-badge {
+  color: #8f5cff !important;
+  -webkit-text-fill-color: #8f5cff !important;
+  opacity: 1 !important;
+  text-shadow:
+    0 0 3px rgba(143, 92, 255, 0.75),
+    0 0 8px rgba(143, 92, 255, 0.45) !important;
+}
+
+.click-me-badge {
+  color: #5edfd0 !important;
+  -webkit-text-fill-color: #5edfd0 !important;
+  opacity: 1 !important;
+  text-shadow:
+    0 0 3px rgba(94, 223, 208, 0.65),
+    0 0 8px rgba(94, 223, 208, 0.35) !important;
+}
+
+.click-me-badge {
+  color: #7ff5e8 !important;
+  -webkit-text-fill-color: #7ff5e8 !important;
+  font-weight: 800 !important;
+  opacity: 1 !important;
+
+  text-shadow:
+    0 0 2px rgba(127, 245, 232, 0.95),
+    0 0 6px rgba(127, 245, 232, 0.75),
+    0 0 12px rgba(127, 245, 232, 0.45) !important;
+}
