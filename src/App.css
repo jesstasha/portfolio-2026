@@ -2790,3 +2790,111 @@ body,
   letter-spacing: 0.06em !important;
 }
 
+
+/* Mint glowing social icons */
+.hero-socials {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.hero-socials a {
+  color: #46d7b0;
+  font-size: 1.2rem;
+
+  text-shadow: 0 0 12px rgba(70, 215, 176, 0.7);
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.hero-socials a:hover {
+  transform: translateY(-2px) scale(1.08);
+  opacity: 0.9;
+}
+
+
+/* Force hero social icons to show */
+.hero-socials {
+  display: flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+  margin-top: 18px !important;
+  margin-bottom: 18px !important;
+}
+
+.hero-socials a,
+.hero-socials svg {
+  display: block !important;
+  width: 30px !important;
+  height: 30px !important;
+  color: #46d7b0 !important;
+  fill: currentColor !important;
+  filter: drop-shadow(0 0 10px rgba(70, 215, 176, 0.75)) !important;
+}
+
+
+/* Refine hero social icon spacing */
+.hero-socials {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  gap: 20px !important;
+}
+
+.hero-socials a,
+.hero-socials svg {
+  width: 34px !important;
+  height: 34px !important;
+  font-size: 1.55rem !important;
+}
+
+
+/* Pull hero social icons closer to heading and copy */
+.hero-card h1 {
+  margin-bottom: 8px !important;
+}
+
+.hero-socials {
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+}
+
+.hero-copy {
+  margin-top: 0 !important;
+}
+
+
+/* Tighten hero title spacing */
+.hero-card h1 {
+  margin-bottom: -6px !important;
+  line-height: 0.92 !important;
+}
+
+.hero-socials {
+  margin-top: 0 !important;
+}
+
+
+/* Move social icons upward under the handwritten title */
+.hero-socials {
+  position: relative !important;
+  top: -28px !important;
+  margin-bottom: -18px !important;
+}
+
+
+/* Move social icons a little more upward */
+.hero-socials {
+  top: -38px !important;
+  margin-bottom: -28px !important;
+}
+
+
+/* Pull socials even closer to heading */
+.hero-socials {
+  top: -48px !important;
+  margin-bottom: -38px !important;
+}
+

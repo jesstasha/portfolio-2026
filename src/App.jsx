@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./App.css";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const uxProjects = [
   {
@@ -149,6 +150,16 @@ function Hero({ label, title, description, focus }) {
       >
         <p className="eyebrow">{label}</p>
         <h1>{title}</h1>
+
+        <div className="hero-socials">
+          <a href="https://github.com/jesstasha" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <FaLinkedin />
+          </a>
+        </div>
+
         <p className="hero-copy">{description}</p>
       </motion.div>
 
