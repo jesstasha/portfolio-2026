@@ -3910,3 +3910,98 @@ body,
   }
 }
 
+
+/* Black panels for Fun Fact + Contact */
+.funfact-panel,
+.about-bottom-grid .contact-panel {
+  background: rgba(5, 8, 7, 0.88) !important;
+  border: 1.5px solid rgba(70, 215, 176, 0.48) !important;
+  box-shadow:
+    0 0 18px rgba(70, 215, 176, 0.22),
+    inset 0 0 18px rgba(70, 215, 176, 0.08) !important;
+}
+
+.funfact-panel h3,
+.about-bottom-grid .contact-panel h3 {
+  color: #46d7b0 !important;
+  text-shadow:
+    0 0 8px rgba(70, 215, 176, 0.8),
+    0 0 18px rgba(70, 215, 176, 0.42) !important;
+}
+
+/* Contact fields on black panel */
+.about-bottom-grid .contact-panel input,
+.about-bottom-grid .contact-panel textarea {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1.5px solid rgba(70, 215, 176, 0.45) !important;
+  color: #eafff7 !important;
+}
+
+.about-bottom-grid .contact-panel input::placeholder,
+.about-bottom-grid .contact-panel textarea::placeholder {
+  color: rgba(234, 255, 247, 0.55) !important;
+}
+
+
+/* Tighten Fun Fact + Contact panels */
+.about-bottom-grid {
+  align-items: start !important;
+}
+
+.funfact-panel,
+.about-bottom-grid .contact-panel {
+  padding: 18px !important;
+  min-height: 0 !important;
+  height: fit-content !important;
+}
+
+.pixel-room {
+  min-height: 220px !important;
+  height: 220px !important;
+}
+
+.funfact-panel h3,
+.about-bottom-grid .contact-panel h3 {
+  margin-bottom: 14px !important;
+}
+
+.about-bottom-grid .contact-panel form {
+  gap: 12px !important;
+}
+
+.about-bottom-grid .contact-panel input {
+  padding: 13px 16px !important;
+}
+
+.about-bottom-grid .contact-panel textarea {
+  height: 110px !important;
+  min-height: 110px !important;
+  padding: 13px 16px !important;
+}
+
+.about-bottom-grid .contact-panel button {
+  margin-top: 4px !important;
+  padding: 12px 30px !important;
+}
+
+
+/* Match Contact height to Fun Fact panel */
+.about-bottom-grid .contact-panel textarea {
+  height: 70px !important;
+  min-height: 70px !important;
+  max-height: 70px !important;
+  resize: none !important;
+}
+
+.about-bottom-grid .contact-panel input {
+  padding: 11px 16px !important;
+}
+
+.about-bottom-grid .contact-panel form {
+  gap: 10px !important;
+}
+
+.about-bottom-grid .contact-panel button {
+  padding: 10px 28px !important;
+}
+
