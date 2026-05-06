@@ -4508,3 +4508,19 @@ body,
 .id-major {
   white-space: nowrap !important;
 }
+
+/* Move Click me into the empty space inside the front card */
+.click-me-badge {
+  top: auto !important;
+  bottom: 24px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 40 !important;
+}
+
+/* Hide Click me when the card is flipped/back side is showing */
+.flip-card-inner.flipped .click-me-badge {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
