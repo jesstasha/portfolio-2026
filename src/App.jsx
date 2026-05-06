@@ -39,6 +39,7 @@ const gameProjects = [
 
 function App() {
   const [page, setPage] = useState("ux");
+  const [showFunFact, setShowFunFact] = useState(false);
 
   return (
     <main className="site-shell">
@@ -249,15 +250,40 @@ function App() {
                 </div>
               </section>
 
-              <div className="contact-panel glass-card">
-            <h3>Contact</h3>
-            <form action="mailto:your@email.com" method="post" encType="text/plain">
-              <input type="text" name="name" placeholder="Name" />
-              <input type="email" name="email" placeholder="Email *" required />
-              <input type="text" name="phone" placeholder="Phone number" />
-              <textarea name="message" placeholder="Comment" rows="5"></textarea>
-              <button type="submit">Send</button>
-            </form>
+              <div id="contact" className="about-bottom-grid">
+                <div className="funfact-panel glass-card">
+                  <h3>Fun Fact</h3>
+
+                  <div className="pixel-room">
+                    <img className="pixel-bg" src="/images/about/funfact-bg.png" alt="" />
+                    <img className="pixel-character" src="/images/about/kaya.gif" alt="Pixel character" />
+
+                    {showFunFact && (
+                      <div className="pixel-speech">
+                        Actually, I also designed the cursor for this portfolio.
+                      </div>
+                    )}
+
+                    <button
+                      type="button"
+                      className="funfact-button"
+                      onClick={() => setShowFunFact((prev) => !prev)}
+                    >
+                      Fun fact
+                    </button>
+                  </div>
+                </div>
+
+                <div className="contact-panel glass-card">
+                  <h3>Contact</h3>
+                  <form action="mailto:your@email.com" method="post" encType="text/plain">
+                    <input type="text" name="name" placeholder="Name" />
+                    <input type="email" name="email" placeholder="Email *" required />
+                    <input type="text" name="phone" placeholder="Phone number" />
+                    <textarea name="message" placeholder="Comment" rows="5"></textarea>
+                    <button type="submit">Send</button>
+                  </form>
+                </div>
               </div>
             </div>
 
