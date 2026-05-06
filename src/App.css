@@ -4417,3 +4417,47 @@ body,
   content: none !important;
   display: none !important;
 }
+
+/* Force restore gothic tarot frame on back card */
+.flip-back {
+  position: relative !important;
+  overflow: hidden !important;
+  border: 1.5px solid rgba(127, 245, 232, 0.75) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 0 18px rgba(127, 245, 232, 0.28),
+    0 0 34px rgba(127, 245, 232, 0.16) !important;
+}
+
+.flip-back::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 12px !important;
+  border: 1px solid rgba(127, 245, 232, 0.75) !important;
+  border-radius: 22px !important;
+  pointer-events: none !important;
+  display: block !important;
+  z-index: 1 !important;
+}
+
+.flip-back::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 22px !important;
+  border: 1px dashed rgba(127, 245, 232, 0.45) !important;
+  border-radius: 18px !important;
+  pointer-events: none !important;
+  display: block !important;
+  z-index: 1 !important;
+}
+
+.back-inner {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.flip-back::after {
+  content: none !important;
+  display: none !important;
+  border: none !important;
+}
