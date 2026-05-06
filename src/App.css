@@ -4357,3 +4357,54 @@ body,
     0 0 4px rgba(127, 245, 232, 0.9),
     0 0 12px rgba(127, 245, 232, 0.55) !important;
 }
+
+/* Bold experience titles on back card */
+.back-list strong,
+.back-list b,
+.back-list li:first-line {
+  font-weight: 700 !important;
+}
+
+.flip-back strong {
+  font-weight: 800 !important;
+}
+
+.flip-back p strong,
+.flip-back .back-inner p strong {
+  font-weight: 900 !important;
+  color: inherit !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
+.flip-back .back-inner p strong {
+  font-weight: 950 !important;
+  font-size: 1.08em !important;
+  letter-spacing: 0.01em !important;
+  text-shadow: 0.35px 0 currentColor, -0.35px 0 currentColor !important;
+}
+
+.flip-back .back-inner p strong {
+  font-weight: 1000 !important;
+  font-size: 1.16em !important;
+  letter-spacing: 0.02em !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+
+  text-shadow:
+    0.6px 0 #ffffff,
+    -0.6px 0 #ffffff,
+    0 0 6px rgba(255,255,255,0.22) !important;
+}
+
+.flip-back .back-inner p strong {
+  font-weight: 1000 !important;
+  font-size: 1.16em !important;
+  letter-spacing: 0.02em !important;
+  color: #7ff5e8 !important;
+  -webkit-text-fill-color: #7ff5e8 !important;
+
+  text-shadow:
+    0.7px 0 #7ff5e8,
+    -0.7px 0 #7ff5e8,
+    0 0 5px rgba(127,245,232,0.45) !important;
+}
