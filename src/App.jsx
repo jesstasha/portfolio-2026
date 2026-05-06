@@ -338,7 +338,7 @@ function App() {
               <p>Page Guide</p>
 
               <nav>
-                <a href="#about" className={activeAboutSection === "about" ? "active" : ""}>About</a>
+                <a href="#about" className={activeAboutSection === "about" ? "active" : ""}>About Me</a>
                 <a href="#more-about-me" className={activeAboutSection === "more-about-me" ? "active" : ""}>More About Me</a>
                 <a href="#contact" className={activeAboutSection === "contact" ? "active" : ""}>Fun Fact & Contact</a>
               </nav>
