@@ -4575,3 +4575,77 @@ body,
   font-size: 1.05rem;
   line-height: 1.7;
 }
+
+.site-header,
+.main-nav {
+  background: rgba(54, 35, 72, 0.92) !important;
+}
+
+/* Change black top nav to dusty plum */
+header,
+.site-header,
+.top-nav,
+.navbar {
+  background: rgba(54, 35, 72, 0.94) !important;
+}
+
+/* Change black top nav to deep rosy pink */
+header,
+.site-header,
+.top-nav,
+.navbar {
+  background: rgba(92, 49, 69, 0.94) !important;
+}
+
+/* Soften black top nav without adding a new colour */
+header,
+.site-header,
+.top-nav,
+.navbar {
+  background: rgba(22, 20, 28, 0.72) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+}
+
+/* Deep pink glass top navigation */
+header,
+.site-header,
+.top-nav,
+.navbar {
+  background: rgba(82, 38, 62, 0.82) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+}
+
+/* Pink glass top navigation */
+header,
+.site-header,
+.top-nav,
+.navbar {
+  background: rgba(255, 154, 202, 0.72) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+}
+
+/* White glowing border for pink top navigation */
+header,
+.site-header,
+.top-nav,
+.navbar {
+  border: 1px solid rgba(255, 255, 255, 0.72) !important;
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.45),
+    0 0 24px rgba(255, 255, 255, 0.22) !important;
+}
+
+/* Mint glowing border for pink top navigation */
+header,
+.site-header,
+.top-nav,
+.navbar {
+  border: 1px solid rgba(127, 245, 232, 0.78) !important;
+
+  box-shadow:
+    0 0 10px rgba(127, 245, 232, 0.42),
+    0 0 24px rgba(127, 245, 232, 0.2) !important;
+}
