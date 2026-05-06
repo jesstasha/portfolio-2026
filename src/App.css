@@ -4205,3 +4205,21 @@ body,
   -webkit-text-fill-color: #ffffff !important;
   text-shadow: none !important;
 }
+
+/* Remove empty space under EXPERIENCE and SKILLS sections */
+.back-inner {
+  gap: 6px !important;
+  padding-bottom: 8px !important;
+}
+
+.back-section {
+  margin-bottom: 6px !important;
+}
+
+.back-section:last-child {
+  margin-bottom: 0 !important;
+}
+
+.flip-back {
+  padding-bottom: 10px !important;
+}
