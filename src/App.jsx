@@ -678,14 +678,14 @@ function FlipCard() {
 
         <div className="flip-card-face flip-back">
           <div className="back-inner">
-            <p className="back-title">EXPERIENCE</p>
+            <p className="back-title"><span className="diamond-icon">✦</span> EXPERIENCE</p>
             <p>2024 CISSA · Product Officer</p>
             <p className="exp-note">Unimelb Computing & Information Systems Student Association</p>
 
             <p>2024 Tooldi · Marketing Ambassador</p>
             <p className="exp-note">Korean digital design template platform</p>
 
-            <p className="back-title">SKILLS</p>
+            <p className="back-title"><span className="diamond-icon">✦</span> SKILLS</p>
 
             <div className="flip-skill-grid">
               <div className="skill-stat"><p>Python</p><span>★★★★★</span></div>
