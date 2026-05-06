@@ -4192,3 +4192,16 @@ body,
 .flip-card {
   transform: translateY(-72px) !important;
 }
+
+.back-title,
+.back-title .diamond-icon {
+  color: #ffffff !important;
+}
+
+.flip-back .back-title,
+.flip-back .back-title span,
+.flip-back .diamond-icon {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-shadow: none !important;
+}
