@@ -4649,3 +4649,37 @@ header,
     0 0 10px rgba(127, 245, 232, 0.42),
     0 0 24px rgba(127, 245, 232, 0.2) !important;
 }
+
+/* Make all top nav buttons look clickable */
+.nav-links button {
+  border: 1px solid rgba(127, 245, 232, 0.55) !important;
+  box-shadow: 0 0 8px rgba(127, 245, 232, 0.18) !important;
+}
+
+.nav-links button:hover {
+  border-color: rgba(127, 245, 232, 0.95) !important;
+  box-shadow:
+    0 0 8px rgba(127, 245, 232, 0.45),
+    0 0 18px rgba(127, 245, 232, 0.25) !important;
+}
+
+.nav-links button {
+  background: rgba(255, 255, 255, 0.82) !important;
+  color: #3f2940 !important;
+  border: 1px solid rgba(127, 245, 232, 0.75) !important;
+}
+
+.nav-links button.active {
+  background: #7ff5e8 !important;
+  color: #263238 !important;
+}
+
+/* Restore active nav to soft mint, not neon blue */
+.nav-links button.active {
+  background: rgba(127, 245, 232, 0.88) !important;
+  color: #2f2638 !important;
+  border-color: rgba(127, 245, 232, 0.95) !important;
+  box-shadow:
+    0 0 8px rgba(127, 245, 232, 0.35),
+    0 0 18px rgba(127, 245, 232, 0.18) !important;
+}
