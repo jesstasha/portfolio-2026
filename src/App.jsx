@@ -144,7 +144,7 @@ function App() {
             <div>
               <SectionIntro
                 label="03"
-                title="About"
+                title="About Me"
                 description=""
               />
 
