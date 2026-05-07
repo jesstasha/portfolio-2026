@@ -28,13 +28,6 @@ const gameProjects = [
       "A typing rhythm experience exploring ego, soul, and self-actualisation through interactive colour progression and reflective gameplay.",
     tags: ["Swift Playgrounds", "Game Design", "Interaction Loop"],
   },
-  {
-    title: "Anymore Farm",
-    type: "Game Design Portfolio",
-    summary:
-      "A stealth evidence-collection game inspired by Animal Farm, where a joyful pig exposes corruption while questioning whether escape is truly possible.",
-    tags: ["Narrative Design", "Stealth", "Systems Design"],
-  },
 ];
 
 function App() {
