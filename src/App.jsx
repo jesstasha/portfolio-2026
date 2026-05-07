@@ -648,6 +648,20 @@ function ProjectCard({ project, index }) {
                 ? "Older projects are hard to retrieve when users cannot remember the exact name."
                 : "Saved short-form videos quickly become difficult to organise, revisit, and use intentionally."}
             </h4>
+
+            {project.title === "Canva Projects Redesign" && (
+              <div className="media-window problem-media-window">
+                <div className="media-window-bar">
+                  <span></span><span></span><span></span>
+                </div>
+
+                <img
+                  src="/canvaredesign.png"
+                  alt="Canva retrieval problem analysis"
+                  className="problem-analysis-image"
+                />
+              </div>
+            )}
             <p>
               {project.title === "Canva Projects Redesign"
                 ? "Users struggle to retrieve past projects when they cannot recall the project name, and the current “Recent” sorting forces inefficient visual scanning. This issue becomes more significant over time, as Canva is not a short-form content platform but a long-term creative archive. Users accumulate a large number of meaningful projects across months or years, making time-based access a critical part of the experience."
