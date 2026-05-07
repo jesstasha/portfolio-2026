@@ -618,10 +618,17 @@ function ProjectCard({ project, index }) {
       </div>
 
       {project.image && (
-        <img src={project.image} alt={project.title} style={{width:"100%", borderRadius:"12px", marginTop:"24px"}} />
-      )}
-      {project.link && (
-        <a href={project.link} target="_blank" rel="noreferrer" style={{display:"inline-block", marginTop:"16px", color:"#00c9a7", fontWeight:600, textDecoration:"none"}}>View Project →</a>
+        <div className="media-window game-media-window">
+          <div className="media-window-bar">
+            <span></span><span></span><span></span>
+          </div>
+
+          <img
+            className="game-showcase-image"
+            src={project.image}
+            alt={project.title}
+          />
+        </div>
       )}
 
       {!project.image && <div className="case-study-long">

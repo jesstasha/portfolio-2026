@@ -4777,3 +4777,30 @@ header,
 .inline-project-link:hover {
   text-decoration: underline;
 }
+
+
+.game-media-window {
+  margin-top: 1.2rem;
+  max-width: 720px;
+}
+
+.game-showcase-image {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  border-radius: 0 0 18px 18px;
+}
+
+.game-media-window {
+  margin-top: 1.2rem;
+  max-width: 720px;
+}
+
+.game-showcase-image {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  border-radius: 0 0 18px 18px;
+}
