@@ -229,7 +229,23 @@ function App() {
                       </section>
 
                       <section>
-                        <span>02 / Photo / Video</span>
+                        <span>02 / Video</span>
+
+                        <div className="media-window">
+                          <div className="media-window-bar">
+                            <span></span><span></span><span></span>
+                          </div>
+                          <video
+                            className="tooldi-video"
+                            src="/videos/about/cissa.MOV"
+                            controls
+                            playsInline
+                          />
+                        </div>
+                      </section>
+
+                      <section>
+                        <span>03 / Photos</span>
 
                         <div className="media-window">
                           <div className="media-window-bar">
@@ -246,14 +262,14 @@ function App() {
                       </section>
 
                       <section>
-                        <span>03 / What I Do</span>
+                        <span>04 / What I Do</span>
                         <p>
                           I contribute to product-oriented planning, user-facing communication, and experience design for student initiatives.
                         </p>
                       </section>
 
                       <section>
-                        <span>04 / What I Learn</span>
+                        <span>05 / What I Learn</span>
                         <p>
                           This experience helps me understand how product thinking works in a real community context, where clarity, usability, and collaboration matter.
                         </p>
@@ -409,6 +425,37 @@ function Hero({ label, title, description, focus }) {
 
       <FlipCard />
     </section>
+  );
+}
+
+
+function MediaFold({ items, alt }) {
+  const [active, setActive] = useState(0);
+  const current = items[active];
+
+  const nextMedia = () => {
+    setActive((value) => (value + 1) % items.length);
+  };
+
+  return (
+    <div className="photo-fold-stage">
+      <div className="photo-fold-card photo-fold-front" key={active}>
+        {current.type === "video" ? (
+          <video
+            className="tooldi-video"
+            src={current.src}
+            controls
+            playsInline
+          />
+        ) : (
+          <img src={current.src} alt={alt} />
+        )}
+      </div>
+
+      <button type="button" className="photo-fold-next" onClick={nextMedia} aria-label="Next media">
+        &gt;
+      </button>
+    </div>
   );
 }
 
