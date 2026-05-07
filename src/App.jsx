@@ -768,8 +768,8 @@ function FlipCard() {
   return (
     <div className="flip-card" onClick={() => setFlipped(!flipped)}>
       <div className={`flip-card-inner ${flipped ? "flipped" : ""}`}>
-        <div className="click-me-badge">Click me!</div>
         <div className="flip-card-face flip-front glass-card">
+          <div className="click-me-badge">Click me!</div>
           <img className="hero-profile-image" src="/jess_profile.png" alt="Portfolio profile" />
 
           <div className="id-card-footer">
