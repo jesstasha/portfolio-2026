@@ -426,6 +426,9 @@ function ProjectPage({ number, title, description, projects }) {
       .replaceAll("’", "")
       .replaceAll("'", "");
 
+    if (project.image) {
+      return [[slug, project.title]];
+    }
     return [
       [`${slug}-overview`, project.title],
       [`${slug}-problem`, "Problem"],
