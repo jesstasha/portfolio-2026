@@ -28,6 +28,22 @@ const gameProjects = [
       "A typing rhythm experience exploring ego, soul, and self-actualisation through interactive colour progression and reflective gameplay.",
     tags: ["Swift Playgrounds", "Game Design", "Interaction Loop"],
   },
+  {
+    title: "Mask The Wild",
+    type: "Global Game Jam 2026",
+    summary: "A quiz-based RPG progression game built in 48 hours. Lead programmer — implemented core game loop in Unity with team collaboration via Git/GitHub.",
+    tags: ["Unity", "C#", "Git/GitHub"],
+    image: "/maskthewild.png",
+    link: "https://globalgamejam.org/games/2026/mask-wild-1",
+  },
+  {
+    title: "Nucleoblob",
+    type: "72-Hour Game Jam · People's Choice 3rd",
+    summary: "Puzzle game co-created in 72 hours. Contributed narrative, level art in Aseprite, and gameplay scripting in Godot.",
+    tags: ["Godot", "GDScript", "Aseprite"],
+    image: "/nucleoblob.png",
+    link: "https://yukebin.itch.io/nucleaobob",
+  },
 ];
 
 function App() {
@@ -517,7 +533,14 @@ function ProjectCard({ project, index }) {
         ))}
       </div>
 
-      <div className="case-study-long">
+      {project.image && (
+        <img src={project.image} alt={project.title} style={{width:"100%", borderRadius:"12px", marginTop:"24px"}} />
+      )}
+      {project.link && (
+        <a href={project.link} target="_blank" rel="noreferrer" style={{display:"inline-block", marginTop:"16px", color:"#00c9a7", fontWeight:600, textDecoration:"none"}}>View Project →</a>
+      )}
+
+      {!project.image && <div className="case-study-long">
           <section id={`${projectSlug}-overview`}>
             <span>01 / Overview</span>
             <h4>{project.title}</h4>
@@ -596,7 +619,7 @@ function ProjectCard({ project, index }) {
                 : "I learned how product thinking can turn a personal pain point into a structured mobile experience. Designing SUNAPBOX helped me think more deeply about how users save content emotionally, forget details over time, and need flexible ways to recover meaning later."}
             </p>
           </section>
-      </div>
+      </div>}
     </motion.article>
   );
 }
