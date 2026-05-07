@@ -266,7 +266,18 @@ function App() {
                       <span>Marketing Supporters · Design Tool</span>
                     </div>
 
-                    <h4>Tooldi Marketing Supporters</h4>
+                    <h4 className="game-title-row">
+  <span>Tooldi Marketing Supporters</span>
+
+  <a
+    className="inline-project-link"
+    href="https://blog.naver.com/muremu/223326616383"
+    target="_blank"
+    rel="noreferrer"
+  >
+    View Project ↗
+  </a>
+</h4>
                     <p className="activity-summary">
                       Creating marketing and design-tool content through visual storytelling and practical creative workflows.
                     </p>
