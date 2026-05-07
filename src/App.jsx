@@ -480,7 +480,7 @@ function ProjectPage({ number, title, description, projects }) {
               href={`#${id}`}
               className={[
                 activeSection === id ? "active" : "",
-                label.includes("Canva") || label.includes("SUNAPBOX") ? "important-guide-link" : ""
+                label.includes("Canva") || label.includes("SUNAPBOX") || label.includes("Earth") || label.includes("Mask") || label.includes("Nucleoblob") ? "important-guide-link" : ""
               ].filter(Boolean).join(" ")}
             >
               {label}
