@@ -198,7 +198,18 @@ function App() {
                       <span>Student Society · Product Role</span>
                     </div>
 
-                    <h4>CISSA Product Officer</h4>
+                    <h4 className="game-title-row">
+  <span>CISSA Product Officer</span>
+
+  <a
+    className="inline-project-link"
+    href="https://cissa.org.au/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    View Project ↗
+  </a>
+</h4>
                     <p className="activity-summary">
                       Supporting student-facing product experiences through community, events, and digital interaction.
                     </p>
