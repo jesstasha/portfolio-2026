@@ -765,8 +765,20 @@ function ClickSparkle() {
 function FlipCard() {
   const [flipped, setFlipped] = useState(false);
 
+  const playFlipSound = () => {
+    const audio = new Audio("/sounds/chiriring.mp3");
+    audio.volume = 0.35;
+    audio.play().catch(() => {});
+  };
+
   return (
-    <div className="flip-card" onClick={() => setFlipped(!flipped)}>
+    <div
+        className="flip-card"
+        onClick={() => {
+          playFlipSound();
+          setFlipped(!flipped);
+        }}
+      >
       <div className={`flip-card-inner ${flipped ? "flipped" : ""}`}>
         <div className="flip-card-face flip-front glass-card">
           <div className="click-me-badge">Click me!</div>
