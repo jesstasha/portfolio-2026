@@ -4758,3 +4758,22 @@ header,
 
   cursor: pointer !important;
 }
+
+.game-title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.inline-project-link {
+  font-family: "SilkPixel", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: #20c7a4;
+  text-decoration: none;
+}
+
+.inline-project-link:hover {
+  text-decoration: underline;
+}

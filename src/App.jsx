@@ -27,6 +27,7 @@ const gameProjects = [
     summary:
       "A typing rhythm experience exploring ego, soul, and self-actualisation through interactive colour progression and reflective gameplay.",
     tags: ["Swift Playgrounds", "Game Design", "Interaction Loop"],
+    link: "https://jesstasia.itch.io/earth-resonance",
   },
   {
     title: "Mask The Wild",
@@ -527,7 +528,18 @@ function ProjectCard({ project, index }) {
         <span>{project.type}</span>
       </div>
 
-      <h3>{project.title}</h3>
+      <h3 className="game-title-row">
+  <span>{project.title}</span>
+
+  <a
+    className="inline-project-link"
+    href={project.link}
+    target="_blank"
+    rel="noreferrer"
+  >
+    View Project ↗
+  </a>
+</h3>
       <p>{project.summary}</p>
 
       <div className="tag-row">
