@@ -23,10 +23,10 @@ const uxProjects = [
 const gameProjects = [
   {
     title: "Earth Resonance",
-    type: "Swift Student Challenge",
+    type: "Apple Swift Student Challenge",
     summary:
       "A typing rhythm experience exploring ego, soul, and self-actualisation through interactive colour progression and reflective gameplay.",
-    tags: ["Swift Playgrounds", "Game Design", "Interaction Loop"],
+    tags: ["", "Swift Playgrounds", "Game Design", "Interaction Loop"],
     link: "https://jesstasia.itch.io/earth-resonance",
   },
   {
