@@ -646,7 +646,7 @@ function ProjectCard({ project, index }) {
             <h4>
               {project.title === "Canva Projects Redesign"
                 ? "Older projects are hard to retrieve when users cannot remember the exact name."
-                : "Saved short-form videos quickly become difficult to organise, revisit, and use intentionally."}
+                : project.title === "SUNAPBOX" ? "Saved short-form videos quickly become difficult to organise, revisit, and use intentionally." : "Many people struggle with comparison, anxiety, and fluctuating self-esteem — yet traditional affirmations feel awkward or ineffective. There was no playful, embodied way to practice better self-talk."}
             </h4>
 
             {project.title === "Canva Projects Redesign" && (
@@ -665,7 +665,7 @@ function ProjectCard({ project, index }) {
             <p>
               {project.title === "Canva Projects Redesign"
                 ? "Users struggle to retrieve past projects when they cannot recall the project name, and the current “Recent” sorting forces inefficient visual scanning. This issue becomes more significant over time, as Canva is not a short-form content platform but a long-term creative archive. Users accumulate a large number of meaningful projects across months or years, making time-based access a critical part of the experience."
-                : "Users often save useful videos across platforms, but the saved content becomes scattered and hard to retrieve later. The problem is not only saving content, but turning saved videos into an organised personal archive."}
+                : project.title === "SUNAPBOX" ? "Users often save useful videos across platforms, but the saved content becomes scattered and hard to retrieve later. The problem is not only saving content, but turning saved videos into an organised personal archive." : ""}
             </p>
             <p>
               {project.title === "Canva Projects Redesign"
@@ -698,12 +698,12 @@ function ProjectCard({ project, index }) {
             <h4>
               {project.title === "Canva Projects Redesign"
                 ? "Introduce year-based filtering and clearer project grouping."
-                : "Create a mobile system for saving, arranging, searching, and revisiting short-form videos."}
+                : project.title === "SUNAPBOX" ? "Create a mobile system for saving, arranging, searching, and revisiting short-form videos." : "A typing-rhythm app with two paths — SOUL MODE rewards intentional self-talk and leads to a peaceful ending, while EGO MODE fuels competition but traps the player in a scoring loop."}
             </h4>
             <p>
               {project.title === "Canva Projects Redesign"
                 ? "Year-based navigation reduces the search space and helps long-term users browse their creative history more intentionally. Grouping related project assets also makes the page easier to scan."
-                : "SUNAPBOX organises videos through save flows, folders, swipe-based arranging, search, and AI-assisted tagging so users can retrieve saved videos based on meaning, context, and future use."}
+                : project.title === "SUNAPBOX" ? "SUNAPBOX organises videos through save flows, folders, swipe-based arranging, search, and AI-assisted tagging so users can retrieve saved videos based on meaning, context, and future use." : ""}
             </p>
           </section>
 
@@ -712,7 +712,7 @@ function ProjectCard({ project, index }) {
             <p>
               {project.title === "Canva Projects Redesign"
                 ? "I focused on turning a familiar interface problem into a clear product-design case study. The main challenge was not simply making the page look different, but identifying why older projects become difficult to retrieve and translating that problem into a practical navigation idea."
-                : "I focused on shaping SUNAPBOX as a product concept that connects saving, organising, searching, and revisiting short-form videos. The main challenge was keeping the flow simple while still showing how AI-assisted tagging and folder-based organisation could support real user behaviour."}
+                : project.title === "SUNAPBOX" ? "I focused on shaping SUNAPBOX as a product concept that connects saving, organising, searching, and revisiting short-form videos. The main challenge was keeping the flow simple while still showing how AI-assisted tagging and folder-based organisation could support real user behaviour." : "Inspired by Jung's ego/self concept and Maslow's five needs. Each level maps to a need (survival → self-actualisation). The main challenge was making psychological concepts feel intuitive through gameplay mechanics rather than explanation."}
             </p>
           </section>
 
@@ -721,7 +721,7 @@ function ProjectCard({ project, index }) {
             <p>
               {project.title === "Canva Projects Redesign"
                 ? "I learned how important information hierarchy is when designing for long-term use. A product can feel easy for recent actions but still become difficult when users return months or years later, so retrieval and memory support need to be considered as part of the experience."
-                : "I learned how product thinking can turn a personal pain point into a structured mobile experience. Designing SUNAPBOX helped me think more deeply about how users save content emotionally, forget details over time, and need flexible ways to recover meaning later."}
+                : project.title === "SUNAPBOX" ? "I learned how product thinking can turn a personal pain point into a structured mobile experience. Designing SUNAPBOX helped me think more deeply about how users save content emotionally, forget details over time, and need flexible ways to recover meaning later." : "Accessibility shaped every decision — single-word typing, high contrast, immediate visual feedback. Keeping the interaction simple was harder than it sounds when the concept is layered."}
             </p>
           </section>
       </div>}
