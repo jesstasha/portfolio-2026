@@ -640,82 +640,140 @@ function ProjectCard({ project, index }) {
       </div>
 
       {project.caseStudy === "anymore-farm" && (
-        <div className="case-study-long">
+        <div className="case-study-long anymore-case-study">
           <section id={`${projectSlug}-overview`}>
             <span>01 / Overview</span>
-            <h4>A political stealth game about documenting corruption.</h4>
-            <p>
-              Anymore Farm is an original game concept inspired by George Orwell’s Animal Farm.
-              The player controls an ordinary pig who secretly investigates the ruling pigs,
-              photographs evidence of broken commandments, and prepares a public broadcast.
-            </p>
-            <p>
-              The design combines stealth, evidence collection, suspicion management, and
-              environmental storytelling. Surveillance operates as both a gameplay mechanic
-              and a central theme.
-            </p>
+            <h4>Pixel-art stealth RPG inspired by Animal Farm.</h4>
+
+            <ul>
+              <li>Original solo game design and prototype project.</li>
+              <li>Investigate corruption while freely exploring an animal village.</li>
+              <li>Expose hidden acts through a live broadcasting mechanic.</li>
+              <li>Manage suspicion while navigating moral and psychological tension.</li>
+            </ul>
+
+            <figure className="anymore-slide">
+              <img
+                src="/portfolio_pngs/overview.png"
+                alt="Anymore Farm theme, gameplay, aesthetic and executive summary"
+              />
+              <figcaption>
+                Theme, player experience, core gameplay and project overview.
+              </figcaption>
+            </figure>
           </section>
 
           <section id={`${projectSlug}-design-goal`}>
             <span>02 / Design Goal</span>
-            <h4>Turn political surveillance into an understandable player experience.</h4>
-            <p>
-              Instead of explaining corruption only through dialogue, the game asks the player
-              to observe it directly. Restricted spaces, suspicious NPC reactions, hidden routes,
-              and photographic proof translate the story’s themes into player actions.
-            </p>
+            <h4>Connect political themes to actions the player performs.</h4>
+
             <ul>
-              <li>Make investigation tense without relying on combat.</li>
-              <li>Connect every major mechanic to secrecy, power, and public truth.</li>
-              <li>Use cute pixel art to contrast with an unsettling political theme.</li>
+              <li>Communicate corruption through exploration and observation rather than exposition alone.</li>
+              <li>Use cute pixel art to contrast with unsettling spaces and subject matter.</li>
+              <li>Support meaningful play through restraint, judgement and visible consequences.</li>
             </ul>
+
+            <figure className="anymore-slide">
+              <img
+                src="/portfolio_pngs/prototype.png"
+                alt="Anymore Farm character sprites, tilemap layers and building prototypes"
+              />
+              <figcaption>
+                Character, environment and tilemap prototypes developed for the game world.
+              </figcaption>
+            </figure>
           </section>
 
           <section id={`${projectSlug}-core-loop`}>
             <span>03 / Core Loop</span>
-            <h4>Observe → infiltrate → capture evidence → escape → broadcast.</h4>
+            <h4>Explore → discover corruption → target → expose → adapt.</h4>
+
             <ul>
-              <li>Explore the farm and identify suspicious behaviour.</li>
-              <li>Enter restricted areas while avoiding guards and witnesses.</li>
-              <li>Photograph evidence connected to violations of the Seven Commandments.</li>
-              <li>Leave before suspicion becomes too high.</li>
-              <li>Expose the ruling pigs at the Main Square.</li>
+              <li>Explore the village and interact with NPCs.</li>
+              <li>Identify suspicious behaviour and hidden areas.</li>
+              <li>Expose corruption through accurate live broadcasts.</li>
+              <li>Adapt future decisions as suspicion increases.</li>
             </ul>
+
+            <figure className="anymore-slide">
+              <img
+                src="/portfolio_pngs/core_loop.png"
+                alt="Anymore Farm gameplay pillars, progression and core gameplay loop"
+              />
+              <figcaption>
+                Gameplay pillars, three-act progression and the investigation–exposure loop.
+              </figcaption>
+            </figure>
           </section>
 
           <section id={`${projectSlug}-systems`}>
             <span>04 / System Design</span>
-            <h4>Three connected systems create the game’s tension.</h4>
-            <p><strong>Suspicion System:</strong> NPC observation, restricted areas, and repeated suspicious actions increase the risk of being caught.</p>
-            <p><strong>Evidence System:</strong> Each photograph must clearly prove a specific act of corruption, making position and timing meaningful.</p>
-            <p><strong>Broadcast System:</strong> Evidence only gains political power when it becomes public through the final broadcast.</p>
+            <h4>Connected systems turn investigation into tension and consequence.</h4>
+
+            <ul>
+              <li><strong>Live Broadcasting:</strong> exposes corruption to the entire farm.</li>
+              <li><strong>Suspicion:</strong> raises the risk of punishment after suspicious actions.</li>
+              <li><strong>Stealth:</strong> requires careful movement and observation.</li>
+              <li><strong>Targeting:</strong> adds precision to the act of documenting corruption.</li>
+            </ul>
+
+            <div className="anymore-slide-stack">
+              <figure className="anymore-slide">
+                <img
+                  src="/portfolio_pngs/mechanic.png"
+                  alt="Anymore Farm gameplay mechanic overview"
+                />
+                <figcaption>
+                  Player interaction, gameplay pillars, progression and mechanic flow.
+                </figcaption>
+              </figure>
+
+              <figure className="anymore-slide">
+                <img
+                  src="/portfolio_pngs/mechanic_two.png"
+                  alt="Anymore Farm live broadcasting, suspicion, stealth and targeting systems"
+                />
+                <figcaption>
+                  Detailed system descriptions and design reflection.
+                </figcaption>
+              </figure>
+            </div>
           </section>
 
           <section id={`${projectSlug}-level-design`}>
             <span>05 / Level Design</span>
-            <h4>Each location supports a different type of observation and risk.</h4>
+            <h4>A spiral village structure supports exploration and discovery.</h4>
+
             <ul>
-              <li><strong>Hotel:</strong> private luxury and evidence behind controlled access.</li>
-              <li><strong>Banquet Hall:</strong> crowd cover and visible inequality.</li>
-              <li><strong>Pub:</strong> rumours, overheard information, and informal NPC behaviour.</li>
-              <li><strong>Main Square:</strong> the final public confrontation and broadcast space.</li>
+              <li>Residential, public and special-purpose buildings create spatial variety.</li>
+              <li>Hidden routes and portal areas reward curiosity.</li>
+              <li>Readable paths and landmarks support navigation.</li>
+              <li>The village gradually shifts from cheerful to unsettling.</li>
             </ul>
-            <p>
-              Routes use readable landmarks, wide movement paths, alternate entrances,
-              and safe observation points to support stealth without confusing the player.
-            </p>
+
+            <figure className="anymore-slide">
+              <img
+                src="/portfolio_pngs/level_design.png"
+                alt="Anymore Farm spiral village map and visual development"
+              />
+              <figcaption>
+                Farm map structure and original pixel-art building development.
+              </figcaption>
+            </figure>
           </section>
 
           <section id={`${projectSlug}-iteration`}>
             <span>06 / Iteration</span>
-            <h4>Refining mechanics to better support the theme.</h4>
+            <h4>Refining mechanics to better support the investigative theme.</h4>
             <p>
-              An early shooting-style targeting interaction felt disconnected from the political
-              and investigative tone. I shifted the design toward photography, positioning, timing,
-              and non-violent evidence gathering.
+              The early shooting-style targeting interaction introduced precision, but feedback
+              showed that it could feel disconnected from the game’s political and investigative
+              tone. The next iteration focuses more clearly on observation, positioning, timing
+              and non-violent documentation.
             </p>
             <p>
-              This made the player’s role clearer: they expose a system by making hidden behaviour visible.
+              This reframes the player as someone who makes hidden behaviour visible rather than
+              someone who attacks an enemy.
             </p>
           </section>
 
@@ -723,10 +781,10 @@ function ProjectCard({ project, index }) {
             <span>07 / My Role</span>
             <h4>Independent game designer and prototype developer.</h4>
             <ul>
-              <li>Created the concept, narrative premise, core loop, and player objective.</li>
-              <li>Designed the suspicion, evidence, broadcasting, stealth, and time-pressure systems.</li>
-              <li>Planned the world map, locations, player routes, and environmental storytelling.</li>
-              <li>Produced character, building, and pixel-art direction.</li>
+              <li>Created the concept, narrative premise, core loop and player objective.</li>
+              <li>Designed the broadcasting, suspicion, stealth and targeting systems.</li>
+              <li>Planned the world map, locations, routes and environmental storytelling.</li>
+              <li>Created character sprites, tilemaps and pixel-art building prototypes.</li>
               <li>Built and tested the early prototype in Godot.</li>
             </ul>
           </section>

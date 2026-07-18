@@ -4817,3 +4817,29 @@ header,
   background: white;
   border-radius: 0 0 18px 18px;
 }
+
+/* Anymore Farm slide-based case study */
+.anymore-case-study .anymore-slide {
+  margin: 24px 0 0;
+}
+
+.anymore-case-study .anymore-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.anymore-case-study .anymore-slide figcaption {
+  margin-top: 10px;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.anymore-case-study .anymore-slide-stack {
+  display: grid;
+  gap: 28px;
+  margin-top: 24px;
+}
+
