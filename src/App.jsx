@@ -45,6 +45,14 @@ const gameProjects = [
     image: "/nucleoblob.png",
     link: "https://yukebin.itch.io/nucleaobob",
   },
+  {
+    title: "Anymore Farm",
+    type: "Game Design Document · Independent Project",
+    summary:
+      "A stealth investigation game inspired by Animal Farm. The player gathers photographic evidence of corruption, manages suspicion, and broadcasts the truth before time runs out.",
+    tags: ["Game Design", "GDD", "System Design", "Level Design", "Godot"],
+    caseStudy: "anymore-farm",
+  },
 ];
 
 function App() {
@@ -496,6 +504,18 @@ function ProjectPage({ number, title, description, projects }) {
       .replaceAll("’", "")
       .replaceAll("'", "");
 
+    if (project.caseStudy === "anymore-farm") {
+      return [
+        [`${slug}-overview`, project.title],
+        [`${slug}-design-goal`, "Design Goal"],
+        [`${slug}-core-loop`, "Core Loop"],
+        [`${slug}-systems`, "System Design"],
+        [`${slug}-level-design`, "Level Design"],
+        [`${slug}-iteration`, "Iteration"],
+        [`${slug}-responsibilities`, "My Role"],
+      ];
+    }
+
     if (project.image) {
       return [[slug, project.title]];
     }
@@ -550,7 +570,7 @@ function ProjectPage({ number, title, description, projects }) {
               href={`#${id}`}
               className={[
                 activeSection === id ? "active" : "",
-                label.includes("Canva") || label.includes("SUNAPBOX") || label.includes("Earth") || label.includes("Mask") || label.includes("Nucleoblob") ? "important-guide-link" : ""
+                label.includes("Canva") || label.includes("SUNAPBOX") || label.includes("Earth") || label.includes("Mask") || label.includes("Nucleoblob") || label.includes("Anymore") ? "important-guide-link" : ""
               ].filter(Boolean).join(" ")}
             >
               {label}
@@ -600,14 +620,16 @@ function ProjectCard({ project, index }) {
       <h3 className="game-title-row">
   <span>{project.title}</span>
 
-  <a
-    className="inline-project-link"
-    href={project.link}
-    target="_blank"
-    rel="noreferrer"
-  >
-    View Project ↗
-  </a>
+  {project.link && (
+    <a
+      className="inline-project-link"
+      href={project.link}
+      target="_blank"
+      rel="noreferrer"
+    >
+      View Project ↗
+    </a>
+  )}
 </h3>
       <p>{project.summary}</p>
 
@@ -616,6 +638,100 @@ function ProjectCard({ project, index }) {
           <span key={tag}>#{tag}</span>
         ))}
       </div>
+
+      {project.caseStudy === "anymore-farm" && (
+        <div className="case-study-long">
+          <section id={`${projectSlug}-overview`}>
+            <span>01 / Overview</span>
+            <h4>A political stealth game about documenting corruption.</h4>
+            <p>
+              Anymore Farm is an original game concept inspired by George Orwell’s Animal Farm.
+              The player controls an ordinary pig who secretly investigates the ruling pigs,
+              photographs evidence of broken commandments, and prepares a public broadcast.
+            </p>
+            <p>
+              The design combines stealth, evidence collection, suspicion management, and
+              environmental storytelling. Surveillance operates as both a gameplay mechanic
+              and a central theme.
+            </p>
+          </section>
+
+          <section id={`${projectSlug}-design-goal`}>
+            <span>02 / Design Goal</span>
+            <h4>Turn political surveillance into an understandable player experience.</h4>
+            <p>
+              Instead of explaining corruption only through dialogue, the game asks the player
+              to observe it directly. Restricted spaces, suspicious NPC reactions, hidden routes,
+              and photographic proof translate the story’s themes into player actions.
+            </p>
+            <ul>
+              <li>Make investigation tense without relying on combat.</li>
+              <li>Connect every major mechanic to secrecy, power, and public truth.</li>
+              <li>Use cute pixel art to contrast with an unsettling political theme.</li>
+            </ul>
+          </section>
+
+          <section id={`${projectSlug}-core-loop`}>
+            <span>03 / Core Loop</span>
+            <h4>Observe → infiltrate → capture evidence → escape → broadcast.</h4>
+            <ul>
+              <li>Explore the farm and identify suspicious behaviour.</li>
+              <li>Enter restricted areas while avoiding guards and witnesses.</li>
+              <li>Photograph evidence connected to violations of the Seven Commandments.</li>
+              <li>Leave before suspicion becomes too high.</li>
+              <li>Expose the ruling pigs at the Main Square.</li>
+            </ul>
+          </section>
+
+          <section id={`${projectSlug}-systems`}>
+            <span>04 / System Design</span>
+            <h4>Three connected systems create the game’s tension.</h4>
+            <p><strong>Suspicion System:</strong> NPC observation, restricted areas, and repeated suspicious actions increase the risk of being caught.</p>
+            <p><strong>Evidence System:</strong> Each photograph must clearly prove a specific act of corruption, making position and timing meaningful.</p>
+            <p><strong>Broadcast System:</strong> Evidence only gains political power when it becomes public through the final broadcast.</p>
+          </section>
+
+          <section id={`${projectSlug}-level-design`}>
+            <span>05 / Level Design</span>
+            <h4>Each location supports a different type of observation and risk.</h4>
+            <ul>
+              <li><strong>Hotel:</strong> private luxury and evidence behind controlled access.</li>
+              <li><strong>Banquet Hall:</strong> crowd cover and visible inequality.</li>
+              <li><strong>Pub:</strong> rumours, overheard information, and informal NPC behaviour.</li>
+              <li><strong>Main Square:</strong> the final public confrontation and broadcast space.</li>
+            </ul>
+            <p>
+              Routes use readable landmarks, wide movement paths, alternate entrances,
+              and safe observation points to support stealth without confusing the player.
+            </p>
+          </section>
+
+          <section id={`${projectSlug}-iteration`}>
+            <span>06 / Iteration</span>
+            <h4>Refining mechanics to better support the theme.</h4>
+            <p>
+              An early shooting-style targeting interaction felt disconnected from the political
+              and investigative tone. I shifted the design toward photography, positioning, timing,
+              and non-violent evidence gathering.
+            </p>
+            <p>
+              This made the player’s role clearer: they expose a system by making hidden behaviour visible.
+            </p>
+          </section>
+
+          <section id={`${projectSlug}-responsibilities`}>
+            <span>07 / My Role</span>
+            <h4>Independent game designer and prototype developer.</h4>
+            <ul>
+              <li>Created the concept, narrative premise, core loop, and player objective.</li>
+              <li>Designed the suspicion, evidence, broadcasting, stealth, and time-pressure systems.</li>
+              <li>Planned the world map, locations, player routes, and environmental storytelling.</li>
+              <li>Produced character, building, and pixel-art direction.</li>
+              <li>Built and tested the early prototype in Godot.</li>
+            </ul>
+          </section>
+        </div>
+      )}
 
       {project.image && (
         <div className="media-window game-media-window">
@@ -631,7 +747,7 @@ function ProjectCard({ project, index }) {
         </div>
       )}
 
-      {!project.image && <div className="case-study-long">
+      {!project.image && !project.caseStudy && <div className="case-study-long">
           <section id={`${projectSlug}-overview`}>
             <span>01 / Overview</span>
             <h4>{project.title}</h4>
