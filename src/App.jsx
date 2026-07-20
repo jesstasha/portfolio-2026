@@ -518,7 +518,7 @@ function ProjectPage({ number, title, description, projects }) {
     if (project.caseStudy === "anymore-farm") {
       return [
         [`${slug}-overview`, project.title],
-        [`${slug}-design-goal`, "Design Decision"],
+        [`${slug}-design-goal`, "Prototype"],
         [`${slug}-core-loop`, "Concept Development"],
         [`${slug}-systems`, "Mechanic Design"],
       ];
@@ -698,7 +698,7 @@ function ProjectCard({ project, index }) {
           </section>
 
           <section id={`${projectSlug}-design-goal`}>
-            <span>02 / Design Decision</span>
+            <span>02 / Prototype</span>
             <h4>Connect political themes to actions the player performs.</h4>
 
             <ul>
