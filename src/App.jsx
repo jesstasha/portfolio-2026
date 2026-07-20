@@ -510,7 +510,6 @@ function ProjectPage({ number, title, description, projects }) {
         [`${slug}-design-goal`, "Design Goal"],
         [`${slug}-core-loop`, "Core Loop"],
         [`${slug}-systems`, "Mechanic Design"],
-        [`${slug}-level-design`, "Level Design"],
         [`${slug}-iteration`, "Playtesting Report"],
       ];
     }
