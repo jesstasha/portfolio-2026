@@ -896,7 +896,7 @@ function ProjectCard({ project, index }) {
             <p>
               {project.title === "Canva Projects Redesign"
                 ? "I focused on turning a familiar interface problem into a clear product-design case study. The main challenge was not simply making the page look different, but identifying why older projects become difficult to retrieve and translating that problem into a practical navigation idea."
-                : project.title === "SUNAPBOX" ? "I focused on shaping SUNAPBOX as a product concept that connects saving, organising, searching, and revisiting short-form videos. The main challenge was keeping the flow simple while still showing how AI-assisted tagging and folder-based organisation could support real user behaviour." : "Inspired by Jung's ego/self concept and Maslow's five needs. Each level maps to a need (survival → self-actualisation). The main challenge was making psychological concepts feel intuitive through gameplay mechanics rather than explanation."}
+                : project.title === "SUNAPBOX" ? "I focused on shaping SUNAPBOX as a product concept that connects saving, organising, searching, and revisiting short-form videos. The main challenge was keeping the flow simple while still showing how AI-assisted tagging and folder-based organisation could support real user behaviour." : "A two-page system design document outlining the game's screen flow, shared state, timing and judgement system, level progression, and branching endings."}
             </p>
           </section>
 
