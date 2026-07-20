@@ -32,7 +32,7 @@ const gameProjects = [
   {
     title: "Mask The Wild",
     type: "Global Game Jam 2026",
-    summary: "A quiz-based RPG progression game built in 48 hours. Lead programmer — implemented core game loop in Unity with team collaboration via Git/GitHub.",
+    summary: "A quiz-based RPG progression game built in 48 hours. I was the lead programmer, implementing the core game loop in Unity and collaborating with the team through Git/GitHub.",
     tags: ["Unity", "C#", "Git/GitHub"],
     image: "/portfolio-2026/maskthewild.png",
     link: "https://globalgamejam.org/games/2026/mask-wild-1",
@@ -1041,9 +1041,9 @@ function FlipCard() {
   const [flipped, setFlipped] = useState(false);
 
   const playFlipSound = () => {
-    const audio = new Audio("/sounds/chiriring.mp3");
+    const audio = new Audio(`${import.meta.env.BASE_URL}sounds/chiriring.mp3`);
     audio.volume = 0.35;
-    audio.play().catch(() => {});
+    audio.play().then(() => console.log("sound played")).catch((error) => console.log("sound error", error));
   };
 
   return (
