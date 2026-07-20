@@ -512,7 +512,6 @@ function ProjectPage({ number, title, description, projects }) {
         [`${slug}-systems`, "Mechanic Design"],
         [`${slug}-level-design`, "Level Design"],
         [`${slug}-iteration`, "Playtesting Report"],
-        [`${slug}-responsibilities`, "My Role"],
       ];
     }
 
@@ -769,18 +768,6 @@ function ProjectCard({ project, index }) {
               className="playtest-report-slider"
             />
           </section>
-
-          <section id={`${projectSlug}-responsibilities`}>
-            <span>07 / My Role</span>
-            <h4>Independent game designer and prototype developer.</h4>
-            <ul>
-              <li>Created the concept, narrative premise, core loop and player objective.</li>
-              <li>Designed the broadcasting, suspicion, stealth and targeting systems.</li>
-              <li>Planned the world map, locations, routes and environmental storytelling.</li>
-              <li>Created character sprites, tilemaps and pixel-art building prototypes.</li>
-              <li>Built and tested the early prototype in Godot.</li>
-            </ul>
-          </section>
         </div>
       )}
 
@@ -841,36 +828,38 @@ function ProjectCard({ project, index }) {
             </p>
           </section>
 
-          <section id={`${projectSlug}-pain-points`}>
-            <span>03 / User Pain Points</span>
-            <ul>
-              {project.title === "Canva Projects Redesign" ? (
-                <>
-                  <li>No alternative retrieval method when the project name is forgotten.</li>
-                  <li>Broad time sorting such as “Most recent” does not help users narrow older work precisely.</li>
-                  <li>Related assets can appear as separate vertical items, increasing visual clutter and cognitive load.</li>
-                </>
-              ) : (
-                <>
-                  <li>Saved videos are spread across different apps and platforms.</li>
-                  <li>Users may remember the vibe or purpose of a video, but not the exact title or source.</li>
-                  <li>Manual organisation takes effort, so saved content easily becomes an unused archive.</li>
-                </>
-              )}
-            </ul>
-          </section>
+          {project.title === "Canva Projects Redesign" && (
+            <section id={`${projectSlug}-pain-points`}>
+              <span>03 / User Pain Points</span>
+              <ul>
+                <li>No alternative retrieval method when the project name is forgotten.</li>
+                <li>Broad time sorting such as “Most recent” does not help users narrow older work precisely.</li>
+                <li>Related assets can appear as separate vertical items, increasing visual clutter and cognitive load.</li>
+              </ul>
+            </section>
+          )}
 
           <section id={`${projectSlug}-solution`}>
-            <span>04 / Solution</span>
+            <span>
+              {project.title === "Earth Resonance"
+                ? "03 / Level Design Layouts"
+                : "04 / Solution"}
+            </span>
+
             <h4>
               {project.title === "Canva Projects Redesign"
                 ? "Introduce year-based filtering and clearer project grouping."
-                : project.title === "SUNAPBOX" ? "Create a mobile system for saving, arranging, searching, and revisiting short-form videos." : "A typing-rhythm app with two paths — SOUL MODE rewards intentional self-talk and leads to a peaceful ending, while EGO MODE fuels competition but traps the player in a scoring loop."}
+                : project.title === "SUNAPBOX"
+                  ? "Create a mobile system for saving, arranging, searching, and revisiting short-form videos."
+                  : "Maslow’s hierarchy structures the five-level progression, while Jung’s ego/self concept shapes the two gameplay paths."}
             </h4>
+
             <p>
               {project.title === "Canva Projects Redesign"
                 ? "Year-based navigation reduces the search space and helps long-term users browse their creative history more intentionally. Grouping related project assets also makes the page easier to scan."
-                : project.title === "SUNAPBOX" ? "SUNAPBOX organises videos through save flows, folders, swipe-based arranging, search, and AI-assisted tagging so users can retrieve saved videos based on meaning, context, and future use." : ""}
+                : project.title === "SUNAPBOX"
+                  ? "SUNAPBOX organises videos through save flows, folders, swipe-based arranging, search, and AI-assisted tagging so users can retrieve saved videos based on meaning, context, and future use."
+                  : "Each level moves from survival to self-actualisation through a red-to-blue progression. In SOUL MODE, players type level-specific words and continue toward the reflective ending. In EGO MODE, players may type any word for score and ranking, but lose access to the SOUL ending."}
             </p>
           </section>
 
