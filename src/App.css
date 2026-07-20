@@ -1447,7 +1447,7 @@ h1 {
   padding: 18px !important;
   display: grid !important;
   grid-template-rows: auto 1fr !important;
-  gap: 16px !important;
+  gap: 36px !important;
 }
 
 .back-title {
@@ -1700,7 +1700,7 @@ h1 {
 
 .project-page-layout {
   grid-template-columns: minmax(0, 1fr) 180px !important;
-  gap: 16px !important;
+  gap: 36px !important;
 }
 
 .page-remote p {
@@ -4865,4 +4865,9 @@ header,
   object-fit: contain;
   object-position: center;
   background: #ffffff;
+}
+
+.project-stack,
+.project-card {
+  min-width: 0;
 }
