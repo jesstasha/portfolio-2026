@@ -269,8 +269,8 @@ function App() {
                           </div>
                           <PhotoFold
                             images={[
-                              "/images/about/cissa-01.png",
-                              "/images/about/cissa-02.png",
+                              "/portfolio-2026/images/about/cissa-01.png",
+                              "/portfolio-2026/images/about/cissa-02.png",
                             ]}
                             alt="CISSA activity photo"
                           />
