@@ -53,6 +53,14 @@ const gameProjects = [
     tags: ["Game Design", "GDD", "Mechanic Design", "Level Design", "Godot"],
     caseStudy: "anymore-farm",
   },
+  {
+    title: "Ringworld",
+    type: "Board Game Prototype · Team Project",
+    summary:
+      "A sci-fi territory control board game prototype exploring expansion, resource management, and strategic decision-making through iterative playtesting.",
+    tags: ["Board Game", "Prototype", "Playtesting", "Iteration"],
+    caseStudy: "ringworld",
+  },
 ];
 
 function App() {
@@ -759,9 +767,33 @@ function ProjectCard({ project, index }) {
             </div>
           </section>
 
-          <section id={`${projectSlug}-iteration`}>
-            <span>06 / Playtesting Report</span>
-            <h4>Playtesting feedback informed balancing and gameplay improvements.</h4>
+
+        </div>
+      )}
+
+      {project.image && (
+        <div className="media-window game-media-window">
+          <div className="media-window-bar">
+            <span></span><span></span><span></span>
+          </div>
+
+          <img
+            className="game-showcase-image"
+            src={project.image}
+            alt={project.title}
+          />
+        </div>
+      )}
+
+      {project.caseStudy === "ringworld" && (
+        <div className="case-study-long ringworld-case-study">
+          <section id={`${projectSlug}-playtesting`}>
+            <span>01 / Playtesting Report</span>
+
+            <h4>
+              Playtesting feedback informed balancing and gameplay improvements.
+            </h4>
+
             <p>
               This report summarises multiple playtesting sessions for Ringworld, documenting player
               feedback, gameplay balance issues, rule clarity, and proposed improvements following testing.
@@ -777,20 +809,6 @@ function ProjectCard({ project, index }) {
               className="playtest-report-slider"
             />
           </section>
-        </div>
-      )}
-
-      {project.image && (
-        <div className="media-window game-media-window">
-          <div className="media-window-bar">
-            <span></span><span></span><span></span>
-          </div>
-
-          <img
-            className="game-showcase-image"
-            src={project.image}
-            alt={project.title}
-          />
         </div>
       )}
 
