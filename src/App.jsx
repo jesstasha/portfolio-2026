@@ -863,24 +863,16 @@ function ProjectCard({ project, index }) {
             </p>
 
             {project.title === "Earth Resonance" && (
-              <div className="media-window game-media-window">
-                <div className="window-bar">
-                  <span className="window-dot red"></span>
-                  <span className="window-dot yellow"></span>
-                  <span className="window-dot green"></span>
-                </div>
-
-                <img
-                  src="/portfolio_pngs/ego_soul_mode.png"
-                  alt="Earth Resonance SOUL MODE and EGO MODE level design layouts"
-                  style={{
-                    width: "60%",
-                    display: "block",
-                    margin: "0 auto",
-                    borderRadius: "12px"
-                  }}
-                />
-              </div>
+              <img
+                src="/portfolio_pngs/ego_soul_mode.png"
+                alt="Earth Resonance SOUL MODE and EGO MODE level design layouts"
+                style={{
+                  width: "40%",
+                  display: "block",
+                  margin: "24px auto",
+                  borderRadius: "12px"
+                }}
+              />
             )}
           </section>
 
