@@ -537,7 +537,7 @@ function ProjectPage({ number, title, description, projects }) {
     if (project.title === "Earth Resonance") {
       return [
         [`${slug}-overview`, project.title],
-        [`${slug}-problem`, "Design Intention"],
+        [`${slug}-problem`, "Design Decision"],
         [`${slug}-solution`, "Level Design"],
         [`${slug}-process`, "System Design"],
       ];
@@ -698,7 +698,7 @@ function ProjectCard({ project, index }) {
           </section>
 
           <section id={`${projectSlug}-design-goal`}>
-            <span>02 / Annotated Screenshots Explaining Design Decisions</span>
+            <span>02 / Design Decision</span>
             <h4>Connect political themes to actions the player performs.</h4>
 
             <ul>
@@ -841,7 +841,7 @@ function ProjectCard({ project, index }) {
           </section>
 
                               <section id={`${projectSlug}-problem`}>
-            <span>02 / Videos Explaining Design Decisions</span>
+            <span>02 / Design Decision</span>
             {project.title === "Earth Resonance" ? (
               <div className="media-window">
                 <div className="media-window-bar">
