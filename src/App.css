@@ -669,7 +669,7 @@ h1 {
   box-shadow: 0 10px 24px rgba(96, 83, 132, 0.14);
 }
 
-.case-study-remote a.active::before {
+.case-study-remote a.active:not(.important-guide-link)::before {
   content: ">";
   margin-right: 8px;
   font-size: 0.65rem;
@@ -4894,3 +4894,12 @@ header,
   object-position: center;
   background: #fff;
 }
+
+.ringworld-case-study {
+  margin-top: 48px;
+}
+
+.ringworld-case-study section {
+  padding-top: 20px;
+}
+

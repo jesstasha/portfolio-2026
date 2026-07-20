@@ -518,7 +518,13 @@ function ProjectPage({ number, title, description, projects }) {
         [`${slug}-design-goal`, "Design Goal"],
         [`${slug}-core-loop`, "Core Loop"],
         [`${slug}-systems`, "Mechanic Design"],
-        [`${slug}-iteration`, "Playtesting Report"],
+      ];
+    }
+
+    if (project.caseStudy === "ringworld") {
+      return [
+        [slug, project.title],
+        [`${slug}-playtesting`, "Playtesting Report"],
       ];
     }
 
@@ -583,9 +589,18 @@ function ProjectPage({ number, title, description, projects }) {
             <a
               key={id}
               href={`#${id}`}
+              onClick={() => setActiveSection(id)}
               className={[
                 activeSection === id ? "active" : "",
-                label.includes("Canva") || label.includes("SUNAPBOX") || label.includes("Earth") || label.includes("Mask") || label.includes("Nucleoblob") || label.includes("Anymore") ? "important-guide-link" : ""
+                id === "ringworld" ||
+                label.includes("Canva") ||
+                label.includes("SUNAPBOX") ||
+                label.includes("Earth") ||
+                label.includes("Mask") ||
+                label.includes("Nucleoblob") ||
+                label.includes("Anymore")
+                  ? "important-guide-link"
+                  : ""
               ].filter(Boolean).join(" ")}
             >
               {label}
@@ -786,7 +801,7 @@ function ProjectCard({ project, index }) {
       )}
 
       {project.caseStudy === "ringworld" && (
-        <div className="case-study-long ringworld-case-study">
+        <div id={projectSlug} className="case-study-long ringworld-case-study">
           <section id={`${projectSlug}-playtesting`}>
             <span>01 / Playtesting Report</span>
 
