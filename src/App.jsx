@@ -838,11 +838,20 @@ function ProjectCard({ project, index }) {
           </section>
 
                               <section id={`${projectSlug}-problem`}>
-            <span>02 / Design Intention</span>
+            <span>02 / Videos Explaining Design Decisions</span>
             {project.title === "Earth Resonance" ? (
-              <p>
-                Many people struggle with comparison, anxiety, and fluctuating self-esteem, yet traditional affirmations often feel awkward or ineffective. Earth Resonance was designed as a playful typing-rhythm game that encourages positive self-suggestion through interaction rather than passive repetition.
-              </p>
+              <div className="media-window">
+                <div className="media-window-bar">
+                  <span></span><span></span><span></span>
+                </div>
+
+                <video
+                  className="tooldi-video"
+                  src="/videos/about/earth-resonance-demo.MOV"
+                  controls
+                  playsInline
+                />
+              </div>
             ) : (
               <h4>
                 {project.title === "Canva Projects Redesign"
