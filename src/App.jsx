@@ -253,7 +253,7 @@ function App() {
                           </div>
                           <video
                             className="tooldi-video"
-                            src="/videos/about/cissa.MOV"
+                            src="/portfolio-2026/videos/about/cissa.MOV"
                             controls
                             playsInline
                           />
@@ -336,7 +336,7 @@ function App() {
                           </div>
                           <video
                             className="tooldi-video"
-                            src="/videos/about/tooldi.mp4"
+                            src="/portfolio-2026/videos/about/tooldi.mp4"
                             controls
                             playsInline
                           />
@@ -366,8 +366,8 @@ function App() {
                   <h3>Fun Fact</h3>
 
                   <div className="pixel-room">
-                    <img className="pixel-bg" src="/images/about/funfact-bg.png" alt="" />
-                    <img className="pixel-character" src="/images/about/kaya.gif" alt="Pixel character" />
+                    <img className="pixel-bg" src="/portfolio-2026/images/about/funfact-bg.png" alt="" />
+                    <img className="pixel-character" src="/portfolio-2026/images/about/kaya.gif" alt="Pixel character" />
 
                     {showFunFact && (
                       <div className="pixel-speech">
@@ -685,7 +685,7 @@ function ProjectCard({ project, index }) {
 
             <figure className="anymore-slide">
               <img
-                src="/portfolio_pngs/overview.png"
+                src="/portfolio-2026/portfolio_pngs/overview.png"
                 alt="Anymore Farm theme, gameplay, aesthetic and executive summary"
               />
               <figcaption>
@@ -706,7 +706,7 @@ function ProjectCard({ project, index }) {
 
             <figure className="anymore-slide">
               <img
-                src="/portfolio_pngs/prototype.png"
+                src="/portfolio-2026/portfolio_pngs/prototype.png"
                 alt="Anymore Farm character sprites, tilemap layers and building prototypes"
               />
               <figcaption>
@@ -717,7 +717,7 @@ function ProjectCard({ project, index }) {
 
             <figure className="anymore-slide">
               <img
-                src="/portfolio_pngs/level_design.png"
+                src="/portfolio-2026/portfolio_pngs/level_design.png"
                 alt="Anymore Farm spiral village map and visual development"
               />
               <figcaption>
@@ -739,7 +739,7 @@ function ProjectCard({ project, index }) {
 
             <figure className="anymore-slide">
               <img
-                src="/portfolio_pngs/core_loop.png"
+                src="/portfolio-2026/portfolio_pngs/core_loop.png"
                 alt="Anymore Farm gameplay pillars, progression and core gameplay loop"
               />
               <figcaption>
@@ -762,7 +762,7 @@ function ProjectCard({ project, index }) {
             <div className="anymore-slide-stack">
               <figure className="anymore-slide">
                 <img
-                  src="/portfolio_pngs/mechanic.png"
+                  src="/portfolio-2026/portfolio_pngs/mechanic.png"
                   alt="Anymore Farm gameplay mechanic overview"
                 />
                 <figcaption>
@@ -772,7 +772,7 @@ function ProjectCard({ project, index }) {
 
               <figure className="anymore-slide">
                 <img
-                  src="/portfolio_pngs/mechanic_two.png"
+                  src="/portfolio-2026/portfolio_pngs/mechanic_two.png"
                   alt="Anymore Farm live broadcasting, suspicion, stealth and targeting systems"
                 />
                 <figcaption>
@@ -847,7 +847,7 @@ function ProjectCard({ project, index }) {
 
                 <video
                   className="tooldi-video"
-                  src="/videos/about/earth-resonance-demo.MOV"
+                  src="/portfolio-2026/videos/about/earth-resonance-demo.MOV"
                   controls
                   playsInline
                 />
@@ -927,7 +927,7 @@ function ProjectCard({ project, index }) {
 
             {project.title === "Earth Resonance" && (
               <img
-                src="/portfolio_pngs/ego_soul_mode.png"
+                src="/portfolio-2026/portfolio_pngs/ego_soul_mode.png"
                 alt="Earth Resonance SOUL MODE and EGO MODE level design layouts"
                 style={{
                   width: "40%",
@@ -956,8 +956,8 @@ function ProjectCard({ project, index }) {
 
                 <PhotoFold
                   images={[
-                    "/portfolio_pngs/system_design_1.png",
-                    "/portfolio_pngs/system_design_2.png",
+                    "/portfolio-2026/portfolio_pngs/system_design_1.png",
+                    "/portfolio-2026/portfolio_pngs/system_design_2.png",
                   ]}
                   alt="Earth Resonance system design document"
                   className="system-design-slider"
@@ -1021,7 +1021,7 @@ function ClickSparkle() {
         <img
           key={sparkle.id}
           className="click-sparkle"
-          src="/cursor.gif"
+          src="/portfolio-2026/cursor.gif"
           alt=""
           style={{
             left: sparkle.x,
@@ -1054,7 +1054,7 @@ function FlipCard() {
       <div className={`flip-card-inner ${flipped ? "flipped" : ""}`}>
         <div className="flip-card-face flip-front glass-card">
           <div className="click-me-badge">Click me!</div>
-          <img className="hero-profile-image" src="/jess_profile.png" alt="Portfolio profile" />
+          <img className="hero-profile-image" src="/portfolio-2026/jess_profile.png" alt="Portfolio profile" />
 
           <div className="id-card-footer">
             <div>

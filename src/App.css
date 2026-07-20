@@ -1631,7 +1631,7 @@ h1 {
 
 @font-face {
   font-family: "PokemonFont";
-  src: url("/fonts/pokemon.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/pokemon.ttf") format("truetype");
 }
 
 .click-me-badge {
@@ -1748,7 +1748,7 @@ h1 {
 
 @font-face {
   font-family: "PokemonPixel";
-  src: url("/fonts/pokemon.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/pokemon.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: block;
@@ -1763,7 +1763,7 @@ h1 {
 
 @font-face {
   font-family: "Pokemon";
-  src: url("/fonts/pokemon.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/pokemon.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -1780,7 +1780,7 @@ h1 {
 /* Pokemon font only */
 @font-face {
   font-family: "PokemonFinal";
-  src: url("/fonts/pokemon.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/pokemon.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -1806,7 +1806,7 @@ h1 {
 /* Final Pokemon pixel font */
 @font-face {
   font-family: "PokemonPixelFinal";
-  src: url("/fonts/pokemon.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/pokemon.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2167,7 +2167,7 @@ h1 {
 /* Retro arcade pixel font */
 @font-face {
   font-family: "RetroPixel";
-  src: url("/fonts/press-start-2p.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/press-start-2p.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2183,7 +2183,7 @@ h1 {
 /* Apply Silkscreen only to Click Me and LCD menu items, not Page Guide logo */
 @font-face {
   font-family: "SilkPixel";
-  src: url("/fonts/silkscreen.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/silkscreen.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2405,7 +2405,7 @@ header h1,
 /* Curly decorative font for main hero title only */
 @font-face {
   font-family: "Mieszkanie";
-  src: url("/fonts/mieszkanie9.otf") format("opentype");
+  src: url("/portfolio-2026/fonts/mieszkanie9.otf") format("opentype");
   font-display: swap;
 }
 
@@ -2419,7 +2419,7 @@ header h1,
 /* Test Goodbye Cruel World for main hero title only */
 @font-face {
   font-family: "GoodbyeCruel";
-  src: url("/fonts/goodbye.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/goodbye.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2433,7 +2433,7 @@ header h1,
 /* Sabrina font for main hero title */
 @font-face {
   font-family: "SabrinaTitle";
-  src: url("/fonts/sabrina.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/sabrina.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2447,7 +2447,7 @@ header h1,
 /* Sabrina font for main hero title */
 @font-face {
   font-family: "SabrinaTitle";
-  src: url("/fonts/sabrina.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/sabrina.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2461,7 +2461,7 @@ header h1,
 /* Starry Type for main hero title */
 @font-face {
   font-family: "StarryTitle";
-  src: url("/fonts/starry-type.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/starry-type.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2475,7 +2475,7 @@ header h1,
 /* KiwiSoda for main hero title */
 @font-face {
   font-family: "KiwiTitle";
-  src: url("/fonts/kiwisoda.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/kiwisoda.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2499,7 +2499,7 @@ header h1,
 /* Crazy Curlz for main hero title */
 @font-face {
   font-family: "CrazyTitle";
-  src: url("/fonts/crazycurlz.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/crazycurlz.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2513,7 +2513,7 @@ header h1,
 /* Stars font for main hero title */
 @font-face {
   font-family: "StarsTitle";
-  src: url("/fonts/stars.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/stars.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2527,7 +2527,7 @@ header h1,
 /* Mieszkanie for main hero title */
 @font-face {
   font-family: "MieszkanieTitle";
-  src: url("/fonts/mieszkanie9.otf") format("opentype");
+  src: url("/portfolio-2026/fonts/mieszkanie9.otf") format("opentype");
   font-display: swap;
 }
 
@@ -2541,7 +2541,7 @@ header h1,
 /* Floozy for main hero title */
 @font-face {
   font-family: "FloozyTitle";
-  src: url("/fonts/floozy.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/floozy.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2555,7 +2555,7 @@ header h1,
 /* Kurly Kyoots for main hero title */
 @font-face {
   font-family: "KurlyTitle";
-  src: url("/fonts/kurlykyoots.otf") format("opentype");
+  src: url("/portfolio-2026/fonts/kurlykyoots.otf") format("opentype");
   font-display: swap;
 }
 
@@ -2569,7 +2569,7 @@ header h1,
 /* Angelica for main hero title */
 @font-face {
   font-family: "AngelicaTitle";
-  src: url("/fonts/angelica.ttf") format("truetype");
+  src: url("/portfolio-2026/fonts/angelica.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -2583,7 +2583,7 @@ header h1,
 /* FINAL hero title font: Mieszkanie */
 @font-face {
   font-family: "FinalHeroTitle";
-  src: url("/fonts/mieszkanie9.otf") format("opentype");
+  src: url("/portfolio-2026/fonts/mieszkanie9.otf") format("opentype");
   font-display: swap;
 }
 
@@ -4009,7 +4009,7 @@ body,
 /* Hero title font */
 @font-face {
   font-family: "AdvinePixel";
-  src: url("/fonts/AdvinePixel-Regular.otf") format("opentype");
+  src: url("/portfolio-2026/fonts/AdvinePixel-Regular.otf") format("opentype");
   font-display: swap;
 }
 
