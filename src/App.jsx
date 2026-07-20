@@ -66,6 +66,14 @@ const gameProjects = [
 function App() {
   const [page, setPage] = useState("ux");
   const [showFunFact, setShowFunFact] = useState(false);
+
+  const funFacts = [
+    "Actually, I also designed the cursor for this portfolio.",
+    "I also composed the music for Earth Resonance."
+  ];
+
+  const [funFact, setFunFact] = useState(funFacts[0]);
+
   const [activeAboutSection, setActiveAboutSection] = useState("about");
 
   useEffect(() => {
@@ -373,14 +381,17 @@ function App() {
 
                     {showFunFact && (
                       <div className="pixel-speech">
-                        Actually, I also designed the cursor for this portfolio.
+                        {funFact}
                       </div>
                     )}
 
                     <button
                       type="button"
                       className="funfact-button"
-                      onClick={() => setShowFunFact((prev) => !prev)}
+                      onClick={() => {
+                        setFunFact(funFacts[Math.floor(Math.random() * funFacts.length)]);
+                        setShowFunFact((prev) => !prev);
+                      }}
                     >
                       Fun fact
                     </button>
