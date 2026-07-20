@@ -796,12 +796,18 @@ function ProjectCard({ project, index }) {
           </section>
 
                               <section id={`${projectSlug}-problem`}>
-            <span>02 / Problem</span>
-            <h4>
-              {project.title === "Canva Projects Redesign"
-                ? "Older projects are hard to retrieve when users cannot remember the exact name."
-                : project.title === "SUNAPBOX" ? "Saved short-form videos quickly become difficult to organise, revisit, and use intentionally." : "Many people struggle with comparison, anxiety, and fluctuating self-esteem — yet traditional affirmations feel awkward or ineffective. There was no playful, embodied way to practice better self-talk."}
-            </h4>
+            <span>02 / Design Intention</span>
+            {project.title === "Earth Resonance" ? (
+              <p>
+                Many people struggle with comparison, anxiety, and fluctuating self-esteem, yet traditional affirmations often feel awkward or ineffective. Earth Resonance was designed as a playful typing-rhythm game that encourages positive self-suggestion through interaction rather than passive repetition.
+              </p>
+            ) : (
+              <h4>
+                {project.title === "Canva Projects Redesign"
+                  ? "Older projects are hard to retrieve when users cannot remember the exact name."
+                  : "Saved short-form videos quickly become difficult to organise, revisit, and use intentionally."}
+              </h4>
+            )}
 
             {project.title === "Canva Projects Redesign" && (
               <div className="media-window problem-media-window">
@@ -885,14 +891,16 @@ function ProjectCard({ project, index }) {
             </p>
           </section>
 
-          <section id={`${projectSlug}-learning`}>
-            <span>06 / What I Learned</span>
-            <p>
-              {project.title === "Canva Projects Redesign"
-                ? "I learned how important information hierarchy is when designing for long-term use. A product can feel easy for recent actions but still become difficult when users return months or years later, so retrieval and memory support need to be considered as part of the experience."
-                : project.title === "SUNAPBOX" ? "I learned how product thinking can turn a personal pain point into a structured mobile experience. Designing SUNAPBOX helped me think more deeply about how users save content emotionally, forget details over time, and need flexible ways to recover meaning later." : "Accessibility shaped every decision — single-word typing, high contrast, immediate visual feedback. Keeping the interaction simple was harder than it sounds when the concept is layered."}
-            </p>
-          </section>
+          {project.title !== "Earth Resonance" && (
+            <section id={`${projectSlug}-learning`}>
+              <span>06 / What I Learned</span>
+              <p>
+                {project.title === "Canva Projects Redesign"
+                  ? "I learned how important information hierarchy is when designing for long-term use. A product can feel easy for recent actions but still become difficult when users return months or years later, so retrieval and memory support need to be considered as part of the experience."
+                  : "I learned how product thinking can turn a personal pain point into a structured mobile experience. Designing SUNAPBOX helped me think more deeply about how users save content emotionally, forget details over time, and need flexible ways to recover meaning later."}
+              </p>
+            </section>
+          )}
       </div>}
     </motion.article>
   );
