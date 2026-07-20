@@ -518,6 +518,15 @@ function ProjectPage({ number, title, description, projects }) {
     if (project.image) {
       return [[slug, project.title]];
     }
+    if (project.title === "Earth Resonance") {
+      return [
+        [`${slug}-overview`, project.title],
+        [`${slug}-problem`, "Design Intention"],
+        [`${slug}-solution`, "Level Design"],
+        [`${slug}-process`, "System Design"],
+      ];
+    }
+
     return [
       [`${slug}-overview`, project.title],
       [`${slug}-problem`, "Problem"],
@@ -883,7 +892,7 @@ function ProjectCard({ project, index }) {
           </section>
 
           <section id={`${projectSlug}-process`}>
-            <span>05 / Process & Challenges</span>
+            <span>04 / System Design Documents</span>
             <p>
               {project.title === "Canva Projects Redesign"
                 ? "I focused on turning a familiar interface problem into a clear product-design case study. The main challenge was not simply making the page look different, but identifying why older projects become difficult to retrieve and translating that problem into a practical navigation idea."
