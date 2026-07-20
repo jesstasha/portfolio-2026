@@ -4871,3 +4871,26 @@ header,
 .project-card {
   min-width: 0;
 }
+
+/* System Design uses same card size as Playtesting */
+.photo-fold-stage.system-design-slider {
+  width: min(100%, 720px);
+  aspect-ratio: 210 / 297;
+  min-height: 0;
+  margin: 32px auto 0;
+  background: rgba(255,255,255,.28);
+}
+
+.system-design-slider .photo-fold-card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.system-design-slider .photo-fold-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+}

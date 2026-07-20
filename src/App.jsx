@@ -899,11 +899,35 @@ function ProjectCard({ project, index }) {
 
           <section id={`${projectSlug}-process`}>
             <span>04 / System Design Documents</span>
-            <p>
-              {project.title === "Canva Projects Redesign"
-                ? "I focused on turning a familiar interface problem into a clear product-design case study. The main challenge was not simply making the page look different, but identifying why older projects become difficult to retrieve and translating that problem into a practical navigation idea."
-                : project.title === "SUNAPBOX" ? "I focused on shaping SUNAPBOX as a product concept that connects saving, organising, searching, and revisiting short-form videos. The main challenge was keeping the flow simple while still showing how AI-assisted tagging and folder-based organisation could support real user behaviour." : "A two-page system design document outlining the game's screen flow, shared state, timing and judgement system, level progression, and branching endings."}
-            </p>
+
+            {project.title === "Earth Resonance" ? (
+              <>
+                <h4>
+                  System architecture, progression, timing, and branching outcomes.
+                </h4>
+
+                <p>
+                  A two-page system design document outlining the game&apos;s screen flow,
+                  shared state, timing and judgement system, level progression, and
+                  branching endings.
+                </p>
+
+                <PhotoFold
+                  images={[
+                    "/portfolio_pngs/system_design_1.png",
+                    "/portfolio_pngs/system_design_2.png",
+                  ]}
+                  alt="Earth Resonance system design document"
+                  className="system-design-slider"
+                />
+              </>
+            ) : (
+              <p>
+                {project.title === "Canva Projects Redesign"
+                  ? "I focused on turning a familiar interface problem into a clear product-design case study. The main challenge was not simply making the page look different, but identifying why older projects become difficult to retrieve and translating that problem into a practical navigation idea."
+                  : "I focused on shaping SUNAPBOX as a product concept that connects saving, organising, searching, and revisiting short-form videos. The main challenge was keeping the flow simple while still showing how AI-assisted tagging and folder-based organisation could support real user behaviour."}
+              </p>
+            )}
           </section>
 
           {project.title !== "Earth Resonance" && (
