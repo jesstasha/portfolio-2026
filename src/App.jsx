@@ -861,6 +861,27 @@ function ProjectCard({ project, index }) {
                   ? "SUNAPBOX organises videos through save flows, folders, swipe-based arranging, search, and AI-assisted tagging so users can retrieve saved videos based on meaning, context, and future use."
                   : "Each level moves from survival to self-actualisation through a red-to-blue progression. In SOUL MODE, players type level-specific words and continue toward the reflective ending. In EGO MODE, players may type any word for score and ranking, but lose access to the SOUL ending."}
             </p>
+
+            {project.title === "Earth Resonance" && (
+              <div className="media-window game-media-window">
+                <div className="window-bar">
+                  <span className="window-dot red"></span>
+                  <span className="window-dot yellow"></span>
+                  <span className="window-dot green"></span>
+                </div>
+
+                <img
+                  src="/portfolio_pngs/ego_soul_mode.png"
+                  alt="Earth Resonance SOUL MODE and EGO MODE level design layouts"
+                  style={{
+                    width: "60%",
+                    display: "block",
+                    margin: "0 auto",
+                    borderRadius: "12px"
+                  }}
+                />
+              </div>
+            )}
           </section>
 
           <section id={`${projectSlug}-process`}>
