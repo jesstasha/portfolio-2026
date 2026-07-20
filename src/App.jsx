@@ -111,11 +111,13 @@ function App() {
   }, [page]);
 
   return (
+    <>
+    <div className="background-orb orb-one" />
+    <div className="background-orb orb-two" />
+    <div className="background-orb orb-three" />
+
     <main className="site-shell">
       <ClickSparkle />
-      <div className="background-orb orb-one" />
-      <div className="background-orb orb-two" />
-      <div className="background-orb orb-three" />
 
       <header className="top-bar">
         <button className="logo" onClick={() => setPage("ux")}>
@@ -412,6 +414,7 @@ function App() {
         </section>
       )}
     </main>
+    </>
   );
 }
 
