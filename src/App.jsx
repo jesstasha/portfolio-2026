@@ -34,7 +34,7 @@ const gameProjects = [
     type: "Global Game Jam 2026",
     summary: "A quiz-based RPG progression game built in 48 hours. Lead programmer — implemented core game loop in Unity with team collaboration via Git/GitHub.",
     tags: ["Unity", "C#", "Git/GitHub"],
-    image: "/maskthewild.png",
+    image: "/portfolio-2026/maskthewild.png",
     link: "https://globalgamejam.org/games/2026/mask-wild-1",
   },
   {
@@ -42,7 +42,7 @@ const gameProjects = [
     type: "People's Choice 3rd · 2025 CISSA X GMC Game Jam",
     summary: "Puzzle game co-created in 72 hours. Contributed narrative, level art in Aseprite, and gameplay scripting in Godot.",
     tags: ["Godot", "GDScript", "Aseprite"],
-    image: "/nucleoblob.png",
+    image: "/portfolio-2026/nucleoblob.png",
     link: "https://yukebin.itch.io/nucleaobob",
   },
   {
