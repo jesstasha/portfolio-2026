@@ -664,7 +664,7 @@ function ProjectCard({ project, index }) {
           </section>
 
           <section id={`${projectSlug}-design-goal`}>
-            <span>02 / Design Goal</span>
+            <span>02 / Annotated Screenshots Explaining Design Decisions</span>
             <h4>Connect political themes to actions the player performs.</h4>
 
             <ul>
@@ -680,6 +680,17 @@ function ProjectCard({ project, index }) {
               />
               <figcaption>
                 Character, environment and tilemap prototypes developed for the game world.
+              </figcaption>
+            </figure>
+
+
+            <figure className="anymore-slide">
+              <img
+                src="/portfolio_pngs/level_design.png"
+                alt="Anymore Farm spiral village map and visual development"
+              />
+              <figcaption>
+                Farm map structure and original pixel-art building development.
               </figcaption>
             </figure>
           </section>
@@ -738,28 +749,6 @@ function ProjectCard({ project, index }) {
                 </figcaption>
               </figure>
             </div>
-          </section>
-
-          <section id={`${projectSlug}-level-design`}>
-            <span>05 / Level Design</span>
-            <h4>A spiral village structure supports exploration and discovery.</h4>
-
-            <ul>
-              <li>Residential, public and special-purpose buildings create spatial variety.</li>
-              <li>Hidden routes and portal areas reward curiosity.</li>
-              <li>Readable paths and landmarks support navigation.</li>
-              <li>The village gradually shifts from cheerful to unsettling.</li>
-            </ul>
-
-            <figure className="anymore-slide">
-              <img
-                src="/portfolio_pngs/level_design.png"
-                alt="Anymore Farm spiral village map and visual development"
-              />
-              <figcaption>
-                Farm map structure and original pixel-art building development.
-              </figcaption>
-            </figure>
           </section>
 
           <section id={`${projectSlug}-iteration`}>
