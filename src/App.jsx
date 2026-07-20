@@ -23,7 +23,7 @@ const uxProjects = [
 const gameProjects = [
   {
     title: "Earth Resonance",
-    type: "Apple Swift Student Challenge",
+    type: "2026 Apple Swift Student Challenge",
     summary:
       "A typing rhythm experience exploring ego, soul, and self-actualisation through interactive colour progression and reflective gameplay.",
     tags: ["", "Swift Playgrounds", "Game Design", "Interaction Loop"],
@@ -39,7 +39,7 @@ const gameProjects = [
   },
   {
     title: "Nucleoblob",
-    type: "72-Hour Game Jam · People's Choice 3rd",
+    type: "People's Choice 3rd · 2025 CISSA X GMC Game Jam",
     summary: "Puzzle game co-created in 72 hours. Contributed narrative, level art in Aseprite, and gameplay scripting in Godot.",
     tags: ["Godot", "GDScript", "Aseprite"],
     image: "/nucleoblob.png",
