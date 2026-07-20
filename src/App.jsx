@@ -615,6 +615,7 @@ function ProjectCard({ project, index }) {
 
   return (
     <motion.article
+      id={projectSlug}
       className="project-card glass-card case-study-card"
       initial={{ opacity: 0, y: 26 }}
       animate={{ opacity: 1, y: 0 }}
