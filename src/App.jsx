@@ -50,7 +50,7 @@ const gameProjects = [
     type: "Game Design Document · Independent Project",
     summary:
       "A stealth investigation game inspired by Animal Farm. The player gathers photographic evidence of corruption, manages suspicion, and broadcasts the truth before time runs out.",
-    tags: ["Game Design", "GDD", "System Design", "Level Design", "Godot"],
+    tags: ["Game Design", "GDD", "Mechanic Design", "Level Design", "Godot"],
     caseStudy: "anymore-farm",
   },
 ];
@@ -509,7 +509,7 @@ function ProjectPage({ number, title, description, projects }) {
         [`${slug}-overview`, project.title],
         [`${slug}-design-goal`, "Design Goal"],
         [`${slug}-core-loop`, "Core Loop"],
-        [`${slug}-systems`, "System Design"],
+        [`${slug}-systems`, "Mechanic Design"],
         [`${slug}-level-design`, "Level Design"],
         [`${slug}-iteration`, "Playtesting Report"],
         [`${slug}-responsibilities`, "My Role"],
@@ -707,7 +707,7 @@ function ProjectCard({ project, index }) {
           </section>
 
           <section id={`${projectSlug}-systems`}>
-            <span>04 / System Design</span>
+            <span>04 / Mechanic Design</span>
             <h4>Connected systems turn investigation into tension and consequence.</h4>
 
             <ul>
