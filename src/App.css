@@ -25,6 +25,7 @@ a {
 
 .site-shell {
   position: relative;
+  z-index: 1;
   overflow: hidden;
   min-height: 100vh;
   padding: 28px;
@@ -36,7 +37,7 @@ a {
   filter: blur(18px);
   opacity: 0.55;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
 }
 
 .orb-one {
