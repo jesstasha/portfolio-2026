@@ -468,7 +468,7 @@ function MediaFold({ items, alt }) {
 }
 
 
-function PhotoFold({ images, alt }) {
+function PhotoFold({ images, alt, className = "" }) {
   const [active, setActive] = useState(0);
 
   const nextPhoto = () => {
@@ -478,7 +478,7 @@ function PhotoFold({ images, alt }) {
   const previous = images[(active - 1 + images.length) % images.length];
 
   return (
-    <div className="photo-fold-stage">
+    <div className={`photo-fold-stage ${className}`}>
       <div className="photo-fold-card photo-fold-back">
         <img src={previous} alt={alt} />
       </div>
@@ -511,7 +511,7 @@ function ProjectPage({ number, title, description, projects }) {
         [`${slug}-core-loop`, "Core Loop"],
         [`${slug}-systems`, "System Design"],
         [`${slug}-level-design`, "Level Design"],
-        [`${slug}-iteration`, "Iteration"],
+        [`${slug}-iteration`, "Playtesting Report"],
         [`${slug}-responsibilities`, "My Role"],
       ];
     }
@@ -763,18 +763,22 @@ function ProjectCard({ project, index }) {
           </section>
 
           <section id={`${projectSlug}-iteration`}>
-            <span>06 / Iteration</span>
-            <h4>Refining mechanics to better support the investigative theme.</h4>
+            <span>06 / Playtesting Report</span>
+            <h4>Playtesting feedback informed balancing and gameplay improvements.</h4>
             <p>
-              The early shooting-style targeting interaction introduced precision, but feedback
-              showed that it could feel disconnected from the game’s political and investigative
-              tone. The next iteration focuses more clearly on observation, positioning, timing
-              and non-violent documentation.
+              This report summarises multiple playtesting sessions for Ringworld, documenting player
+              feedback, gameplay balance issues, rule clarity, and proposed improvements following testing.
             </p>
-            <p>
-              This reframes the player as someone who makes hidden behaviour visible rather than
-              someone who attacks an enemy.
-            </p>
+
+            <PhotoFold
+              images={[
+                "/playtest-report/playtesting_1.png",
+                "/playtest-report/playtesting_2.png",
+                "/playtest-report/playtesting_3.png",
+              ]}
+              alt="Ringworld playtesting report"
+              className="playtest-report-slider"
+            />
           </section>
 
           <section id={`${projectSlug}-responsibilities`}>

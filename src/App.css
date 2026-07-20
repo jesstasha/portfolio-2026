@@ -4843,3 +4843,26 @@ header,
   margin-top: 24px;
 }
 
+
+/* Playtesting Report — full A4 pages without cropping */
+.photo-fold-stage.playtest-report-slider {
+  width: min(100%, 720px);
+  aspect-ratio: 210 / 297;
+  min-height: 0;
+  margin: 32px auto 0;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.playtest-report-slider .photo-fold-card {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
+.playtest-report-slider .photo-fold-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
+}
