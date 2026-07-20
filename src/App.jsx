@@ -55,7 +55,7 @@ const gameProjects = [
   },
   {
     title: "Ringworld",
-    type: "Board Game Prototype · Team Project",
+    type: "Board Game Prototype · 2026 Game Design Subject",
     summary:
       "A sci-fi territory control board game prototype exploring expansion, resource management, and strategic decision-making through iterative playtesting.",
     tags: ["Board Game", "Prototype", "Playtesting", "Iteration"],
