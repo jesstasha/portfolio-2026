@@ -816,9 +816,9 @@ function ProjectCard({ project, index }) {
 
             <PhotoFold
               images={[
-                "/playtest-report/playtesting_1.png",
-                "/playtest-report/playtesting_2.png",
-                "/playtest-report/playtesting_3.png",
+                "/portfolio-2026/playtest-report/playtesting_1.png",
+                "/portfolio-2026/playtest-report/playtesting_2.png",
+                "/portfolio-2026/playtest-report/playtesting_3.png",
               ]}
               alt="Ringworld playtesting report"
               className="playtest-report-slider"
@@ -867,7 +867,7 @@ function ProjectCard({ project, index }) {
                 </div>
 
                 <img
-                  src="/canvaredesign.png"
+                  src="/portfolio-2026/canvaredesign.png"
                   alt="Canva retrieval problem analysis"
                   className="problem-analysis-image"
                 />
