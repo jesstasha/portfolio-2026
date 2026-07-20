@@ -519,7 +519,7 @@ function ProjectPage({ number, title, description, projects }) {
       return [
         [`${slug}-overview`, project.title],
         [`${slug}-design-goal`, "Design Goal"],
-        [`${slug}-core-loop`, "Core Loop"],
+        [`${slug}-core-loop`, "Concept Development"],
         [`${slug}-systems`, "Mechanic Design"],
       ];
     }
@@ -730,19 +730,19 @@ function ProjectCard({ project, index }) {
           </section>
 
           <section id={`${projectSlug}-core-loop`}>
-            <span>03 / Core Loop</span>
-            <h4>Explore → discover corruption → target → expose → adapt.</h4>
+            <span>03 / Concept Development</span>
+            <h4>From Stoicism to interactive player choices.</h4>
 
             <ul>
-              <li>Explore the village and interact with NPCs.</li>
-              <li>Identify suspicious behaviour and hidden areas.</li>
-              <li>Expose corruption through accurate live broadcasts.</li>
-              <li>Adapt future decisions as suspicion increases.</li>
+              <li>Explore how values can be communicated through gameplay systems.</li>
+              <li>Transform philosophical ideas into player decisions and consequences.</li>
+              <li>Combine mechanics and narrative to create meaningful player experiences.</li>
+              <li>Develop Anymore Farm as a value-driven game about corruption and moral choices.</li>
             </ul>
 
             <figure className="anymore-slide">
               <img
-                src="/portfolio-2026/portfolio_pngs/core_loop.png"
+                src="/portfolio-2026/stoic.png"
                 alt="Anymore Farm gameplay pillars, progression and core gameplay loop"
               />
               <figcaption>
@@ -927,6 +927,7 @@ function ProjectCard({ project, index }) {
                   ? "SUNAPBOX organises videos through save flows, folders, swipe-based arranging, search, and AI-assisted tagging so users can retrieve saved videos based on meaning, context, and future use."
                   : "Each level moves from survival to self-actualisation through a red-to-blue progression. In SOUL MODE, players type level-specific words and continue toward the reflective ending. In EGO MODE, players may type any word for score and ranking, but lose access to the SOUL ending."}
             </p>
+
 
             {project.title === "Earth Resonance" && (
               <img
