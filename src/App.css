@@ -36,6 +36,7 @@ a {
   filter: blur(18px);
   opacity: 0.55;
   pointer-events: none;
+  z-index: -1;
 }
 
 .orb-one {
