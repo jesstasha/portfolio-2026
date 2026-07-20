@@ -869,6 +869,12 @@ function ProjectCard({ project, index }) {
                   : "Maslow’s hierarchy structures the five-level progression, while Jung’s ego/self concept shapes the two gameplay paths."}
             </h4>
 
+            {project.title === "Earth Resonance" && (
+              <p>
+                Inspired by Jung&apos;s ego/self concept and Maslow&apos;s five needs. Each level maps to a need (survival → self-actualisation). The main challenge was making psychological concepts feel intuitive through gameplay mechanics rather than explanation.
+              </p>
+            )}
+
             <p>
               {project.title === "Canva Projects Redesign"
                 ? "Year-based navigation reduces the search space and helps long-term users browse their creative history more intentionally. Grouping related project assets also makes the page easier to scan."
