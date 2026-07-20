@@ -518,7 +518,7 @@ function ProjectPage({ number, title, description, projects }) {
     if (project.caseStudy === "anymore-farm") {
       return [
         [`${slug}-overview`, project.title],
-        [`${slug}-design-goal`, "Design Goal"],
+        [`${slug}-design-goal`, "Design Decision"],
         [`${slug}-core-loop`, "Concept Development"],
         [`${slug}-systems`, "Mechanic Design"],
       ];
@@ -843,6 +843,7 @@ function ProjectCard({ project, index }) {
                               <section id={`${projectSlug}-problem`}>
             <span>02 / Design Decision</span>
             {project.title === "Earth Resonance" ? (
+              <>
               <div className="media-window">
                 <div className="media-window-bar">
                   <span></span><span></span><span></span>
@@ -855,6 +856,13 @@ function ProjectCard({ project, index }) {
                   playsInline
                 />
               </div>
+
+              <p>
+                Design process video: Apple Swift Student Challenge - Resonance.
+                This video demonstrates how abstract psychological concepts were translated into interactive gameplay.
+                The progression system, input mechanics, and branching outcomes were designed to communicate the contrast between self-actualisation and ego-driven goals through player choices.
+              </p>
+              </>
             ) : (
               <h4>
                 {project.title === "Canva Projects Redesign"
