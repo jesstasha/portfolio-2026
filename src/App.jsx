@@ -874,13 +874,11 @@ function ProjectCard({ project, index }) {
                 The progression system, input mechanics, and branching outcomes were designed to communicate the contrast between self-actualisation and ego-driven goals through player choices.
               </p>
               </>
-            ) : (
+            ) : project.title === "Canva Projects Redesign" ? (
               <h4>
-                {project.title === "Canva Projects Redesign"
-                  ? "Older projects are hard to retrieve when users cannot remember the exact name."
-                  : "Saved short-form videos quickly become difficult to organise, revisit, and use intentionally."}
+                Older projects are hard to retrieve when users cannot remember the exact name.
               </h4>
-            )}
+            ) : null}
 
             {project.title === "Scheduling of Care" && (
               <>
@@ -944,43 +942,64 @@ function ProjectCard({ project, index }) {
             <span>
               {project.title === "Earth Resonance"
                 ? "03 / Level Design Layouts"
-                : "04 / Solution"}
+                : project.title === "Scheduling of Care"
+                  ? "03 / Solution"
+                  : "04 / Solution"}
             </span>
 
-            <h4>
-              {project.title === "Canva Projects Redesign"
-                ? "Introduce year-based filtering and clearer project grouping."
-                : project.title === "SUNAPBOX"
-                  ? "Create a mobile system for saving, arranging, searching, and revisiting short-form videos."
-                  : "Maslow’s hierarchy structures the five-level progression, while Jung’s ego/self concept shapes the two gameplay paths."}
-            </h4>
+            {project.title === "Scheduling of Care" ? (
+              <>
+                <h4>High-Fidelity Design</h4>
+                <p>
+                  The low-fidelity structure was developed into a high-fidelity interface
+                  with clearer visual hierarchy, consistent components, and refined layouts
+                  for the core user flows.
+                </p>
 
-            {project.title === "Earth Resonance" && (
-              <p>
-                Inspired by Jung&apos;s ego/self concept and Maslow&apos;s five needs. Each level maps to a need (survival → self-actualisation). The main challenge was making psychological concepts feel intuitive through gameplay mechanics rather than explanation.
-              </p>
-            )}
+                <PhotoFold
+                  images={[
+                    "/portfolio-2026/portfolio_pngs/scheduling-of-care/highfi-sign-in.png",
+                    "/portfolio-2026/portfolio_pngs/scheduling-of-care/highfi-homepage.png",
+                    "/portfolio-2026/portfolio_pngs/scheduling-of-care/highfi-organisation.png",
+                    "/portfolio-2026/portfolio_pngs/scheduling-of-care/highfi-worksheet.png",
+                  ]}
+                  alt="Scheduling of Care high-fidelity designs"
+                  className="lowfi-wireframe-slider"
+                />
+              </>
+            ) : (
+              <>
+                <h4>
+                  {project.title === "Canva Projects Redesign"
+                    ? "Introduce year-based filtering and clearer project grouping."
+                    : "Maslow’s hierarchy structures the five-level progression, while Jung’s ego/self concept shapes the two gameplay paths."}
+                </h4>
 
-            <p>
-              {project.title === "Canva Projects Redesign"
-                ? "Year-based navigation reduces the search space and helps long-term users browse their creative history more intentionally. Grouping related project assets also makes the page easier to scan."
-                : project.title === "SUNAPBOX"
-                  ? "SUNAPBOX organises videos through save flows, folders, swipe-based arranging, search, and AI-assisted tagging so users can retrieve saved videos based on meaning, context, and future use."
-                  : "Each level moves from survival to self-actualisation through a red-to-blue progression. In SOUL MODE, players type level-specific words and continue toward the reflective ending. In EGO MODE, players may type any word for score and ranking, but lose access to the SOUL ending."}
-            </p>
+                {project.title === "Earth Resonance" && (
+                  <p>
+                    Inspired by Jung&apos;s ego/self concept and Maslow&apos;s five needs. Each level maps to a need (survival → self-actualisation). The main challenge was making psychological concepts feel intuitive through gameplay mechanics rather than explanation.
+                  </p>
+                )}
 
+                <p>
+                  {project.title === "Canva Projects Redesign"
+                    ? "Year-based navigation reduces the search space and helps long-term users browse their creative history more intentionally. Grouping related project assets also makes the page easier to scan."
+                    : "Each level moves from survival to self-actualisation through a red-to-blue progression. In SOUL MODE, players type level-specific words and continue toward the reflective ending. In EGO MODE, players may type any word for score and ranking, but lose access to the SOUL ending."}
+                </p>
 
-            {project.title === "Earth Resonance" && (
-              <img
-                src="/portfolio-2026/portfolio_pngs/ego_soul_mode.png"
-                alt="Earth Resonance SOUL MODE and EGO MODE level design layouts"
-                style={{
-                  width: "40%",
-                  display: "block",
-                  margin: "24px auto",
-                  borderRadius: "12px"
-                }}
-              />
+                {project.title === "Earth Resonance" && (
+                  <img
+                    src="/portfolio-2026/portfolio_pngs/ego_soul_mode.png"
+                    alt="Earth Resonance SOUL MODE and EGO MODE level design layouts"
+                    style={{
+                      width: "40%",
+                      display: "block",
+                      margin: "24px auto",
+                      borderRadius: "12px"
+                    }}
+                  />
+                )}
+              </>
             )}
           </section>
 
