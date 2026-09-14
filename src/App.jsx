@@ -16,7 +16,7 @@ const uxProjects = [
     type: "Client-Based IT Capstone Project · 2026",
     summary:
       "A short-form video organisation app that helps users save, arrange, search, and revisit videos through folder-based collection and AI-assisted tagging.",
-    tags: ["SwiftUI", "Product Thinking", "AI Parser", "Mobile UX"],
+    tags: ["Product Design", "Client Project", "Capstone Project"],
   },
 ];
 
