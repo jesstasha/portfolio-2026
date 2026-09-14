@@ -966,38 +966,77 @@ function ProjectCard({ project, index }) {
                   className="lowfi-wireframe-slider"
                 />
               </>
+            ) : project.title === "Canva Projects Redesign" ? (
+              <>
+                <h4>
+                  Year-based navigation makes long-term projects easier to retrieve and explore.
+                </h4>
+
+                <img
+                  src="/portfolio-2026/portfolio_pngs/canva-projects-redesign/solution-year-view.png"
+                  alt="Canva redesign with year-based project navigation"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    display: "block",
+                    margin: "32px auto 24px",
+                    borderRadius: "16px"
+                  }}
+                />
+
+                <img
+                  src="/portfolio-2026/portfolio_pngs/canva-projects-redesign/solution-sort-view.png"
+                  alt="Canva redesign showing consistent project sorting controls"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    display: "block",
+                    margin: "24px auto 32px",
+                    borderRadius: "16px"
+                  }}
+                />
+
+                <p>
+                  The redesign improves discoverability by introducing year-based filtering,
+                  allowing users to narrow their search and retrieve older projects more
+                  efficiently. Projects are organised vertically from January to December,
+                  creating a clear chronological structure that makes the timeline easier to
+                  understand at a glance. The “Sort by” control also follows the same UI pattern
+                  as the yearly filter, maintaining consistency across interactions and creating
+                  a more predictable browsing experience.
+                </p>
+              </>
             ) : (
               <>
                 <h4>
-                  {project.title === "Canva Projects Redesign"
-                    ? "Introduce year-based filtering and clearer project grouping."
-                    : "Maslow’s hierarchy structures the five-level progression, while Jung’s ego/self concept shapes the two gameplay paths."}
+                  Maslow’s hierarchy structures the five-level progression, while Jung’s
+                  ego/self concept shapes the two gameplay paths.
                 </h4>
 
-                {project.title === "Earth Resonance" && (
-                  <p>
-                    Inspired by Jung&apos;s ego/self concept and Maslow&apos;s five needs. Each level maps to a need (survival → self-actualisation). The main challenge was making psychological concepts feel intuitive through gameplay mechanics rather than explanation.
-                  </p>
-                )}
-
                 <p>
-                  {project.title === "Canva Projects Redesign"
-                    ? "Year-based navigation reduces the search space and helps long-term users browse their creative history more intentionally. Grouping related project assets also makes the page easier to scan."
-                    : "Each level moves from survival to self-actualisation through a red-to-blue progression. In SOUL MODE, players type level-specific words and continue toward the reflective ending. In EGO MODE, players may type any word for score and ranking, but lose access to the SOUL ending."}
+                  Inspired by Jung&apos;s ego/self concept and Maslow&apos;s five needs.
+                  Each level maps to a need (survival → self-actualisation). The main
+                  challenge was making psychological concepts feel intuitive through
+                  gameplay mechanics rather than explanation.
                 </p>
 
-                {project.title === "Earth Resonance" && (
-                  <img
-                    src="/portfolio-2026/portfolio_pngs/ego_soul_mode.png"
-                    alt="Earth Resonance SOUL MODE and EGO MODE level design layouts"
-                    style={{
-                      width: "40%",
-                      display: "block",
-                      margin: "24px auto",
-                      borderRadius: "12px"
-                    }}
-                  />
-                )}
+                <p>
+                  Each level moves from survival to self-actualisation through a red-to-blue
+                  progression. In SOUL MODE, players type level-specific words and continue
+                  toward the reflective ending. In EGO MODE, players may type any word for
+                  score and ranking, but lose access to the SOUL ending.
+                </p>
+
+                <img
+                  src="/portfolio-2026/portfolio_pngs/ego_soul_mode.png"
+                  alt="Earth Resonance SOUL MODE and EGO MODE level design layouts"
+                  style={{
+                    width: "40%",
+                    display: "block",
+                    margin: "24px auto",
+                    borderRadius: "12px"
+                  }}
+                />
               </>
             )}
           </section>
