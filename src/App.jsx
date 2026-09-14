@@ -608,7 +608,7 @@ function ProjectPage({ number, title, description, projects }) {
                 activeSection === id ? "active" : "",
                 id === "ringworld" ||
                 label.includes("Canva") ||
-                label.includes("SUNAPBOX") ||
+                label.includes("Scheduling of Care") ||
                 label.includes("Earth") ||
                 label.includes("Mask") ||
                 label.includes("Nucleoblob") ||
