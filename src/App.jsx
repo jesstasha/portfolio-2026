@@ -12,8 +12,8 @@ const uxProjects = [
     tags: ["UX Research", "Interaction Design", "React", "Case Study"],
   },
   {
-    title: "SUNAPBOX",
-    type: "iOS Product Concept",
+    title: "Scheduling of Care",
+    type: "Client-Based IT Capstone Project · 2026",
     summary:
       "A short-form video organisation app that helps users save, arrange, search, and revisit videos through folder-based collection and AI-assisted tagging.",
     tags: ["SwiftUI", "Product Thinking", "AI Parser", "Mobile UX"],
