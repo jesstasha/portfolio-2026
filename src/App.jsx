@@ -972,29 +972,29 @@ function ProjectCard({ project, index }) {
                   Year-based navigation makes long-term projects easier to retrieve and explore.
                 </h4>
 
-                <img
-                  src="/portfolio-2026/portfolio_pngs/canva-projects-redesign/solution-year-view.png"
-                  alt="Canva redesign with year-based project navigation"
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    display: "block",
-                    margin: "32px auto 24px",
-                    borderRadius: "16px"
-                  }}
-                />
+                <div className="media-window problem-media-window">
+                  <div className="media-window-bar">
+                    <span></span><span></span><span></span>
+                  </div>
 
-                <img
-                  src="/portfolio-2026/portfolio_pngs/canva-projects-redesign/solution-sort-view.png"
-                  alt="Canva redesign showing consistent project sorting controls"
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    display: "block",
-                    margin: "24px auto 32px",
-                    borderRadius: "16px"
-                  }}
-                />
+                  <img
+                    src="/portfolio-2026/portfolio_pngs/canva-projects-redesign/solution-year-view.png"
+                    alt="Canva redesign with year-based project navigation"
+                    className="problem-analysis-image"
+                  />
+                </div>
+
+                <div className="media-window problem-media-window">
+                  <div className="media-window-bar">
+                    <span></span><span></span><span></span>
+                  </div>
+
+                  <img
+                    src="/portfolio-2026/portfolio_pngs/canva-projects-redesign/solution-sort-view.png"
+                    alt="Canva redesign showing consistent project sorting controls"
+                    className="problem-analysis-image"
+                  />
+                </div>
 
                 <p>
                   The redesign improves discoverability by introducing year-based filtering,
