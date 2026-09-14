@@ -846,8 +846,7 @@ function ProjectCard({ project, index }) {
             <span>01 / Overview</span>
             <h4>{project.title}</h4>
             <p>
-              This case study explains the project context, the design problem, the main user pain points,
-              the proposed solution, and how the idea was translated into an interactive prototype. The app was designed and developed in SwiftUI, with future AI parser integration planned through a lightweight backend that converts natural language prompts into structured actions. The redesign was planned as a UX case study and implemented as an interactive React prototype, showing both the information architecture and working UI behaviour.
+              Scheduling of Care is a client-based capstone project developed as part of my university studies. Through regular team discussions and client meetings, we worked to understand the client&apos;s needs, clarify requirements, and define an achievable MVP that addresses the core problems within the care scheduling workflow. Rather than treating the project as a purely academic exercise, we approached it as a real product development process, balancing user needs, client expectations, technical feasibility, and the project timeline as we moved from early design decisions into implementation.
             </p>
           </section>
 
@@ -1004,7 +1003,11 @@ function ProjectCard({ project, index }) {
           </section>
 
           <section id={`${projectSlug}-process`}>
-            <span>04 / System Design Documents</span>
+            <span>
+              {project.title === "Scheduling of Care"
+                ? "04 / Domain Design Model"
+                : "04 / System Design Documents"}
+            </span>
 
             {project.title === "Earth Resonance" ? (
               <>
@@ -1027,22 +1030,49 @@ function ProjectCard({ project, index }) {
                   className="system-design-slider"
                 />
               </>
+            ) : project.title === "Scheduling of Care" ? (
+              <>
+                <h4>Domain Design Model</h4>
+                <p>
+                  The domain model maps the core entities and relationships within the
+                  system, helping translate client requirements into a structured design
+                  before implementation.
+                </p>
+
+                <img
+                  src="/portfolio-2026/portfolio_pngs/scheduling-of-care/domain-design-model.png"
+                  alt="Scheduling of Care domain design model"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    display: "block",
+                    margin: "32px auto 0",
+                    borderRadius: "16px"
+                  }}
+                />
+              </>
             ) : (
               <p>
                 {project.title === "Canva Projects Redesign"
                   ? "I focused on turning a familiar interface problem into a clear product-design case study. The main challenge was not simply making the page look different, but identifying why older projects become difficult to retrieve and translating that problem into a practical navigation idea."
-                  : "I focused on shaping SUNAPBOX as a product concept that connects saving, organising, searching, and revisiting short-form videos. The main challenge was keeping the flow simple while still showing how AI-assisted tagging and folder-based organisation could support real user behaviour."}
+                  : ""}
               </p>
             )}
           </section>
 
           {project.title !== "Earth Resonance" && (
             <section id={`${projectSlug}-learning`}>
-              <span>06 / What I Learned</span>
+              <span>
+                {project.title === "Scheduling of Care"
+                  ? "05 / What I Learned"
+                  : "06 / What I Learned"}
+              </span>
               <p>
                 {project.title === "Canva Projects Redesign"
                   ? "I learned how important information hierarchy is when designing for long-term use. A product can feel easy for recent actions but still become difficult when users return months or years later, so retrieval and memory support need to be considered as part of the experience."
-                  : "I learned how product thinking can turn a personal pain point into a structured mobile experience. Designing SUNAPBOX helped me think more deeply about how users save content emotionally, forget details over time, and need flexible ways to recover meaning later."}
+                  : project.title === "Scheduling of Care"
+                    ? "Working on a real client-based project taught me how to translate complex requirements into clear user flows and practical interface decisions. I learned that effective UX is not only about designing individual screens, but also about understanding the underlying system, collaborating with a development team, and refining designs as requirements evolve throughout implementation."
+                    : ""}
               </p>
             </section>
           )}
