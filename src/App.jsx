@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const uxProjects = [
   {
     title: "Canva Projects Redesign",
+    link: "https:" + "//" + "jesstasha.github.io/canva-projects-redesign/" + "",
     type: "UX / Product Design",
     summary:
       "A redesign concept for Canva’s Projects page, focused on improving long-term project discoverability through year-based navigation and clearer information hierarchy.",
