@@ -4905,3 +4905,26 @@ header,
   padding-top: 20px;
 }
 
+
+/* Scheduling of Care — low-fidelity wireframes shown without cropping */
+.photo-fold-stage.lowfi-wireframe-slider {
+  width: min(100%, 720px);
+  aspect-ratio: 16 / 10;
+  min-height: 0;
+  margin: 32px auto 0;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.lowfi-wireframe-slider .photo-fold-card {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
+.lowfi-wireframe-slider .photo-fold-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
+}

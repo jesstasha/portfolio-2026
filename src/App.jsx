@@ -556,7 +556,7 @@ function ProjectPage({ number, title, description, projects }) {
 
     return [
       [`${slug}-overview`, project.title],
-      [`${slug}-problem`, "Problem"],
+      [`${slug}-problem`, project.title === "Scheduling of Care" ? "Design Decision" : "Problem"],
       [`${slug}-pain-points`, "Pain Points"],
       [`${slug}-solution`, "Solution"],
       [`${slug}-process`, "Process"],
@@ -880,6 +880,28 @@ function ProjectCard({ project, index }) {
                   ? "Older projects are hard to retrieve when users cannot remember the exact name."
                   : "Saved short-form videos quickly become difficult to organise, revisit, and use intentionally."}
               </h4>
+            )}
+
+            {project.title === "Scheduling of Care" && (
+              <>
+                <h4>Low-Fidelity Wireframes</h4>
+                <p>
+                  Early wireframes were used to establish the core information hierarchy,
+                  navigation, and key user flows before moving into high-fidelity design
+                  and frontend implementation.
+                </p>
+
+                <PhotoFold
+                  images={[
+                    "/portfolio-2026/portfolio_pngs/scheduling-of-care/lowfi-sign-in.png",
+                    "/portfolio-2026/portfolio_pngs/scheduling-of-care/lowfi-homepage.png",
+                    "/portfolio-2026/portfolio_pngs/scheduling-of-care/lowfi-organisation.png",
+                    "/portfolio-2026/portfolio_pngs/scheduling-of-care/lowfi-worksheet.png",
+                  ]}
+                  alt="Scheduling of Care low-fidelity wireframes"
+                  className="lowfi-wireframe-slider"
+                />
+              </>
             )}
 
             {project.title === "Canva Projects Redesign" && (
